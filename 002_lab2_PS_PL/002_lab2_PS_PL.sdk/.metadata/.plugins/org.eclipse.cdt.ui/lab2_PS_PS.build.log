@@ -1,0 +1,23 @@
+23:52:50 **** Auto Build of configuration Debug for project lab2_PS_PS ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lsb2_PS_PS_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab2_PS_PS.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lsb2_PS_PS_bsp/ps7_cortexa9_0/lib -o "lab2_PS_PS.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab2_PS_PS.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab2_PS_PS.elf  |tee "lab2_PS_PS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91192	   4200	  23408	 118800	  1d010	lab2_PS_PS.elf
+'Finished building: lab2_PS_PS.elf.size'
+' '
+
+23:52:52 Build Finished (took 1s.454ms)
+

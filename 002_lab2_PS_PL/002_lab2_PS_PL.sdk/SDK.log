@@ -1,0 +1,6 @@
+23:37:22 INFO  : Registering command handlers for SDK TCF services
+23:37:23 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\002_lab2_PS_PL\002_lab2_PS_PL.sdk\temp_xsdb_launch_script.tcl
+23:37:26 INFO  : XSCT server has started successfully.
+23:37:28 INFO  : Successfully done setting XSCT server connection channel  
+23:37:28 INFO  : Successfully done setting SDK workspace  
+23:37:28 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/002_lab2_PS_PL/002_lab2_PS_PL.sdk/PS_system_wrapper.hdf.

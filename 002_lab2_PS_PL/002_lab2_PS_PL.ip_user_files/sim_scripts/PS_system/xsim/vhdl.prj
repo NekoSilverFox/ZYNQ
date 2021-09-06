@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "../../../bd/PS_system/ip/PS_system_axi_gpio_0_0/sim/PS_system_axi_gpio_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/PS_system/ip/PS_system_axi_timer_0_0/sim/PS_system_axi_timer_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/PS_system/ip/PS_system_rst_ps7_0_50M_0/sim/PS_system_rst_ps7_0_50M_0.vhd" 
+
+nosort

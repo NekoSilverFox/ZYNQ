@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Sep 06 23:31:18 2021
+# Process ID: 28632
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/002_lab2_PS_PL/002_lab2_PS_PL.runs/synth_1
+# Command line: vivado.exe -log PS_system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PS_system_wrapper.tcl
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/002_lab2_PS_PL/002_lab2_PS_PL.runs/synth_1/PS_system_wrapper.vds
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/002_lab2_PS_PL/002_lab2_PS_PL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PS_system_wrapper.tcl -notrace

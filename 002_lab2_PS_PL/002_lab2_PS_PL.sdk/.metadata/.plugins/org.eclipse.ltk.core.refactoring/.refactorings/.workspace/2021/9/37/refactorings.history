@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lsb2_PS_PS&apos; to &apos;lab2_PS_PS&apos;" description="Rename resource &apos;lsb2_PS_PS&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/lsb2_PS_PS" name="lab2_PS_PS" stamp="1630961175878" updateReferences="true"/>
+</session>
