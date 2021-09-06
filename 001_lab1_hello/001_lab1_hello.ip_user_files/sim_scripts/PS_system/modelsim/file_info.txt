@@ -1,0 +1,4 @@
+processing_system7_bfm_v2_0_vl_rfs.v,verilog,processing_system7_bfm_v2_0_5,../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl/processing_system7_bfm_v2_0_vl_rfs.v,incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"
+PS_system_processing_system7_0_0.v,verilog,xil_defaultlib,../../../bd/PS_system/ip/PS_system_processing_system7_0_0/sim/PS_system_processing_system7_0_0.v,incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"
+PS_system.v,verilog,xil_defaultlib,../../../bd/PS_system/hdl/PS_system.v,incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"incdir="../../../../001_lab1_hello.srcs/sources_1/bd/PS_system/ipshared/2527/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v
