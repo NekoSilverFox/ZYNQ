@@ -9,7 +9,7 @@
 
 int main() {
 
-	printf("Hello World!!\n");
+	print("Hello World!!\n");
 
 	char* a;
 	char b;

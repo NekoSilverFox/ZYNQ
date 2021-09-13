@@ -6,10 +6,13 @@
  */
 
 #include <stdio.h>
+#include "platform.h"
+#include "xfl_printf.h"
+
 
 int main() {
 
-	printf("Hello World!!\n");
+	print("Hello World!!\n");
 
 	char* a;
 	char b;

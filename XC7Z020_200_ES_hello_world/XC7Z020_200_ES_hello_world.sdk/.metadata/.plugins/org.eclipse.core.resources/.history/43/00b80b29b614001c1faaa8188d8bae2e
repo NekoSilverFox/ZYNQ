@@ -8,13 +8,12 @@
 #include <stdio.h>
 
 int main() {
-
-	printf("Hello World!!\n");
+	init_platform();
+	print("Hello World\n");
 
 	char* a;
 	char b;
 	char temp;
-
 	scanf("%d", &b);
 	temp = b;
 	printf("%*d\n", 10, temp);

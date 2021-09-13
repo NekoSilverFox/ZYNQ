@@ -9,7 +9,7 @@
 
 int main() {
 
-	printf("Hello World!!\n");
+	print("Hello World!!\n");
 
 	char* a;
 	char b;
@@ -17,7 +17,7 @@ int main() {
 
 	scanf("%d", &b);
 	temp = b;
-	printf("%*d\n", 10, temp);
+	print("%*d\n", 10, temp);
 
 	return 0;
 }
