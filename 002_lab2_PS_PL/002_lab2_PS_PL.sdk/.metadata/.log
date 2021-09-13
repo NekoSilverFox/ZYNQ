@@ -5643,3 +5643,6 @@ java.lang.NullPointerException
 	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch$1.run(BaseTcfLaunch.java:78)
 	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
 	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-09-06 23:59:59.989
+!MESSAGE Executed Webtalk command

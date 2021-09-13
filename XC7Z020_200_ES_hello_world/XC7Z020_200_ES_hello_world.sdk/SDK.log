@@ -1,0 +1,159 @@
+12:31:39 INFO  : Registering command handlers for SDK TCF services
+12:31:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_200_ES_hello_world\XC7Z020_200_ES_hello_world.sdk\temp_xsdb_launch_script.tcl
+12:31:45 INFO  : XSCT server has started successfully.
+12:31:48 INFO  : Successfully done setting XSCT server connection channel  
+12:31:48 INFO  : Successfully done setting SDK workspace  
+12:31:48 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper.hdf.
+12:49:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:49:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:55:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:55:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:56:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:57:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:57:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:58:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:58:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:00:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:03:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:09:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:21:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:38 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+13:21:38 INFO  : 'jtag frequency' command is executed.
+13:21:38 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:21:38 INFO  : Context for 'APU' is selected.
+13:21:38 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+13:21:38 INFO  : Context for 'APU' is selected.
+13:21:38 INFO  : 'stop' command is executed.
+13:21:39 INFO  : 'ps7_init' command is executed.
+13:21:39 INFO  : 'ps7_post_config' command is executed.
+13:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:39 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:21:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf
+----------------End of Script----------------
+
+13:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:39 INFO  : 'con' command is executed.
+13:21:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+13:21:39 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_200_ES_hello_world\XC7Z020_200_ES_hello_world.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world.elf_on_local.tcl'
+13:22:12 INFO  : Disconnected from the channel tcfchan#1.
+13:22:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:14 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+13:22:14 INFO  : 'jtag frequency' command is executed.
+13:22:14 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:22:14 INFO  : Context for 'APU' is selected.
+13:22:16 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+13:22:16 INFO  : Context for 'APU' is selected.
+13:22:16 INFO  : 'stop' command is executed.
+13:22:16 INFO  : 'ps7_init' command is executed.
+13:22:16 INFO  : 'ps7_post_config' command is executed.
+13:22:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:22:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:16 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:22:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf
+----------------End of Script----------------
+
+13:22:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:16 INFO  : 'con' command is executed.
+13:22:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+13:22:16 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_200_ES_hello_world\XC7Z020_200_ES_hello_world.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world.elf_on_local.tcl'
+13:22:50 INFO  : Disconnected from the channel tcfchan#2.
+13:22:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:51 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+13:22:51 INFO  : 'jtag frequency' command is executed.
+13:22:51 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:22:51 INFO  : Context for 'APU' is selected.
+13:22:53 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+13:22:53 INFO  : Context for 'APU' is selected.
+13:22:53 INFO  : 'stop' command is executed.
+13:22:53 INFO  : 'ps7_init' command is executed.
+13:22:53 INFO  : 'ps7_post_config' command is executed.
+13:22:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:22:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:54 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:22:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_200_ES_hello_world/XC7Z020_200_ES_hello_world.sdk/hello_world/Debug/hello_world.elf
+----------------End of Script----------------
+
+13:22:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:54 INFO  : 'con' command is executed.
+13:22:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+13:22:54 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_200_ES_hello_world\XC7Z020_200_ES_hello_world.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world.elf_on_local.tcl'
