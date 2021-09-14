@@ -1,0 +1,52 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021年9月14日
+ *      Author: NekoSilverfox
+ */
+
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xgpiops.h"
+
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID
+#define MIO50_LED 			50							/* 核心板PS端LED */
+
+XGpioPs_Config* ConfigPtr = NULL;
+XGpioPs Gpio;	/* The driver instance for GPIO Device. */
+
+int main() {
+	printf("GPIO MIO TEST!\n\r");
+
+	// 0. 初始化GPIO驱动
+
+	// 查找器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+
+	// 初始化GPIO驱动
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	// 1. GPIO方向设置为输出（0 - 输入；1 - 输出）
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED, 1);
+
+	// 2. 设置输出使能（0 - 关闭输出使能；1 - 打开输出使能）
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED, 1);
+
+	// 实现LED闪烁（点亮、延时、熄灭，以此重复）
+	while(1) {
+		// 3. 写数据到GPIO的输出引脚（点亮）
+		XGpioPs_WritePin(&Gpio, MIO50_LED, 0x0);
+
+		// 延时
+		sleep(1);
+
+		// 3. 写数据到GPIO的输出引脚（熄灭）
+		XGpioPs_WritePin(&Gpio, MIO50_LED, 0x0);
+
+		// 延时
+				sleep(1);
+	}
+
+	return 0;
+}

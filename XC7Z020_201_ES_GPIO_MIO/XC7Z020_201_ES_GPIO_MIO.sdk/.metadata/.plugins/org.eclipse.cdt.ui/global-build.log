@@ -1,0 +1,1568 @@
+17:48:51 **** Build of project GPIO_MIO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+17:49:16 **** Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+17:49:19 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:50:13 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+17:50:52 **** Clean-only build of configuration Debug for project GPIO_MIO ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/main.o ./src/platform.o  ./src/helloworld.d ./src/main.d ./src/platform.d  GPIO_MIO.elf.size  GPIO_MIO.elf
+' '
+17:50:52 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+17:51:02 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+17:53:23 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_201_ES_GPIO_MIO\XC7Z020_201_ES_GPIO_MIO.sdk\GPIO_MIO\Debug/../src/main.c:11: multiple definition of `main'
+./src/helloworld.o:C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_201_ES_GPIO_MIO\XC7Z020_201_ES_GPIO_MIO.sdk\GPIO_MIO\Debug/../src/helloworld.c:54: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO.elf] ´íÎó 1
+17:53:47 **** Clean-only build of configuration Debug for project GPIO_MIO ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/main.o ./src/platform.o  ./src/helloworld.d ./src/main.d ./src/platform.d  GPIO_MIO.elf.size  GPIO_MIO.elf
+' '
+17:53:47 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74692	   2584	  23328	 100604	  188fc	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+17:56:04 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:57:58 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74692	   2584	  23328	 100604	  188fc	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:00:50 **** Build of configuration Debug for project GPIO_MIO_bsp_xgpiops_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpiops_polled_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_polled_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpiops_polled_example.d" -MT"src/xgpiops_polled_example.o" -o "src/xgpiops_polled_example.o" "../src/xgpiops_polled_example.c"
+'Finished building: ../src/xgpiops_polled_example.c'
+' '
+'Building target: GPIO_MIO_bsp_xgpiops_polled_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_bsp_xgpiops_polled_example_1.elf"  ./src/xgpiops_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_bsp_xgpiops_polled_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_bsp_xgpiops_polled_example_1.elf  |tee "GPIO_MIO_bsp_xgpiops_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29952	   1164	  22616	  53732	   d1e4	GPIO_MIO_bsp_xgpiops_polled_example_1.elf
+'Finished building: GPIO_MIO_bsp_xgpiops_polled_example_1.elf.size'
+' '
+18:00:53 **** Auto Build of configuration Debug for project GPIO_MIO_bsp_xgpiops_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:03:36 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74692	   2584	  23328	 100604	  188fc	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:04:17 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:15:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:15:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:15:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:15:35: error: 'GPIO_DEVICE_ID' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+                                   ^
+../src/main.c:16:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:16:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:16:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:05:05 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:17:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:17:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:17:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:11:26: error: 'XPAR_XGPIOPS_0_DEVICE_ID' undeclared (first use in this function)
+ #define GPIO_DEVICE_ID   XPAR_XGPIOPS_0_DEVICE_ID
+                          ^
+../src/main.c:17:35: note: in expansion of macro 'GPIO_DEVICE_ID'
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+                                   ^
+../src/main.c:18:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:18:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:18:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:11:55 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:18:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:19:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:19:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:19:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:12:17 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:18:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:19:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:19:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:19:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:12:40 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:18:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:18:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:19:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:19:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:19:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:18:24 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:20:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:20:14: warning: implicit declaration of function 'XGpioPs_LookupConfig' [-Wimplicit-function-declaration]
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+              ^
+../src/main.c:21:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:21:11: warning: implicit declaration of function 'XGpioPs_CfgInitialize' [-Wimplicit-function-declaration]
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+           ^
+../src/main.c:21:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:19:04 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+  ^
+../src/main.c:21:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:23:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:19:42 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:23:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:23:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:23:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:19:59 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:25:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:25:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:20:06 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:25:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:25:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:20:18 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:25:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:25:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:25:34: error: 'Gpio' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+                                  ^
+make: *** [src/main.o] ´íÎó 1
+18:25:10 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:27:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+  ^
+../src/main.c:27:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:27:52 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:27:2: error: 'Status' undeclared (first use in this function)
+  Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+  ^
+../src/main.c:27:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:28:36 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81632	   2592	  23376	 107600	  1a450	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:31:41 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:30:33: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_SetDirectionPin(&Gpio, Output_Pin, 1);
+                                 ^
+../src/main.c:30:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:35:37 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:30:33: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_SetDirectionPin(&Gpio, Output_Pin, 1);
+                                 ^
+../src/main.c:30:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:40:41 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:31:33: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_SetDirectionPin(&Gpio, Output_Pin, 1);
+                                 ^
+../src/main.c:31:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:41:06 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:35:36: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_SetOutputEnablePin(&Gpio, Output_Pin, 1);
+                                    ^
+../src/main.c:35:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:42:17 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:34:36: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_SetOutputEnablePin(&Gpio, Output_Pin, 1);
+                                    ^
+../src/main.c:34:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+18:42:25 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81632	   2592	  23376	 107600	  1a450	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:45:49 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:48:47 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:49:00 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:49:09 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:49:19 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+18:49:39 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:02:45 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:03:06 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:03:33 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:37:8: error: 'true' undeclared (first use in this function)
+  while(true) {
+        ^
+../src/main.c:37:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:03:38 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:03:53 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:03 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:06 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81696	   2592	  23376	 107664	  1a490	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:20 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:42:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:35 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:42:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:38 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:42:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:04:50 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:05:54 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:06:15 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:06:18 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:14:54 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81824	   2592	  23376	 107792	  1a510	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:14:59 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:15:35 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:15:40 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:15:46 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:15:51 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:15:53 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:21:47 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:22:10 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:24:15 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:27:6: error: redefinition of 'shift_one_led'
+ void shift_one_led() {
+      ^
+../src/main.c:22:6: note: previous definition of 'shift_one_led' was here
+ void shift_one_led() {
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:24:30 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81824	   2592	  23376	 107792	  1a510	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:24:45 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81824	   2592	  23376	 107792	  1a510	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:25:56 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:26:11 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:28:00 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:29:02 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:29:06 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:29:33 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:29:52 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:30:22 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:30:37 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:33:58 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81952	   2592	  23376	 107920	  1a590	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:34:15 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:34:30 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:34:54 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:35:34 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:36:04 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:36:11 **** Incremental Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:36:41 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:36:47 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:37:03 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status = 0;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '
+19:37:15 **** Auto Build of configuration Debug for project GPIO_MIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO.elf  |tee "GPIO_MIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82016	   2592	  23376	 107984	  1a5d0	GPIO_MIO.elf
+'Finished building: GPIO_MIO.elf.size'
+' '

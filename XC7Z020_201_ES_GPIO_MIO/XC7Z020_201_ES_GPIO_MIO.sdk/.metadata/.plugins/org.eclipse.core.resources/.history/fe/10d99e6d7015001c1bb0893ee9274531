@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021年9月14日
+ *      Author: NekoSilverfox
+ */
+
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xgpiops.h"
+
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID
+
+XGpioPs_Config* ConfigPtr = NULL;
+XGpioPs Gpio;	/* The driver instance for GPIO Device. */
+
+int main() {
+	printf("GPIO MIO TEST!\n\r");
+
+	// 0. 初始化GPIO驱动
+
+	// 查找器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+
+	// 初始化GPIO驱动
+	Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+
+	// 1. GPIO方向设置为输出
+
+
+	// 2. 设置输出使能
+
+
+	// 3. 写数据到GPIO的输出引脚
+
+	return 0;
+}
