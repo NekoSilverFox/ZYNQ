@@ -56,6 +56,7 @@ void shift_two_led() {
 	XGpioPs_SetOutputEnablePin(&Gpio, MIO51_LED2, 1);
 
 
+	int shift_time = 250000;
 
 	// 实现LED闪烁（点亮、延时、熄灭，以此重复）
 	while(1) {
@@ -64,14 +65,14 @@ void shift_two_led() {
 		XGpioPs_WritePin(&Gpio, MIO51_LED2, 0x0);
 		// 延时
 		//sleep(1);  秒为单位
-		usleep(250000);  /* 微秒为单位  0.25sec */
+		usleep(shift_time);  /* 微秒为单位  0.25sec */
 
 
 		// 3. 写数据到GPIO的输出引脚（熄灭）
 		XGpioPs_WritePin(&Gpio, MIO50_LED1, 0x1);
 		XGpioPs_WritePin(&Gpio, MIO51_LED2, 0x1);
 		// 延时
-		usleep(250000);  /* 微秒为单位  0.5sec */
+		usleep(shift_time);  /* 微秒为单位  0.5sec */
 	}
 }
 
