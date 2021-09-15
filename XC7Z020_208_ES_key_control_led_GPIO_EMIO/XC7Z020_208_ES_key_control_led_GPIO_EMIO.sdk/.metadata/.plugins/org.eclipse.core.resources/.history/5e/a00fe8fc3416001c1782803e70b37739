@@ -1,0 +1,77 @@
+/*
+  * main.c
+ *
+ *  Created on: 2021年9月14日
+ *      Author: NekoSilverfox
+ */
+
+
+// ---------------------------------------------
+#include <stdio.h>
+#include "xparameters.h" //器件参数信息
+#include "xgpiops_instps.h"     //包含PS gpiops_inst的函数
+#include "sleep.h"       //包含sleep()函数
+// ---------------------------------------------
+
+
+
+// ---------------------------------------------
+#define gpiops_inst_DEVICE_ID  	XPAR_Xgpiops_instPS_0_DEVICE_ID
+
+//连接到MIO的LED
+#define MIO_LED1 			50							/* 核心板PS端LED */
+#define MIO_LED2 			51
+
+//连接到MIO的KEY
+#define MIO_KEY1			0							/* 核心板PS端KEY */
+
+//连接到EIO的KEY
+#define EMIO_KEY1			54							/* 核心板PL端KEY */
+// ---------------------------------------------
+
+
+// ---------------------------------------------
+int main() {
+	printf("gpiops_inst EMIO TEST!\n\r");
+
+	// 查找器件的ID，查找器件的配置信息
+	Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID);	/* PS端 GPIO 配置信息 */
+
+	// 初始化GPIO驱动
+	Xgpiops_instPs gpiops_inst;	/* PS端 GPIO 驱动实例 The driver instance for gpiops_inst Device. */
+	int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+    if (Status != XST_SUCCESS){
+        return XST_FAILURE;
+    }
+
+	// 设置LED为输出，GPIO方向设置为输出（0 - 输入；1 - 输出）
+	Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED1, 1);
+	Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED2, 1);
+
+	// 设置输出使能（0 - 关闭输出使能；1 - 打开输出使能）
+	Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED1, 1);
+	Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED2, 1);
+
+	// GPIO方向设置为输入（0 - 输入；1 - 输出）
+	Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_KEY1, 0);
+	Xgpiops_instPs_SetDirectionPin(&gpiops_inst, EMIO_KEY1, 0);
+
+	printf("Before while loop!!\n\r");
+
+	// 实现LED按键点亮
+	u32 key_value;
+	while(1) {
+		printf("Ready to read key value!!\n\r");
+
+		// 读取按键状态
+//		key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+		key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, EMIO_KEY1);
+		printf("Read key value done, value == %d!!\n\r", key_value);
+
+		// 将按键状态写入LED（写数据到gpiops_inst的输出引脚）
+		Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+		printf("Read key value done!!\n\r");
+	}
+
+	return 0;
+}

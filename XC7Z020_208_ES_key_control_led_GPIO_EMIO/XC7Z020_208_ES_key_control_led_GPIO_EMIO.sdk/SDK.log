@@ -1,0 +1,751 @@
+16:15:11 INFO  : Registering command handlers for SDK TCF services
+16:15:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\temp_xsdb_launch_script.tcl
+16:15:15 INFO  : XSCT server has started successfully.
+16:15:16 INFO  : Successfully done setting XSCT server connection channel  
+16:15:16 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper.hdf.
+16:15:16 INFO  : Successfully done setting SDK workspace  
+16:25:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:25:49 INFO  : 'fpga -state' command is executed.
+16:26:14 INFO  : Memory regions updated for context APU
+16:26:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:26:53 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+16:27:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:27:29 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+16:28:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:28:07 INFO  : 'fpga -state' command is executed.
+16:28:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:28:07 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+16:28:07 INFO  : 'jtag frequency' command is executed.
+16:28:07 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:28:07 INFO  : Context for 'APU' is selected.
+16:28:07 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+16:28:07 INFO  : Context for 'APU' is selected.
+16:28:07 INFO  : 'stop' command is executed.
+16:28:08 INFO  : 'ps7_init' command is executed.
+16:28:08 INFO  : 'ps7_post_config' command is executed.
+16:28:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:28:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:08 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:28:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+16:28:08 INFO  : Memory regions updated for context APU
+16:28:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:08 INFO  : 'con' command is executed.
+16:28:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+16:28:08 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+16:39:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:39:43 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+16:40:09 INFO  : Disconnected from the channel tcfchan#1.
+16:40:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:40:10 INFO  : 'fpga -state' command is executed.
+16:40:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:10 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+16:40:10 INFO  : 'jtag frequency' command is executed.
+16:40:10 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:40:11 INFO  : Context for 'APU' is selected.
+16:40:12 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+16:40:12 INFO  : Context for 'APU' is selected.
+16:40:12 INFO  : 'stop' command is executed.
+16:40:12 INFO  : 'ps7_init' command is executed.
+16:40:12 INFO  : 'ps7_post_config' command is executed.
+16:40:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:40:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:13 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:40:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+16:40:13 INFO  : Memory regions updated for context APU
+16:40:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:13 INFO  : 'con' command is executed.
+16:40:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+16:40:13 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+16:55:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:55:47 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+16:55:56 INFO  : Disconnected from the channel tcfchan#2.
+16:55:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:55:57 INFO  : 'fpga -state' command is executed.
+16:55:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:58 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+16:55:58 INFO  : 'jtag frequency' command is executed.
+16:55:58 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:55:58 INFO  : Context for 'APU' is selected.
+16:55:59 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+16:55:59 INFO  : Context for 'APU' is selected.
+16:55:59 INFO  : 'stop' command is executed.
+16:56:00 INFO  : 'ps7_init' command is executed.
+16:56:00 INFO  : 'ps7_post_config' command is executed.
+16:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:56:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:56:00 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:56:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+16:56:00 INFO  : Memory regions updated for context APU
+16:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:56:00 INFO  : 'con' command is executed.
+16:56:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+16:56:00 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+16:57:33 INFO  : Disconnected from the channel tcfchan#3.
+16:57:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:57:34 INFO  : 'fpga -state' command is executed.
+16:57:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:57:34 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+16:57:34 INFO  : 'jtag frequency' command is executed.
+16:57:34 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:57:34 INFO  : Context for 'APU' is selected.
+16:57:36 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+16:57:36 INFO  : Context for 'APU' is selected.
+16:57:36 INFO  : 'stop' command is executed.
+16:57:37 INFO  : 'ps7_init' command is executed.
+16:57:37 INFO  : 'ps7_post_config' command is executed.
+16:57:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:57:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:37 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:57:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+16:57:37 INFO  : Memory regions updated for context APU
+16:57:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:57:38 INFO  : 'con' command is executed.
+16:57:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+16:57:38 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+16:59:21 INFO  : Disconnected from the channel tcfchan#4.
+16:59:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+16:59:23 INFO  : 'fpga -state' command is executed.
+16:59:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:59:23 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+16:59:23 INFO  : 'jtag frequency' command is executed.
+16:59:23 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:59:23 INFO  : Context for 'APU' is selected.
+16:59:24 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+16:59:24 INFO  : Context for 'APU' is selected.
+16:59:24 INFO  : 'stop' command is executed.
+16:59:25 INFO  : 'ps7_init' command is executed.
+16:59:25 INFO  : 'ps7_post_config' command is executed.
+16:59:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:59:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:59:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:59:25 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:59:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+16:59:25 INFO  : Memory regions updated for context APU
+16:59:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:59:25 INFO  : 'con' command is executed.
+16:59:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+16:59:25 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:01:42 INFO  : Disconnected from the channel tcfchan#5.
+17:01:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:01:43 INFO  : 'fpga -state' command is executed.
+17:01:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:43 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:01:43 INFO  : 'jtag frequency' command is executed.
+17:01:43 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:01:43 INFO  : Context for 'APU' is selected.
+17:01:45 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:01:45 INFO  : Context for 'APU' is selected.
+17:01:45 INFO  : 'stop' command is executed.
+17:01:45 INFO  : 'ps7_init' command is executed.
+17:01:45 INFO  : 'ps7_post_config' command is executed.
+17:01:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:01:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:46 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:01:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:01:46 INFO  : Memory regions updated for context APU
+17:01:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:46 INFO  : 'con' command is executed.
+17:01:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:01:46 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:04:19 INFO  : Disconnected from the channel tcfchan#6.
+17:04:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:04:20 INFO  : 'fpga -state' command is executed.
+17:04:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:20 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:04:20 INFO  : 'jtag frequency' command is executed.
+17:04:20 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:04:20 INFO  : Context for 'APU' is selected.
+17:04:21 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:04:21 INFO  : Context for 'APU' is selected.
+17:04:21 INFO  : 'stop' command is executed.
+17:04:22 INFO  : 'ps7_init' command is executed.
+17:04:22 INFO  : 'ps7_post_config' command is executed.
+17:04:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:04:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:22 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:04:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:04:22 INFO  : Memory regions updated for context APU
+17:04:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:22 INFO  : 'con' command is executed.
+17:04:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:04:22 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:04:55 INFO  : Disconnected from the channel tcfchan#7.
+17:04:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:04:56 INFO  : 'fpga -state' command is executed.
+17:04:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:04:57 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:04:57 INFO  : 'jtag frequency' command is executed.
+17:04:57 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:04:57 INFO  : Context for 'APU' is selected.
+17:04:58 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:04:58 INFO  : Context for 'APU' is selected.
+17:04:58 INFO  : 'stop' command is executed.
+17:04:59 INFO  : 'ps7_init' command is executed.
+17:04:59 INFO  : 'ps7_post_config' command is executed.
+17:04:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:04:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:59 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:04:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:04:59 INFO  : Memory regions updated for context APU
+17:04:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:04:59 INFO  : 'con' command is executed.
+17:04:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:04:59 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:05:37 INFO  : Disconnected from the channel tcfchan#8.
+17:05:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:05:39 INFO  : 'fpga -state' command is executed.
+17:05:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:39 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:05:39 INFO  : 'jtag frequency' command is executed.
+17:05:39 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:05:39 INFO  : Context for 'APU' is selected.
+17:05:40 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:05:40 INFO  : Context for 'APU' is selected.
+17:05:40 INFO  : 'stop' command is executed.
+17:05:41 INFO  : 'ps7_init' command is executed.
+17:05:41 INFO  : 'ps7_post_config' command is executed.
+17:05:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:05:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:41 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:05:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:05:41 INFO  : Memory regions updated for context APU
+17:05:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:41 INFO  : 'con' command is executed.
+17:05:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:05:41 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:30:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:30:07 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+17:31:08 INFO  : Disconnected from the channel tcfchan#9.
+17:31:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:31:09 INFO  : 'fpga -state' command is executed.
+17:31:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:09 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:31:09 INFO  : 'jtag frequency' command is executed.
+17:31:09 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:31:09 INFO  : Context for 'APU' is selected.
+17:31:11 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:31:11 INFO  : Context for 'APU' is selected.
+17:31:11 INFO  : 'stop' command is executed.
+17:31:11 INFO  : 'ps7_init' command is executed.
+17:31:11 INFO  : 'ps7_post_config' command is executed.
+17:31:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:31:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:12 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:31:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:31:12 INFO  : Memory regions updated for context APU
+17:31:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:12 INFO  : 'con' command is executed.
+17:31:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:31:12 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:42:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:42:22 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+17:42:28 INFO  : Disconnected from the channel tcfchan#10.
+17:42:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:42:29 INFO  : 'fpga -state' command is executed.
+17:42:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:29 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:42:29 INFO  : 'jtag frequency' command is executed.
+17:42:29 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:42:29 INFO  : Context for 'APU' is selected.
+17:42:31 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:42:31 INFO  : Context for 'APU' is selected.
+17:42:31 INFO  : 'stop' command is executed.
+17:42:31 INFO  : 'ps7_init' command is executed.
+17:42:32 INFO  : 'ps7_post_config' command is executed.
+17:42:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:42:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:42:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:42:32 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:42:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:42:32 INFO  : Memory regions updated for context APU
+17:42:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:42:32 INFO  : 'con' command is executed.
+17:42:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:42:32 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:42:57 INFO  : Disconnected from the channel tcfchan#11.
+17:42:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:42:58 INFO  : 'fpga -state' command is executed.
+17:42:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:58 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:42:58 INFO  : 'jtag frequency' command is executed.
+17:42:58 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:42:58 INFO  : Context for 'APU' is selected.
+17:43:00 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:43:00 INFO  : Context for 'APU' is selected.
+17:43:00 INFO  : 'stop' command is executed.
+17:43:00 INFO  : 'ps7_init' command is executed.
+17:43:00 INFO  : 'ps7_post_config' command is executed.
+17:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:43:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:01 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:43:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:43:01 INFO  : Memory regions updated for context APU
+17:43:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:01 INFO  : 'con' command is executed.
+17:43:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:43:01 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+17:58:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:58:26 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+17:58:36 INFO  : Disconnected from the channel tcfchan#12.
+17:58:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+17:58:38 INFO  : 'fpga -state' command is executed.
+17:58:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:38 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+17:58:38 INFO  : 'jtag frequency' command is executed.
+17:58:38 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:58:38 INFO  : Context for 'APU' is selected.
+17:58:40 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+17:58:40 INFO  : Context for 'APU' is selected.
+17:58:40 INFO  : 'stop' command is executed.
+17:58:40 INFO  : 'ps7_init' command is executed.
+17:58:40 INFO  : 'ps7_post_config' command is executed.
+17:58:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:58:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:40 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:58:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+17:58:40 INFO  : Memory regions updated for context APU
+17:58:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:58:41 INFO  : 'con' command is executed.
+17:58:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+17:58:41 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+18:01:59 INFO  : Disconnected from the channel tcfchan#13.
+18:02:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:02:01 INFO  : 'fpga -state' command is executed.
+18:02:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:01 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:02:01 INFO  : 'jtag frequency' command is executed.
+18:02:01 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:02:01 INFO  : Context for 'APU' is selected.
+18:02:03 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+18:02:03 INFO  : Context for 'APU' is selected.
+18:02:03 INFO  : 'stop' command is executed.
+18:02:04 INFO  : 'ps7_init' command is executed.
+18:02:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:02:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:02:05 ERROR : Context does not support memory read. Unsupported command
+18:02:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+18:02:05 INFO  : 'fpga -state' command is executed.
+18:02:05 INFO  : 'fpga -state' command is executed.
+18:02:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:05 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:02:05 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:02:05 INFO  : 'jtag frequency' command is executed.
+18:02:05 INFO  : 'jtag frequency' command is executed.
+18:02:05 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:02:05 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:02:05 INFO  : Context for 'APU' is selected.
+18:02:06 INFO  : Context for 'APU' is selected.
+18:02:06 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+18:02:06 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+18:02:06 INFO  : Context for 'APU' is selected.
+18:02:06 INFO  : Context for 'APU' is selected.
+18:02:06 INFO  : 'stop' command is executed.
+18:02:06 INFO  : 'stop' command is executed.
+18:02:06 INFO  : 'ps7_init' command is executed.
+18:02:07 INFO  : 'ps7_init' command is executed.
+18:02:07 INFO  : 'ps7_post_config' command is executed.
+18:02:07 INFO  : 'ps7_post_config' command is executed.
+18:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:02:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:08 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+18:02:08 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+18:02:08 INFO  : Memory regions updated for context APU
+18:02:08 INFO  : Memory regions updated for context APU
+18:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:08 INFO  : 'con' command is executed.
+18:02:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+18:02:08 ERROR : Already running
+18:02:08 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+18:02:08 INFO  : Disconnected from the channel tcfchan#14.
+18:02:14 INFO  : Memory regions updated for context APU
+18:03:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:03:57 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+18:04:02 WARN  : channel "tcfchan#14" closed
+18:04:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:04:04 INFO  : 'fpga -state' command is executed.
+18:04:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:04 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:04:04 INFO  : 'jtag frequency' command is executed.
+18:04:04 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:04:04 INFO  : Context for 'APU' is selected.
+18:04:04 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+18:04:04 INFO  : Context for 'APU' is selected.
+18:04:04 INFO  : 'stop' command is executed.
+18:04:04 INFO  : 'ps7_init' command is executed.
+18:04:04 INFO  : 'ps7_post_config' command is executed.
+18:04:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:04:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:05 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:04:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+18:04:05 INFO  : Memory regions updated for context APU
+18:04:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:05 INFO  : 'con' command is executed.
+18:04:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+18:04:05 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+18:09:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:09:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:09:54 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps_design_wrapper.bit"
+18:10:01 INFO  : Disconnected from the channel tcfchan#15.
+18:10:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:10:02 INFO  : 'fpga -state' command is executed.
+18:10:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:02 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:10:02 INFO  : 'jtag frequency' command is executed.
+18:10:02 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:10:03 INFO  : Context for 'APU' is selected.
+18:10:04 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf'.
+18:10:04 INFO  : Context for 'APU' is selected.
+18:10:04 INFO  : 'stop' command is executed.
+18:10:05 INFO  : 'ps7_init' command is executed.
+18:10:05 INFO  : 'ps7_post_config' command is executed.
+18:10:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:10:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:05 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:10:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/ps_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk/key_control_led_GPIO_EMIO/Debug/key_control_led_GPIO_EMIO.elf
+----------------End of Script----------------
+
+18:10:05 INFO  : Memory regions updated for context APU
+18:10:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:05 INFO  : 'con' command is executed.
+18:10:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+18:10:05 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_key_control_led_gpio_emio.elf_on_local.tcl'
+18:11:00 INFO  : Disconnected from the channel tcfchan#16.

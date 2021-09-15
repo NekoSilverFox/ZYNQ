@@ -426,3 +426,8 @@ arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMI
   82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
 'Finished building: key_control_led_GPIO_EMIO.elf.size'
 ' '
+15:42:11 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

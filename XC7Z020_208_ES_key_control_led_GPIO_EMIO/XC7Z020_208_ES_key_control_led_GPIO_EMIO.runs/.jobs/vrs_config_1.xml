@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ps_design_processing_system7_0_0_synth_1" LaunchDir="C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_208_ES_key_control_led_GPIO_EMIO/XC7Z020_208_ES_key_control_led_GPIO_EMIO.runs/ps_design_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

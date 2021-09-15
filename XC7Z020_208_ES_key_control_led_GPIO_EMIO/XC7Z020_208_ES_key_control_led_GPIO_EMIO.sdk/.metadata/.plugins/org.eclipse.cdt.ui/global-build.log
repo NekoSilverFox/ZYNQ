@@ -1,0 +1,1149 @@
+16:15:49 **** Build of project key_control_led_GPIO_EMIO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+16:16:18 **** Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:16:21 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:91: multiple definition of `main'
+./src/helloworld.o:C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/helloworld.c:54: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [key_control_led_GPIO_EMIO.elf] ¥ÌŒÛ 1
+16:16:45 **** Clean-only build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/main.o ./src/platform.o  ./src/helloworld.d ./src/main.d ./src/platform.d  key_control_led_GPIO_EMIO.elf.size  key_control_led_GPIO_EMIO.elf
+' '
+16:16:46 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:18:43 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:19:04 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:22:56 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:24:29 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:25:38 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:25:42 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:28:05 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:31:16 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81824	   2592	  23376	 107792	  1a510	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:33:13 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81824	   2592	  23376	 107792	  1a510	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:40:02 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:55:53 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:56:19 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+16:56:23 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:59:17 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:01:35 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:65:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("%d\n", key_value);
+          ^
+../src/main.c:65:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81760	   2592	  23376	 107728	  1a4d0	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:01:38 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:04:12 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81784	   2592	  23376	 107752	  1a4e8	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:04:16 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:04:51 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81872	   2592	  23376	 107840	  1a540	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:05:31 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81896	   2592	  23376	 107864	  1a558	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:05:34 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:29:56 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81896	   2592	  23376	 107864	  1a558	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:31:02 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81896	   2592	  23376	 107864	  1a558	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:31:05 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:41:24 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81896	   2592	  23376	 107864	  1a558	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:41:35 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81896	   2592	  23376	 107864	  1a558	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:42:05 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23376	 107904	  1a580	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:42:12 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23376	 107904	  1a580	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:42:24 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:42:53 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23376	 107904	  1a580	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:51:29 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23344	 107872	  1a560	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:51:59 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23344	 107872	  1a560	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:52:02 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:69:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23344	 107872	  1a560	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:53:12 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:68:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("Read key value done, value == %d!!\n\r", key_value);
+          ^
+../src/main.c:68:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81936	   2592	  23344	 107872	  1a560	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+17:53:45 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:54:26 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:54:45 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:55:22 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:55:38 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:56:38 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:57:00 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:57:19 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:58:04 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:58:12 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:58:18 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:58:31 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:59: fatal error: xgpiops_instps.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:59:09 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:38:2: error: unknown type name 'Xgpiops_instPs_Config'
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+  ^
+../src/main.c:38:49: warning: implicit declaration of function 'Xgpiops_instPs_LookupConfig' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                                                 ^
+../src/main.c:19:33: error: 'XPAR_Xgpiops_instPS_0_DEVICE_ID' undeclared (first use in this function)
+ #define gpiops_inst_DEVICE_ID   XPAR_Xgpiops_instPS_0_DEVICE_ID
+                                 ^
+../src/main.c:38:77: note: in expansion of macro 'gpiops_inst_DEVICE_ID'
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                                                                             ^
+../src/main.c:19:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define gpiops_inst_DEVICE_ID   XPAR_Xgpiops_instPS_0_DEVICE_ID
+                                 ^
+../src/main.c:38:77: note: in expansion of macro 'gpiops_inst_DEVICE_ID'
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                                                                             ^
+../src/main.c:41:2: error: unknown type name 'Xgpiops_instPs'
+  Xgpiops_instPs gpiops_inst; /* PS∂À GPIO «˝∂Ø µ¿˝ The driver instance for gpiops_inst Device. */
+  ^
+../src/main.c:42:15: warning: implicit declaration of function 'Xgpiops_instPs_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+               ^
+../src/main.c:42:102: error: request for member 'BaseAddr' in something not a structure or union
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+                                                                                                      ^
+../src/main.c:48:2: warning: implicit declaration of function 'Xgpiops_instPs_SetDirectionPin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:51:2: warning: implicit declaration of function 'Xgpiops_instPs_SetOutputEnablePin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'Xgpiops_instPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+               ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:69:3: warning: implicit declaration of function 'Xgpiops_instPs_WritePin' [-Wimplicit-function-declaration]
+   Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+   ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+make: *** [src/main.o] ¥ÌŒÛ 1
+17:59:31 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:38:2: error: unknown type name 'Xgpiops_instPs_Config'
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+  ^
+../src/main.c:38:49: warning: implicit declaration of function 'Xgpiops_instPs_LookupConfig' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                                                 ^
+../src/main.c:38:77: error: 'gpiops_inst_DEVICE_ID' undeclared (first use in this function)
+  Xgpiops_instPs_Config* gpiops_instps_cfg_ptr = Xgpiops_instPs_LookupConfig(gpiops_inst_DEVICE_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                                                                             ^
+../src/main.c:38:77: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:41:2: error: unknown type name 'Xgpiops_instPs'
+  Xgpiops_instPs gpiops_inst; /* PS∂À GPIO «˝∂Ø µ¿˝ The driver instance for gpiops_inst Device. */
+  ^
+../src/main.c:42:15: warning: implicit declaration of function 'Xgpiops_instPs_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+               ^
+../src/main.c:42:102: error: request for member 'BaseAddr' in something not a structure or union
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+                                                                                                      ^
+../src/main.c:48:2: warning: implicit declaration of function 'Xgpiops_instPs_SetDirectionPin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:51:2: warning: implicit declaration of function 'Xgpiops_instPs_SetOutputEnablePin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'Xgpiops_instPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+               ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:69:3: warning: implicit declaration of function 'Xgpiops_instPs_WritePin' [-Wimplicit-function-declaration]
+   Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+   ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+make: *** [src/main.o] ¥ÌŒÛ 1
+18:00:08 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:41:2: error: unknown type name 'Xgpiops_instPs'
+  Xgpiops_instPs gpiops_inst; /* PS∂À GPIO «˝∂Ø µ¿˝ The driver instance for gpiops_inst Device. */
+  ^
+../src/main.c:42:15: warning: implicit declaration of function 'Xgpiops_instPs_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+               ^
+../src/main.c:42:58: error: 'gpiops_instps_cfg_ptr' undeclared (first use in this function)
+  int Status = Xgpiops_instPs_CfgInitialize(&gpiops_inst, gpiops_instps_cfg_ptr, gpiops_instps_cfg_ptr->BaseAddr);
+                                                          ^
+../src/main.c:42:58: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:48:2: warning: implicit declaration of function 'Xgpiops_instPs_SetDirectionPin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:51:2: warning: implicit declaration of function 'Xgpiops_instPs_SetOutputEnablePin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'Xgpiops_instPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+               ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:69:3: warning: implicit declaration of function 'Xgpiops_instPs_WritePin' [-Wimplicit-function-declaration]
+   Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+   ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:38:18: warning: unused variable 'gpiops_cfg_ptr' [-Wunused-variable]
+  XGpioPs_Config* gpiops_cfg_ptr = XGpioPs_LookupConfig(GPIOPS_ID); /* PS∂À GPIO ≈‰÷√–≈œ¢ */
+                  ^
+make: *** [src/main.o] ¥ÌŒÛ 1
+18:00:31 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:2: warning: implicit declaration of function 'Xgpiops_instPs_SetDirectionPin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetDirectionPin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:51:2: warning: implicit declaration of function 'Xgpiops_instPs_SetOutputEnablePin' [-Wimplicit-function-declaration]
+  Xgpiops_instPs_SetOutputEnablePin(&gpiops_inst, MIO_LED1, 1);
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'Xgpiops_instPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+               ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:69:3: warning: implicit declaration of function 'Xgpiops_instPs_WritePin' [-Wimplicit-function-declaration]
+   Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+   ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:48: undefined reference to `Xgpiops_instPs_SetDirectionPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:49: undefined reference to `Xgpiops_instPs_SetDirectionPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:51: undefined reference to `Xgpiops_instPs_SetOutputEnablePin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:52: undefined reference to `Xgpiops_instPs_SetOutputEnablePin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:55: undefined reference to `Xgpiops_instPs_SetDirectionPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:56: undefined reference to `Xgpiops_instPs_SetDirectionPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:66: undefined reference to `Xgpiops_instPs_ReadPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:69: undefined reference to `Xgpiops_instPs_WritePin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:71: undefined reference to `Xgpiops_instPs_ReadPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:73: undefined reference to `Xgpiops_instPs_WritePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [key_control_led_GPIO_EMIO.elf] ¥ÌŒÛ 1
+18:00:57 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:66:15: warning: implicit declaration of function 'Xgpiops_instPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = Xgpiops_instPs_ReadPin(&gpiops_inst, MIO_KEY1);
+               ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:69:3: warning: implicit declaration of function 'Xgpiops_instPs_WritePin' [-Wimplicit-function-declaration]
+   Xgpiops_instPs_WritePin(&gpiops_inst, MIO_LED1, key_value);
+   ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:66: undefined reference to `Xgpiops_instPs_ReadPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:69: undefined reference to `Xgpiops_instPs_WritePin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:71: undefined reference to `Xgpiops_instPs_ReadPin'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_208_ES_key_control_led_GPIO_EMIO\XC7Z020_208_ES_key_control_led_GPIO_EMIO.sdk\key_control_led_GPIO_EMIO\Debug/../src/main.c:73: undefined reference to `Xgpiops_instPs_WritePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [key_control_led_GPIO_EMIO.elf] ¥ÌŒÛ 1
+18:01:15 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:67:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:72:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81992	   2592	  23344	 107928	  1a598	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+18:01:49 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:01:52 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:01:54 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:03:48 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:66:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value MIO_KEY1 == %d\r", key_value);
+          ^
+../src/main.c:66:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+../src/main.c:71:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("value EMIO_KEY1 == %d\n\r", key_value);
+          ^
+../src/main.c:71:10: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81968	   2592	  23344	 107904	  1a580	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+18:04:00 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:09:58 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
