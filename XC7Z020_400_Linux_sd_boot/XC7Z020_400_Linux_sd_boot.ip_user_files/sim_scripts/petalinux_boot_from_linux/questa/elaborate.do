@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L processing_system7_bfm_v2_0_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.petalinux_boot_from_linux xil_defaultlib.glbl -o petalinux_boot_from_linux_opt

@@ -19,6 +19,7 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -58,14 +59,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="hdl/ps_design.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="hw_handoff/ps_design.hwh"/>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="ps_design_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="hw_handoff/ps_design_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="hdl/ps_design.v"/>
-        <CompFileExtendedInfo CompFileName="ps_design.bd" FileRelPathName="ip/ps_design_processing_system7_0_0/ps_design_processing_system7_0_0.xci">
-          <Proxy FileSetName="ps_design_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ps_design/hdl/ps_design_wrapper.v">
         <FileInfo>

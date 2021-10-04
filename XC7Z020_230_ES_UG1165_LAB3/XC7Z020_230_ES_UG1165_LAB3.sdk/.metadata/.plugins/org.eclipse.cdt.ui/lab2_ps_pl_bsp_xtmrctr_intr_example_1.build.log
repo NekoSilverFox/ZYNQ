@@ -1,0 +1,24 @@
+10:43:15 **** Auto Build of configuration Debug for project lab2_ps_pl_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab2_ps_pl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:84:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function)
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:181:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^
+../src/xtmrctr_intr_example.c:84:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:181:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^
+make: *** [src/xtmrctr_intr_example.o] ´íÎó 1
+
+10:43:16 Build Finished (took 780ms)
+

@@ -1,0 +1,953 @@
+11:05:02 INFO  : Registering command handlers for SDK TCF services
+11:05:03 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\temp_xsdb_launch_script.tcl
+11:05:07 INFO  : XSCT server has started successfully.
+11:05:07 INFO  : Successfully done setting XSCT server connection channel  
+11:05:10 INFO  : Successfully done setting SDK workspace  
+11:05:10 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper.hdf.
+11:10:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:10:39 INFO  : 'fpga -state' command is executed.
+11:10:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:42 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:10:42 INFO  : 'jtag frequency' command is executed.
+11:10:42 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:10:42 INFO  : Context for 'APU' is selected.
+11:10:42 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:10:42 INFO  : Context for 'APU' is selected.
+11:10:42 INFO  : 'stop' command is executed.
+11:10:42 INFO  : 'ps7_init' command is executed.
+11:10:42 INFO  : 'ps7_post_config' command is executed.
+11:10:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:10:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:43 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:10:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:10:43 INFO  : Memory regions updated for context APU
+11:10:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:43 INFO  : 'con' command is executed.
+11:10:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:10:43 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:11:12 INFO  : Disconnected from the channel tcfchan#1.
+11:11:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:13 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:11:13 INFO  : 'jtag frequency' command is executed.
+11:11:13 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:11:13 INFO  : Context for 'APU' is selected.
+11:11:13 INFO  : System reset is completed.
+11:11:16 INFO  : 'after 3000' command is executed.
+11:11:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:11:20 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:11:20 INFO  : Context for 'APU' is selected.
+11:11:22 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:11:22 INFO  : Context for 'APU' is selected.
+11:11:22 INFO  : 'ps7_init' command is executed.
+11:11:22 INFO  : 'ps7_post_config' command is executed.
+11:11:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:22 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:11:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:11:22 INFO  : Memory regions updated for context APU
+11:11:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:22 INFO  : 'con' command is executed.
+11:11:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:11:22 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:11:47 INFO  : Disconnected from the channel tcfchan#2.
+11:11:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:48 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:11:48 INFO  : 'jtag frequency' command is executed.
+11:11:48 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:11:48 INFO  : Context for 'APU' is selected.
+11:11:48 INFO  : System reset is completed.
+11:11:51 INFO  : 'after 3000' command is executed.
+11:11:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:11:55 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:11:55 INFO  : Context for 'APU' is selected.
+11:11:56 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:11:56 INFO  : Context for 'APU' is selected.
+11:11:57 INFO  : 'ps7_init' command is executed.
+11:11:57 INFO  : 'ps7_post_config' command is executed.
+11:11:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:57 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:11:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:11:57 INFO  : Memory regions updated for context APU
+11:11:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:57 INFO  : 'con' command is executed.
+11:11:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:11:57 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:16:21 INFO  : Disconnected from the channel tcfchan#3.
+11:16:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:22 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:16:22 INFO  : 'jtag frequency' command is executed.
+11:16:22 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:16:22 INFO  : Context for 'APU' is selected.
+11:16:22 INFO  : System reset is completed.
+11:16:25 INFO  : 'after 3000' command is executed.
+11:16:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:16:29 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:16:29 INFO  : Context for 'APU' is selected.
+11:16:30 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:16:30 INFO  : Context for 'APU' is selected.
+11:16:31 INFO  : 'ps7_init' command is executed.
+11:16:31 INFO  : 'ps7_post_config' command is executed.
+11:16:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:31 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:16:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:16:31 INFO  : Memory regions updated for context APU
+11:16:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:31 INFO  : 'con' command is executed.
+11:16:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:16:31 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:18:10 INFO  : Disconnected from the channel tcfchan#4.
+11:18:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:18:11 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:18:11 INFO  : 'jtag frequency' command is executed.
+11:18:11 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:18:11 INFO  : Context for 'APU' is selected.
+11:18:11 INFO  : System reset is completed.
+11:18:14 INFO  : 'after 3000' command is executed.
+11:18:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:18:18 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:18:18 INFO  : Context for 'APU' is selected.
+11:18:19 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:18:19 INFO  : Context for 'APU' is selected.
+11:18:20 INFO  : 'ps7_init' command is executed.
+11:18:20 INFO  : 'ps7_post_config' command is executed.
+11:18:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:18:20 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:18:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:18:20 INFO  : Memory regions updated for context APU
+11:18:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:18:20 INFO  : 'con' command is executed.
+11:18:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:18:20 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:25:53 INFO  : Disconnected from the channel tcfchan#5.
+11:25:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:54 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:25:54 INFO  : 'jtag frequency' command is executed.
+11:25:54 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:25:54 INFO  : Context for 'APU' is selected.
+11:25:54 INFO  : System reset is completed.
+11:25:58 INFO  : 'after 3000' command is executed.
+11:25:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:26:01 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:26:01 INFO  : Context for 'APU' is selected.
+11:26:03 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:26:03 INFO  : Context for 'APU' is selected.
+11:26:03 INFO  : 'ps7_init' command is executed.
+11:26:03 INFO  : 'ps7_post_config' command is executed.
+11:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:03 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:26:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:26:03 INFO  : Memory regions updated for context APU
+11:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:03 INFO  : 'con' command is executed.
+11:26:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:26:03 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:30:06 INFO  : Disconnected from the channel tcfchan#6.
+11:30:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:07 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:30:07 INFO  : 'jtag frequency' command is executed.
+11:30:07 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:30:07 INFO  : Context for 'APU' is selected.
+11:30:07 INFO  : System reset is completed.
+11:30:10 INFO  : 'after 3000' command is executed.
+11:30:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:30:14 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:30:14 INFO  : Context for 'APU' is selected.
+11:30:15 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:30:15 INFO  : Context for 'APU' is selected.
+11:30:16 INFO  : 'ps7_init' command is executed.
+11:30:16 INFO  : 'ps7_post_config' command is executed.
+11:30:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+11:30:16 INFO  : Memory regions updated for context APU
+11:30:16 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:38:21 INFO  : Disconnected from the channel tcfchan#7.
+11:38:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:23 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:38:23 INFO  : 'jtag frequency' command is executed.
+11:38:23 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:38:23 INFO  : Context for 'APU' is selected.
+11:38:23 INFO  : System reset is completed.
+11:38:26 INFO  : 'after 3000' command is executed.
+11:38:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:38:29 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:38:29 INFO  : Context for 'APU' is selected.
+11:38:31 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:38:31 INFO  : Context for 'APU' is selected.
+11:38:31 INFO  : 'ps7_init' command is executed.
+11:38:31 INFO  : 'ps7_post_config' command is executed.
+11:38:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:38:32 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:38:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:38:32 INFO  : Memory regions updated for context APU
+11:38:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:38:32 INFO  : 'con' command is executed.
+11:38:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:38:32 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:48:30 ERROR : (XSDB Server)invalid command name "ps_7_postconfig"
+
+11:48:40 ERROR : (XSDB Server)invalid command name "ps7_postconfig"
+
+11:49:13 ERROR : (XSDB Server)couldn't open "C:/Users/mi/AppData/Roaming/Xilinx/Vivado/<tutorial_download_path>/u-boot.elf": no such file or directory
+
+11:49:31 ERROR : (XSDB Server)invalid command name "Enter"
+
+11:52:00 INFO  : Disconnected from the channel tcfchan#8.
+11:52:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:02 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:52:02 INFO  : 'jtag frequency' command is executed.
+11:52:02 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:52:02 INFO  : Context for 'APU' is selected.
+11:52:02 INFO  : System reset is completed.
+11:52:05 INFO  : 'after 3000' command is executed.
+11:52:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:52:08 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:52:08 INFO  : Context for 'APU' is selected.
+11:52:10 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:52:10 INFO  : Context for 'APU' is selected.
+11:52:10 INFO  : 'ps7_init' command is executed.
+11:52:10 INFO  : 'ps7_post_config' command is executed.
+11:52:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:10 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:52:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:52:10 INFO  : Memory regions updated for context APU
+11:52:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:11 INFO  : 'con' command is executed.
+11:52:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:52:11 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:52:29 INFO  : Disconnected from the channel tcfchan#9.
+11:52:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:30 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:52:30 INFO  : 'jtag frequency' command is executed.
+11:52:30 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:52:30 INFO  : Context for 'APU' is selected.
+11:52:31 INFO  : System reset is completed.
+11:52:34 INFO  : 'after 3000' command is executed.
+11:52:34 ERROR : (XSDB Server)invalid command name "clear"
+
+11:52:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:52:37 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:52:37 INFO  : Context for 'APU' is selected.
+11:52:38 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:52:39 INFO  : Context for 'APU' is selected.
+11:52:39 INFO  : 'ps7_init' command is executed.
+11:52:39 INFO  : 'ps7_post_config' command is executed.
+11:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:39 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:52:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:52:39 INFO  : Memory regions updated for context APU
+11:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:39 INFO  : 'con' command is executed.
+11:52:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:52:39 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:52:56 INFO  : Disconnected from the channel tcfchan#10.
+11:52:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:52:57 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:52:57 INFO  : 'jtag frequency' command is executed.
+11:52:57 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:52:57 INFO  : Context for 'APU' is selected.
+11:52:57 INFO  : System reset is completed.
+11:53:00 INFO  : 'after 3000' command is executed.
+11:53:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:53:04 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:53:04 INFO  : Context for 'APU' is selected.
+11:53:05 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:53:05 INFO  : Context for 'APU' is selected.
+11:53:06 INFO  : 'ps7_init' command is executed.
+11:53:06 INFO  : 'ps7_post_config' command is executed.
+11:53:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:06 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:53:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:53:06 INFO  : Memory regions updated for context APU
+11:53:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:53:06 INFO  : 'con' command is executed.
+11:53:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:53:06 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+11:55:25 ERROR : (XSDB Server)invalid command name "ps7_init.tcl"
+
+11:56:26 ERROR : (XSDB Server)invalid command name "C:UsersmiDesktopProgrammaZYNQXC7Z020_240_ES_AXI_CDMAXC7Z020_240_ES_AXI_CDMA.sdkdesign_axi_cdma_wrapper_hw_platform_0ps7_init.tcl"
+
+11:56:48 ERROR : (XSDB Server)invalid command name "C:UsersmiDesktopProgrammaZYNQXC7Z020_240_ES_AXI_CDMAXC7Z020_240_ES_AXI_CDMA.sdkdesign_axi_cdma_wrapper_hw_platform_0ps7_init.tcl"
+
+11:57:30 ERROR : (XSDB Server)invalid command name "C:UsersmiDesktopProgrammaZYNQXC7Z020_240_ES_AXI_CDMAXC7Z020_240_ES_AXI_CDMA.sdkdesign_axi_cdma_wrapper_hw_platform_0ps7_init.tcl"
+
+11:58:59 INFO  : Disconnected from the channel tcfchan#11.
+11:59:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:00 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+11:59:00 INFO  : 'jtag frequency' command is executed.
+11:59:00 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:59:00 INFO  : Context for 'APU' is selected.
+11:59:00 INFO  : System reset is completed.
+11:59:03 INFO  : 'after 3000' command is executed.
+11:59:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+11:59:07 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+11:59:07 INFO  : Context for 'APU' is selected.
+11:59:10 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+11:59:10 INFO  : Context for 'APU' is selected.
+11:59:11 INFO  : 'ps7_init' command is executed.
+11:59:11 INFO  : 'ps7_post_config' command is executed.
+11:59:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:11 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:59:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+11:59:11 INFO  : Memory regions updated for context APU
+11:59:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:11 INFO  : 'con' command is executed.
+11:59:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+11:59:11 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+12:02:55 INFO  : Disconnected from the channel tcfchan#12.
+12:02:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:02:56 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+12:02:56 INFO  : 'jtag frequency' command is executed.
+12:02:56 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:02:56 INFO  : Context for 'APU' is selected.
+12:02:56 INFO  : System reset is completed.
+12:02:59 INFO  : 'after 3000' command is executed.
+12:02:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+12:03:03 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+12:03:03 INFO  : Context for 'APU' is selected.
+12:03:04 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+12:03:04 INFO  : Context for 'APU' is selected.
+12:03:05 INFO  : 'ps7_init' command is executed.
+12:03:05 INFO  : 'ps7_post_config' command is executed.
+12:03:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:05 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:03:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+12:03:05 INFO  : Memory regions updated for context APU
+12:03:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:05 INFO  : 'con' command is executed.
+12:03:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+12:03:05 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+12:06:02 INFO  : Disconnected from the channel tcfchan#13.
+12:06:28 INFO  : Registering command handlers for SDK TCF services
+12:06:28 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\temp_xsdb_launch_script.tcl
+12:06:31 INFO  : XSCT server has started successfully.
+12:06:32 INFO  : Successfully done setting XSCT server connection channel  
+12:06:32 INFO  : Successfully done setting SDK workspace  
+12:06:32 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper.hdf.
+12:06:32 INFO  : Checking for hwspec changes in the project design_axi_cdma_wrapper_hw_platform_0.
+12:07:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:31 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+12:07:31 INFO  : 'jtag frequency' command is executed.
+12:07:31 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:31 INFO  : Context for 'APU' is selected.
+12:07:31 INFO  : System reset is completed.
+12:07:34 INFO  : 'after 3000' command is executed.
+12:07:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+12:07:38 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+12:07:38 INFO  : Context for 'APU' is selected.
+12:07:38 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+12:07:38 INFO  : Context for 'APU' is selected.
+12:07:39 INFO  : 'ps7_init' command is executed.
+12:07:39 INFO  : 'ps7_post_config' command is executed.
+12:07:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:39 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+12:07:39 INFO  : Memory regions updated for context APU
+12:07:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:39 INFO  : 'con' command is executed.
+12:07:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+12:07:39 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+12:08:08 ERROR : (XSDB Server)invalid command name "C:UsersmiDesktopProgrammaZYNQXC7Z020_240_ES_AXI_CDMAXC7Z020_240_ES_AXI_CDMA.sdkdesign_axi_cdma_wrapper_hw_platform_0ps7_init.tcl"
+
+12:08:13 ERROR : (XSDB Server)invalid command name "asd"
+
+12:08:58 ERROR : (XSDB Server)couldn't execute "C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\design_axi_cdma_wrapper_hw_platform_0\ps7_init.tcl": No error
+
+12:09:11 ERROR : (XSDB Server)couldn't execute "C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\design_axi_cdma_wrapper_hw_platform_0\ps7_init.tcl": No error
+
+12:09:49 ERROR : (XSDB Server)couldn't execute "C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\design_axi_cdma_wrapper_hw_platform_0\ps7_init.tcl": No error
+
+12:10:36 ERROR : (XSDB Server)child process exited abnormally
+
+12:11:10 ERROR : (XSDB Server)couldn't change working directory to "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl": not a directory
+
+12:11:33 ERROR : (XSDB Server)invalid command name "pws"
+
+12:11:37 ERROR : (XSDB Server)wrong # args: should be "llength list"
+
+12:11:58 ERROR : (XSDB Server)couldn't execute ".\ps7_init.tcl": no such file or directory
+
+12:12:11 ERROR : (XSDB Server)ambiguous command name "ps": ps7_clock_init_data_1_0 ps7_clock_init_data_2_0 ps7_clock_init_data_3_0 ps7_ddr_init_data_1_0 ps7_ddr_init_data_2_0 ps7_ddr_init_data_3_0 ps7_debug ps7_debug_1_0 ps7_debug_2_0 ps7_debug_3_0 ps7_init ps7_mio_init_data_1_0 ps7_mio_init_data_2_0 ps7_mio_init_data_3_0 ps7_peripherals_init_data_1_0 ps7_peripherals_init_data_2_0 ps7_peripherals_init_data_3_0 ps7_pll_init_data_1_0 ps7_pll_init_data_2_0 ps7_pll_init_data_3_0 ps7_post_config ps7_post_config_1_0 ps7_post_config_2_0 ps7_post_config_3_0 ps_version
+
+12:12:18 ERROR : (XSDB Server)couldn't execute ".\ps7_init.tcl": no such file or directory
+
+12:16:19 ERROR : (XSDB Server)couldn't open "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/<tutorial_download_path>/u-boot.elf": no such file or directory
+
+13:15:28 ERROR : (XSDB Server)couldn't open "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/<tutorial_download_path>/u-boot.elf": no such file or directory
+
+13:21:55 ERROR : (XSDB Server)couldn't open "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/u-boot.elf": no such file or directory
+
+13:35:12 ERROR : (XSDB Server)Petalinux commands are supported only on Linux platform
+
+15:02:39 INFO  : Disconnected from the channel tcfchan#1.
+15:02:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:02:40 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:02:40 INFO  : 'jtag frequency' command is executed.
+15:02:40 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:02:40 INFO  : Context for 'APU' is selected.
+15:02:40 INFO  : System reset is completed.
+15:02:43 INFO  : 'after 3000' command is executed.
+15:02:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:02:47 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:02:47 INFO  : Context for 'APU' is selected.
+15:02:49 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:02:49 INFO  : Context for 'APU' is selected.
+15:02:49 INFO  : 'ps7_init' command is executed.
+15:02:49 INFO  : 'ps7_post_config' command is executed.
+15:02:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:50 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:02:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:02:50 INFO  : Memory regions updated for context APU
+15:02:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:50 INFO  : 'con' command is executed.
+15:02:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:02:50 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:03:07 INFO  : Disconnected from the channel tcfchan#2.
+15:03:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:08 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:03:08 INFO  : 'jtag frequency' command is executed.
+15:03:08 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:03:08 INFO  : Context for 'APU' is selected.
+15:03:08 INFO  : System reset is completed.
+15:03:11 INFO  : 'after 3000' command is executed.
+15:03:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:03:15 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:03:15 INFO  : Context for 'APU' is selected.
+15:03:16 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:03:16 INFO  : Context for 'APU' is selected.
+15:03:17 INFO  : 'ps7_init' command is executed.
+15:03:17 INFO  : 'ps7_post_config' command is executed.
+15:03:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:17 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:03:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:03:17 INFO  : Memory regions updated for context APU
+15:03:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:17 INFO  : 'con' command is executed.
+15:03:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:03:17 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:04:12 INFO  : Disconnected from the channel tcfchan#3.
+15:04:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:13 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:04:13 INFO  : 'jtag frequency' command is executed.
+15:04:13 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:04:13 INFO  : Context for 'APU' is selected.
+15:04:13 INFO  : System reset is completed.
+15:04:16 INFO  : 'after 3000' command is executed.
+15:04:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:04:20 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:04:20 INFO  : Context for 'APU' is selected.
+15:04:22 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:04:22 INFO  : Context for 'APU' is selected.
+15:04:22 INFO  : 'ps7_init' command is executed.
+15:04:22 INFO  : 'ps7_post_config' command is executed.
+15:04:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:23 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:04:23 INFO  : Memory regions updated for context APU
+15:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:23 INFO  : 'con' command is executed.
+15:04:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:04:23 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:12:38 INFO  : Disconnected from the channel tcfchan#4.
+15:12:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:39 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:12:39 INFO  : 'jtag frequency' command is executed.
+15:12:39 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:12:39 INFO  : Context for 'APU' is selected.
+15:12:39 INFO  : System reset is completed.
+15:12:42 INFO  : 'after 3000' command is executed.
+15:12:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:12:46 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:12:46 INFO  : Context for 'APU' is selected.
+15:12:48 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:12:48 INFO  : Context for 'APU' is selected.
+15:12:49 INFO  : 'ps7_init' command is executed.
+15:12:49 INFO  : 'ps7_post_config' command is executed.
+15:12:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:49 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:12:49 INFO  : Memory regions updated for context APU
+15:12:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:49 INFO  : 'con' command is executed.
+15:12:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:12:49 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:15:59 INFO  : Disconnected from the channel tcfchan#5.
+15:16:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:00 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:16:00 INFO  : 'jtag frequency' command is executed.
+15:16:00 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:16:00 INFO  : Context for 'APU' is selected.
+15:16:00 INFO  : System reset is completed.
+15:16:03 INFO  : 'after 3000' command is executed.
+15:16:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:16:07 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:16:07 INFO  : Context for 'APU' is selected.
+15:16:08 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:16:08 INFO  : Context for 'APU' is selected.
+15:16:09 INFO  : 'ps7_init' command is executed.
+15:16:09 INFO  : 'ps7_post_config' command is executed.
+15:16:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:09 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:16:09 INFO  : Memory regions updated for context APU
+15:16:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:09 INFO  : 'con' command is executed.
+15:16:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:16:09 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:39:47 INFO  : Disconnected from the channel tcfchan#6.
+15:39:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:48 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:39:48 INFO  : 'jtag frequency' command is executed.
+15:39:48 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:39:48 INFO  : Context for 'APU' is selected.
+15:39:49 INFO  : System reset is completed.
+15:39:52 INFO  : 'after 3000' command is executed.
+15:39:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:39:55 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:39:55 INFO  : Context for 'APU' is selected.
+15:39:57 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:39:57 INFO  : Context for 'APU' is selected.
+15:39:57 INFO  : 'ps7_init' command is executed.
+15:39:58 INFO  : 'ps7_post_config' command is executed.
+15:39:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:58 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:39:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:39:58 INFO  : Memory regions updated for context APU
+15:39:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:58 INFO  : 'con' command is executed.
+15:39:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:39:58 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:41:47 INFO  : Disconnected from the channel tcfchan#7.
+15:41:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:41:48 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+15:41:48 INFO  : 'jtag frequency' command is executed.
+15:41:48 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:41:48 INFO  : Context for 'APU' is selected.
+15:41:48 INFO  : System reset is completed.
+15:41:51 INFO  : 'after 3000' command is executed.
+15:41:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+15:41:55 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit"
+15:41:55 INFO  : Context for 'APU' is selected.
+15:41:57 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf'.
+15:41:57 INFO  : Context for 'APU' is selected.
+15:41:58 INFO  : 'ps7_init' command is executed.
+15:41:58 INFO  : 'ps7_post_config' command is executed.
+15:41:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:41:58 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:41:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1
+fpga -file C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/design_axi_cdma_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/design_axi_cdma_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.sdk/axi_cdma/Debug/axi_cdma.elf
+----------------End of Script----------------
+
+15:41:58 INFO  : Memory regions updated for context APU
+15:41:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:41:58 INFO  : 'con' command is executed.
+15:41:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+15:41:58 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_cdma.elf_on_local.tcl'
+15:58:33 INFO  : Disconnected from the channel tcfchan#8.

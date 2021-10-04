@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\FSBL\Debug\FSBL.elf
+	C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\PS_design_wrapper_hw_platform_0\PS_design_wrapper.bit
+	C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\Debug\axi_gpio.elf
+}

@@ -1,0 +1,8 @@
+18:25:16 **** Auto Build of configuration Debug for project axi_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+18:25:17 Build Finished (took 535ms)
+

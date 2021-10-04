@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "../../../bd/design_axi_cdma/ip/design_axi_cdma_axi_cdma_0_0/sim/design_axi_cdma_axi_cdma_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_axi_cdma/ip/design_axi_cdma_axi_timer_0_0/sim/design_axi_cdma_axi_timer_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_axi_cdma/ip/design_axi_cdma_rst_ps7_0_50M_0/sim/design_axi_cdma_rst_ps7_0_50M_0.vhd" 
+
+nosort

@@ -1,0 +1,12 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021Äê10ÔÂ1ÈÕ
+ *      Author: mi
+ */
+
+#include "StandaloneCDMA.h"
+
+int main() {
+	RunStandaloneCDMA();
+}

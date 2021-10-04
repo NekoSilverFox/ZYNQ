@@ -1,0 +1,9 @@
+16:49:50 INFO  : Registering command handlers for SDK TCF services
+16:49:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_400_Linux_sd_boot\XC7Z020_400_Linux_sd_boot.sdk\temp_xsdb_launch_script.tcl
+16:49:53 INFO  : XSCT server has started successfully.
+16:49:53 INFO  : Successfully done setting XSCT server connection channel  
+16:49:53 INFO  : Successfully done setting SDK workspace  
+16:49:53 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_400_Linux_sd_boot/XC7Z020_400_Linux_sd_boot.sdk/petalinux_boot_from_linux_wrapper.hdf.
+19:03:47 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_400_Linux_sd_boot\images\BOOT.bin
+19:03:47 INFO  : Creating new bif file C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_400_Linux_sd_boot\images\output.bif
+19:03:48 INFO  : Bootgen command execution is done.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="PS_design_wrapper_hw_platform_0-offSet"/>
+	<item value="PS_design_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="PS_design_wrapper_hw_platform_0-device"/>
+	<item value="false" key="PS_design_wrapper_hw_platform_0-blankCheck"/>
+	<item value="" key="PS_design_wrapper_hw_platform_0-fsblFile"/>
+	<item value="qspi_single" key="PS_design_wrapper_hw_platform_0-flashType"/>
+	<item value="false" key="PS_design_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\bootimage\BOOT.bin" key="PS_design_wrapper_hw_platform_0-imgFile"/>
+	<item value="Local" key="PS_design_wrapper_hw_platform_0-target"/>
+</section>

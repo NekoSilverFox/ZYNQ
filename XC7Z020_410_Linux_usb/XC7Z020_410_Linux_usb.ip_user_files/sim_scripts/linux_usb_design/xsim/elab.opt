@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L processing_system7_bfm_v2_0_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot linux_usb_design xil_defaultlib.linux_usb_design xil_defaultlib.glbl -log elaborate.log

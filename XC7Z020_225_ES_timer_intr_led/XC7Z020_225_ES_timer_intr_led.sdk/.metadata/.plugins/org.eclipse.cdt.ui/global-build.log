@@ -1,0 +1,2919 @@
+19:21:21 **** Build of project timer_intr_led_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project timer_intr_led ****
+
+Nothing to build for project timer_intr_led
+19:22:04 **** Build of configuration Debug for project timer_intr_led_bsp_xscutimer_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xscutimer_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xscutimer_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.o" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+'Finished building: ../src/xscutimer_intr_example.c'
+' '
+'Building target: timer_intr_led_bsp_xscutimer_intr_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led_bsp_xscutimer_intr_example_1.elf"  ./src/xscutimer_intr_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led_bsp_xscutimer_intr_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led_bsp_xscutimer_intr_example_1.elf  |tee "timer_intr_led_bsp_xscutimer_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26624	   2732	  22616	  51972	   cb04	timer_intr_led_bsp_xscutimer_intr_example_1.elf
+'Finished building: timer_intr_led_bsp_xscutimer_intr_example_1.elf.size'
+' '
+19:22:08 **** Auto Build of configuration Debug for project timer_intr_led_bsp_xscutimer_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:23:02 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:23:06 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:27:06 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:28:32 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:33:34 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:34:25 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:36:50 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82144	   2592	  23376	 108112	  1a650	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:37:43 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:36:2: error: unknown type name 'XScuTimer_Config'
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+  ^
+../src/main.c:36:31: warning: implicit declaration of function 'XScuTimer_LookupConfig' [-Wimplicit-function-declaration]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                               ^
+../src/main.c:36:54: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                                                      ^
+../src/main.c:36:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:36:20: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                    ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:37:46 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:36:2: error: unknown type name 'XScuTimer_Config'
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+  ^
+../src/main.c:36:31: warning: implicit declaration of function 'XScuTimer_LookupConfig' [-Wimplicit-function-declaration]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                               ^
+../src/main.c:36:54: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                                                      ^
+../src/main.c:36:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:36:20: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                    ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:32:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:38:25 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:54: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                                                      ^
+../src/main.c:37:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:37:20: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                    ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:38:44 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:54: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                                                      ^
+../src/main.c:37:54: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:37:20: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+  XScuTimer_Config* ConfigPtr= XScuTimer_LookupConfig(TimerDeviceId);
+                    ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:38:47 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:37:20: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                    ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:41:16 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:38:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:38:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:41:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:41:46 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:38:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:38:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:41:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:41:51 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:38:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:38:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:41:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:42:12 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:38:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:38:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:41:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:48:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:48:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:42:19 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:37:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:37:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:38:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:38:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:41:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:48:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:48:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:42:43 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:38:55: error: 'TimerDeviceId' undeclared (first use in this function)
+  XScuTimer_Config* ConfigPtr = XScuTimer_LookupConfig(TimerDeviceId);
+                                                       ^
+../src/main.c:38:55: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:39:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:39:35: error: 'TimerInstancePtr' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                   ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:42:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:49:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:49:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:43:59 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:36:35: error: expected declaration specifiers or '...' before ')' token
+ void init_timer(u16 TimerDeviceId,) {
+                                   ^
+../src/main.c: In function 'main':
+../src/main.c:116:2: warning: implicit declaration of function 'init_timer' [-Wimplicit-function-declaration]
+  init_timer(TIMER_DEVICE_ID);
+  ^
+../src/main.c:116:13: error: 'TIMER_DEVICE_ID' undeclared (first use in this function)
+  init_timer(TIMER_DEVICE_ID);
+             ^
+../src/main.c:116:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:44:14 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:37:35: error: expected declaration specifiers or '...' before ')' token
+ void init_timer(u16 TimerDeviceId,) {
+                                   ^
+../src/main.c: In function 'main':
+../src/main.c:117:2: warning: implicit declaration of function 'init_timer' [-Wimplicit-function-declaration]
+  init_timer(TIMER_DEVICE_ID);
+  ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:45:03 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:40:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:40:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:43:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:50:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:50:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:117:2: error: too few arguments to function 'init_timer'
+  init_timer(TIMER_DEVICE_ID);
+  ^
+../src/main.c:37:6: note: declared here
+ void init_timer(XScuTimer * TimerInstancePtr, u16 TimerDeviceId) {
+      ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:45:25 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:40:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:40:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:43:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:50:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:50:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'main':
+../src/main.c:117:14: error: 'TimerInstance' undeclared (first use in this function)
+  init_timer(&TimerInstance, TIMER_DEVICE_ID);
+              ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:45:39 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:41:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:41:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:44:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:115:0,
+                 from ../src/main.c:13:
+../src/main.c:51:40: error: 'TIMER_LOAD_VALUE' undeclared (first use in this function)
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+                                        ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:276:39: note: in definition of macro 'XScuTimer_WriteReg'
+  Xil_Out32((BaseAddr) + (RegOffset), (Data))
+                                       ^
+../src/main.c:51:2: note: in expansion of macro 'XScuTimer_LoadTimer'
+  XScuTimer_LoadTimer(TimerInstancePtr, TIMER_LOAD_VALUE);
+  ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:47:22 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:42:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:42:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:45:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:48:18 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:42:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:42:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:45:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:17 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:45:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:45:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:48:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:55:10 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_timer':
+../src/main.c:46:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/main.c:46:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:49:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:55:24 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:49:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:56:04 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:49:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+19:57:04 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:01:33 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:02:03 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:02:32 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  83180	   2600	  23392	 109172	  1aa74	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:03:34 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:65:2: error: 'IntcConfig' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+  ^
+../src/main.c:65:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:65:15: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+               ^
+../src/main.c:65:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:66:15: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+               ^
+../src/main.c:66:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:69:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:03:56 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:65:2: error: unknown type name 'XScuGic_Config'
+  XScuGic_Config *IntcConfig;
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+               ^
+../src/main.c:66:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:66:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:67:15: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+               ^
+../src/main.c:67:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+../src/main.c:68:16: error: request for member 'CpuBaseAddress' in something not a structure or union
+      IntcConfig->CpuBaseAddress);
+                ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:70:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:04:14 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:51:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:65:2: error: unknown type name 'XScuGic_Config'
+  XScuGic_Config *IntcConfig;
+  ^
+../src/main.c:66:15: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+               ^
+../src/main.c:66:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:66:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:67:15: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+               ^
+../src/main.c:67:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+../src/main.c:68:16: error: request for member 'CpuBaseAddress' in something not a structure or union
+      IntcConfig->CpuBaseAddress);
+                ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:70:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:73:2: warning: implicit declaration of function 'Xil_ExceptionInit' [-Wimplicit-function-declaration]
+  Xil_ExceptionInit();
+  ^
+../src/main.c:75:2: warning: implicit declaration of function 'Xil_ExceptionRegisterHandler' [-Wimplicit-function-declaration]
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+  ^
+../src/main.c:75:31: error: 'XIL_EXCEPTION_ID_IRQ_INT' undeclared (first use in this function)
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+                               ^
+../src/main.c:76:6: error: 'Xil_ExceptionHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+      ^
+../src/main.c:76:27: error: expected ')' before 'XScuGic_InterruptHandler'
+     (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                           ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:04:38 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:52:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:67:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:67:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:68:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:71:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:04:49 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:52:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:67:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:67:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:68:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:71:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:05:07 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:53:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../src/main.c:69:37: error: 'IntcInstancePtr' undeclared (first use in this function)
+  int Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+                                     ^
+../src/main.c:69:37: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:72:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:05:41 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:53:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:72:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85640	   4176	  23392	 113208	  1ba38	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:06:14 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:53:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:72:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:149:2: error: too few arguments to function 'init_intr_timer'
+  init_intr_timer();
+  ^
+../src/main.c:66:6: note: declared here
+ void init_intr_timer(XScuGic* IntcInstancePtr) {
+      ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:06:48 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:53:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:72:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:149:19: error: 'IntcInstance' undeclared (first use in this function)
+  init_intr_timer(&IntcInstance);
+                   ^
+../src/main.c:149:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:07:02 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:73:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85640	   4176	  23408	 113224	  1ba48	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:08:17 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:73:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:82:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:82:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:83:27: error: 'TimerIntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^
+../src/main.c:84:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:86:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:08:34 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:83:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:83:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:84:27: error: 'TimerIntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^
+../src/main.c:85:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:87:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:08:43 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'TimerIntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:08:58 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'TimerIntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)TimerIntrHandler,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:09:40 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:10:17 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:10:21 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:10:41 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:11:05 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:84:44: error: 'TimerIntrId' undeclared (first use in this function)
+  Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
+                                            ^
+../src/main.c:84:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:11:36 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:85:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:167:2: error: too few arguments to function 'init_intr_timer'
+  init_intr_timer(&IntcInstance);
+  ^
+../src/main.c:67:6: note: declared here
+ void init_intr_timer(XScuGic* IntcInstancePtr, u16 TimerIntrId) {
+      ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:11:58 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:54:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:74:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:85:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:85:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:86:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:88:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:167:33: error: 'TIMER_IRPT_INTR' undeclared (first use in this function)
+  init_intr_timer(&IntcInstance, TIMER_IRPT_INTR);
+                                 ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:12:11 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:75:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:86:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:87:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:89:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:12:30 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:75:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:86:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:87:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:89:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:12:35 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:75:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:86:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:87:13: error: 'TimerInstancePtr' undeclared (first use in this function)
+     (void *)TimerInstancePtr);
+             ^
+../src/main.c:89:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:19:47 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:75:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:86:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:89:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xparameters.h:16:0,
+                 from ../src/main.c:10:
+../src/main.c: In function 'main':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xparameters_ps.h:267:29: warning: passing argument 2 of 'init_intr_timer' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPS_SCU_TMR_INT_ID  29U /* SCU Private Timer interrupt */
+                             ^
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xparameters_ps.h:95:29: note: in expansion of macro 'XPS_SCU_TMR_INT_ID'
+ #define XPAR_SCUTIMER_INTR  XPS_SCU_TMR_INT_ID
+                             ^
+../src/main.c:19:26: note: in expansion of macro 'XPAR_SCUTIMER_INTR'
+ #define TIMER_IRPT_INTR  XPAR_SCUTIMER_INTR   /* Ë½ÓÐ¶¨Ê±Æ÷ID */
+                          ^
+../src/main.c:168:33: note: in expansion of macro 'TIMER_IRPT_INTR'
+  init_intr_timer(&IntcInstance, TIMER_IRPT_INTR);
+                                 ^
+../src/main.c:68:6: note: expected 'XScuTimer * {aka struct <anonymous> *}' but argument is of type 'unsigned int'
+ void init_intr_timer(XScuGic* IntcInstancePtr,XScuTimer *TimerInstancePtr, u16 TimerIntrId) {
+      ^
+../src/main.c:168:2: error: too few arguments to function 'init_intr_timer'
+  init_intr_timer(&IntcInstance, TIMER_IRPT_INTR);
+  ^
+../src/main.c:68:6: note: declared here
+ void init_intr_timer(XScuGic* IntcInstancePtr,XScuTimer *TimerInstancePtr, u16 TimerIntrId) {
+      ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:20:02 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:75:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:86:27: error: 'timer_intr_hander' undeclared (first use in this function)
+     (Xil_ExceptionHandler)timer_intr_hander,
+                           ^
+../src/main.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:89:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:20:21 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:78:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:92:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85832	   4176	  23408	 113416	  1bb08	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:20:55 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'timer_intr_hander':
+../src/main.c:80:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^
+../src/main.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:21:23 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'timer_intr_hander':
+../src/main.c:80:3: error: 'TimerExpired' undeclared (first use in this function)
+   TimerExpired++;
+   ^
+../src/main.c:80:3: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:21:53 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'timer_intr_hander':
+../src/main.c:82:3: error: stray '\270' in program
+   ¸Ä±äLED
+   ^
+../src/main.c:82:3: error: stray '\304' in program
+../src/main.c:82:3: error: stray '\261' in program
+../src/main.c:82:3: error: stray '\344' in program
+../src/main.c:82:7: error: unknown type name 'LED'
+   ¸Ä±äLED
+       ^
+../src/main.c:83:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+   TimerExpired++;
+               ^
+../src/main.c:84:7: error: 'TimerExpired' undeclared (first use in this function)
+   if (TimerExpired == 3) {
+       ^
+../src/main.c:84:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:69:6: warning: unused variable 'led_state' [-Wunused-variable]
+  int led_state = 0;
+      ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:98:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:112:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:21:58 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'timer_intr_hander':
+../src/main.c:82:3: error: stray '\270' in program
+   ¸Ä±äLED
+   ^
+../src/main.c:82:3: error: stray '\304' in program
+../src/main.c:82:3: error: stray '\261' in program
+../src/main.c:82:3: error: stray '\344' in program
+../src/main.c:82:7: error: unknown type name 'LED'
+   ¸Ä±äLED
+       ^
+../src/main.c:83:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+   TimerExpired++;
+               ^
+../src/main.c:84:7: error: 'TimerExpired' undeclared (first use in this function)
+   if (TimerExpired == 3) {
+       ^
+../src/main.c:84:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:69:13: warning: unused variable 'led_state' [-Wunused-variable]
+  static int led_state = 0;
+             ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:98:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:112:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:23:18 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'timer_intr_hander':
+../src/main.c:84:2: error: expected ';' before '}' token
+  }
+  ^
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:23:35 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85960	   4176	  23408	 113544	  1bb88	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:24:02 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85576	   4176	  23408	 113160	  1ba08	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:25:41 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85576	   4176	  23408	 113160	  1ba08	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:26:54 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:27:49 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:31:25 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:133:18: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XScuTimer_Start(TimerInstancePtr);
+                  ^
+../src/main.c:133:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:33:07 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:133:19: error: 'TimerInstancePtr' undeclared (first use in this function)
+  XScuTimer_Start(&TimerInstancePtr);
+                   ^
+../src/main.c:133:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+20:33:19 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'main':
+../src/main.c:133:18: warning: passing argument 1 of 'XScuTimer_Start' from incompatible pointer type [-Wincompatible-pointer-types]
+  XScuTimer_Start(&IntcInstance);
+                  ^
+In file included from ../src/main.c:13:0:
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xscutimer.h:356:6: note: expected 'XScuTimer * {aka struct <anonymous> *}' but argument is of type 'XScuGic * {aka struct <anonymous> *}'
+ void XScuTimer_Start(XScuTimer *InstancePtr);
+      ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:33:41 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:34:52 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:34:57 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:47:27 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:47:40 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:52:14 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+20:58:15 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:00:56 **** Auto Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../timer_intr_led_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../timer_intr_led_bsp/ps7_cortexa9_0/include/xgpiops.h:113:0,
+                 from ../src/main.c:11:
+../src/main.c: In function 'init_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:55:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c: In function 'init_intr_timer':
+../../timer_intr_led_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:95:10: note: in expansion of macro 'XST_FAILURE'
+   return XST_FAILURE;
+          ^
+../src/main.c:109:10: warning: 'return' with a value, in function returning void
+   return Status;
+          ^
+../src/main.c: In function 'init_mio_gpio':
+../src/main.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: timer_intr_led.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../timer_intr_led_bsp/ps7_cortexa9_0/lib -o "timer_intr_led.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: timer_intr_led.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size timer_intr_led.elf  |tee "timer_intr_led.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85584	   4176	  23408	 113168	  1ba10	timer_intr_led.elf
+'Finished building: timer_intr_led.elf.size'
+' '
+21:01:07 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:02:09 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:02:48 **** Incremental Build of configuration Debug for project timer_intr_led ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

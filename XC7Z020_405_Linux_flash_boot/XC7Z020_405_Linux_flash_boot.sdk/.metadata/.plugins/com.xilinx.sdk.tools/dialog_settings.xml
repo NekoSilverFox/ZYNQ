@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="flash_boot_design_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="qspi_single" key="flash_boot_design_wrapper_hw_platform_0-flashType"/>
+	<item value="" key="flash_boot_design_wrapper_hw_platform_0-fsblFile"/>
+	<item value="false" key="flash_boot_design_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_405_Linux_flash_boot\images\linux\BOOT.BIN" key="flash_boot_design_wrapper_hw_platform_0-imgFile"/>
+	<item value="false" key="flash_boot_design_wrapper_hw_platform_0-blankCheck"/>
+	<item value="" key="flash_boot_design_wrapper_hw_platform_0-offSet"/>
+	<item value="Local" key="flash_boot_design_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="flash_boot_design_wrapper_hw_platform_0-device"/>
+</section>

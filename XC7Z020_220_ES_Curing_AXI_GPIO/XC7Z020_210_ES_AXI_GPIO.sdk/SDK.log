@@ -1,0 +1,174 @@
+17:36:27 INFO  : Registering command handlers for SDK TCF services
+17:36:27 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_210_ES_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\temp_xsdb_launch_script.tcl
+17:36:31 INFO  : XSCT server has started successfully.
+17:36:34 INFO  : Successfully done setting XSCT server connection channel  
+17:36:34 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper.hdf.
+17:36:34 INFO  : Successfully done setting SDK workspace  
+17:53:27 INFO  : Example project axi_gpio_bsp_xgpio_intr_tapp_example_1 has been created successfully.
+12:16:25 INFO  : Registering command handlers for SDK TCF services
+12:16:25 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_210_ES_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\temp_xsdb_launch_script.tcl
+12:16:29 INFO  : XSCT server has started successfully.
+12:16:29 INFO  : Successfully done setting XSCT server connection channel  
+12:16:32 INFO  : Successfully done setting SDK workspace  
+12:16:32 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper.hdf.
+12:16:32 INFO  : Checking for hwspec changes in the project PS_design_wrapper_hw_platform_0.
+19:39:30 INFO  : Registering command handlers for SDK TCF services
+19:39:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_210_ES_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\temp_xsdb_launch_script.tcl
+19:39:34 INFO  : XSCT server has started successfully.
+19:39:34 INFO  : Successfully done setting XSCT server connection channel  
+19:39:37 INFO  : Successfully done setting SDK workspace  
+19:39:37 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper.hdf.
+19:39:37 INFO  : Checking for hwspec changes in the project PS_design_wrapper_hw_platform_0.
+20:14:45 INFO  : System reset is completed.
+20:14:48 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+20:14:49 INFO  : ps7_init is completed.
+20:14:49 INFO  : ps7_post_config is completed.
+20:15:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:15:05 INFO  : System reset is completed.
+20:15:08 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+20:15:09 INFO  : ps7_init is completed.
+20:15:09 INFO  : ps7_post_config is completed.
+20:16:13 INFO  : System reset is completed.
+20:16:17 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+20:16:18 INFO  : ps7_init is completed.
+20:16:18 INFO  : ps7_post_config is completed.
+20:23:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:24:01 INFO  : System reset is completed.
+20:24:05 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+20:24:06 INFO  : ps7_init is completed.
+20:24:06 INFO  : ps7_post_config is completed.
+20:31:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:31:21 INFO  : System reset is completed.
+20:31:25 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+20:31:25 INFO  : ps7_init is completed.
+20:31:25 INFO  : ps7_post_config is completed.
+22:41:47 INFO  : System reset is completed.
+22:41:51 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:41:52 INFO  : ps7_init is completed.
+22:41:52 INFO  : ps7_post_config is completed.
+22:42:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:42:32 INFO  : System reset is completed.
+22:42:35 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:42:36 INFO  : ps7_init is completed.
+22:42:36 INFO  : ps7_post_config is completed.
+22:44:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:44:23 INFO  : System reset is completed.
+22:44:27 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:44:28 INFO  : ps7_init is completed.
+22:44:28 INFO  : ps7_post_config is completed.
+22:45:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:45:08 INFO  : System reset is completed.
+22:45:12 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:45:13 INFO  : ps7_init is completed.
+22:45:13 INFO  : ps7_post_config is completed.
+22:46:07 INFO  : System reset is completed.
+22:46:10 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:46:11 INFO  : ps7_init is completed.
+22:46:11 INFO  : ps7_post_config is completed.
+22:47:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:47:06 INFO  : System reset is completed.
+22:47:10 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:47:11 INFO  : ps7_init is completed.
+22:47:11 INFO  : ps7_post_config is completed.
+22:48:23 INFO  : System reset is completed.
+22:48:27 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:48:28 INFO  : ps7_init is completed.
+22:48:28 INFO  : ps7_post_config is completed.
+22:50:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:50:20 INFO  : System reset is completed.
+22:50:24 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:50:25 INFO  : ps7_init is completed.
+22:50:25 INFO  : ps7_post_config is completed.
+22:50:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:50:49 INFO  : System reset is completed.
+22:50:53 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:50:53 INFO  : ps7_init is completed.
+22:50:53 INFO  : ps7_post_config is completed.
+22:51:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:51:19 INFO  : System reset is completed.
+22:51:23 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:51:24 INFO  : ps7_init is completed.
+22:51:24 INFO  : ps7_post_config is completed.
+22:52:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:52:40 INFO  : System reset is completed.
+22:52:44 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:52:45 INFO  : ps7_init is completed.
+22:52:45 INFO  : ps7_post_config is completed.
+22:54:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+22:54:35 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:54:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:54:42 INFO  : System reset is completed.
+22:54:46 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+22:54:46 INFO  : ps7_init is completed.
+22:54:46 INFO  : ps7_post_config is completed.
+23:01:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:01:23 INFO  : System reset is completed.
+23:01:27 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+23:01:28 INFO  : ps7_init is completed.
+23:01:28 INFO  : ps7_post_config is completed.
+23:02:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:02:46 INFO  : System reset is completed.
+23:02:50 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_210_ES_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+23:02:50 INFO  : ps7_init is completed.
+23:02:50 INFO  : ps7_post_config is completed.
+23:06:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:35:51 INFO  : Registering command handlers for SDK TCF services
+17:35:51 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\temp_xsdb_launch_script.tcl
+17:35:56 INFO  : XSCT server has started successfully.
+17:36:00 INFO  : Successfully done setting XSCT server connection channel  
+17:36:00 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper.hdf.
+17:36:00 INFO  : Successfully done setting SDK workspace  
+17:38:44 INFO  : Refreshed build settings on project axi_gpio
+17:42:45 INFO  : Invoking Bootgen: bootgen -image axi_gpio.bif -arch zynq -o C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\bootimage\BOOT.bin
+17:42:45 INFO  : Creating new bif file C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\bootimage\axi_gpio.bif
+17:42:47 INFO  : Bootgen command execution is done.
+17:57:38 INFO  : Invoking Bootgen: bootgen -image axi_gpio.bif -arch zynq -o C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\bootimage\BOOT.bin -w on
+17:57:40 INFO  : Bootgen command execution is done.
+18:01:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:05:42 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/PS_design_wrapper.bit"
+18:05:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+18:05:59 INFO  : 'fpga -state' command is executed.
+18:05:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:59 INFO  : Jtag cable 'Digilent JTAG-HS2 201706300081' is selected.
+18:05:59 INFO  : 'jtag frequency' command is executed.
+18:05:59 INFO  : Sourcing of 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:05:59 INFO  : Context for 'APU' is selected.
+18:05:59 INFO  : Hardware design information is loaded from 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/system.hdf'.
+18:05:59 INFO  : Context for 'APU' is selected.
+18:05:59 INFO  : 'stop' command is executed.
+18:06:00 INFO  : 'ps7_init' command is executed.
+18:06:00 INFO  : 'ps7_post_config' command is executed.
+18:06:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:06:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:00 INFO  : The application 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/axi_gpio/Debug/axi_gpio.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+loadhw C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/PS_design_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+dow C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.sdk/axi_gpio/Debug/axi_gpio.elf
+----------------End of Script----------------
+
+18:06:01 INFO  : Memory regions updated for context APU
+18:06:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:01 INFO  : 'con' command is executed.
+18:06:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS2 201706300081"} -index 0
+con
+----------------End of Script----------------
+
+18:06:01 INFO  : Launch script is exported to file 'C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_gpio.elf_on_local.tcl'
+18:25:15 INFO  : Invoking Bootgen: bootgen -image axi_gpio.bif -arch zynq -o C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.sdk\axi_gpio\bootimage\BOOT.bin -w on
+18:25:16 INFO  : Bootgen command execution is done.
+18:28:47 INFO  : Disconnected from the channel tcfchan#1.

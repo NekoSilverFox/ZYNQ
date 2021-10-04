@@ -1,0 +1,6 @@
+verilog xil_defaultlib "../../../bd/linux_usb_design/ip/linux_usb_design_processing_system7_0_0/sim/linux_usb_design_processing_system7_0_0.v" --include "../../../../XC7Z020_410_Linux_usb.srcs/sources_1/bd/linux_usb_design/ipshared/2527/hdl"
+verilog xil_defaultlib "../../../bd/linux_usb_design/hdl/linux_usb_design.v" --include "../../../../XC7Z020_410_Linux_usb.srcs/sources_1/bd/linux_usb_design/ipshared/2527/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

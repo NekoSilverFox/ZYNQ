@@ -1,0 +1,23 @@
+23:05:53 **** Auto Build of configuration Debug for project axi_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../axi_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: axi_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../axi_gpio_bsp/ps7_cortexa9_0/lib -o "axi_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: axi_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size axi_gpio.elf  |tee "axi_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84612	   4184	  23408	 112204	  1b64c	axi_gpio.elf
+'Finished building: axi_gpio.elf.size'
+' '
+
+23:05:56 Build Finished (took 2s.477ms)
+

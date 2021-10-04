@@ -1,0 +1,24 @@
+23:02:42 **** Incremental Build of configuration Debug for project axi_gpio_bsp_xgpio_intr_tapp_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpio_intr_tapp_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_intr_tapp_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../axi_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpio_intr_tapp_example.d" -MT"src/xgpio_intr_tapp_example.o" -o "src/xgpio_intr_tapp_example.o" "../src/xgpio_intr_tapp_example.c"
+../src/xgpio_intr_tapp_example.c: In function 'main':
+../src/xgpio_intr_tapp_example.c:92:33: error: 'XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR' undeclared (first use in this function)
+  #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+                                 ^
+../src/xgpio_intr_tapp_example.c:192:8: note: in expansion of macro 'INTC_GPIO_INTERRUPT_ID'
+        INTC_GPIO_INTERRUPT_ID,
+        ^
+../src/xgpio_intr_tapp_example.c:92:33: note: each undeclared identifier is reported only once for each function it appears in
+  #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+                                 ^
+../src/xgpio_intr_tapp_example.c:192:8: note: in expansion of macro 'INTC_GPIO_INTERRUPT_ID'
+        INTC_GPIO_INTERRUPT_ID,
+        ^
+make: *** [src/xgpio_intr_tapp_example.o] ´íÎó 1
+
+23:02:43 Build Finished (took 1s.68ms)
+

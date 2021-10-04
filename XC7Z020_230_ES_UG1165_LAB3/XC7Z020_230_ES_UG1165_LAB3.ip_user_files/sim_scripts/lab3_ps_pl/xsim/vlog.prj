@@ -1,0 +1,8 @@
+verilog xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_processing_system7_0_0/sim/lab3_ps_pl_processing_system7_0_0.v" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/2527/hdl" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_xbar_0/sim/lab3_ps_pl_xbar_0.v" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/2527/hdl" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_auto_pc_0/sim/lab3_ps_pl_auto_pc_0.v" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/2527/hdl" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/lab3_ps_pl/hdl/lab3_ps_pl.v" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/2527/hdl" --include "../../../../XC7Z020_230_ES_UG1165_LAB3.srcs/sources_1/bd/lab3_ps_pl/ipshared/7e3a/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

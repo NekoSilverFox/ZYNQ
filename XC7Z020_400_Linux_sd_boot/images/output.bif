@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_400_Linux_sd_boot\images\zynq_fsbl.elf
+	C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_400_Linux_sd_boot\images\u-boot.elf
+}

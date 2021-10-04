@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_axi_gpio_0_0/sim/lab3_ps_pl_axi_gpio_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_axi_timer_0_0/sim/lab3_ps_pl_axi_timer_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/lab3_ps_pl/ip/lab3_ps_pl_rst_ps7_0_50M_0/sim/lab3_ps_pl_rst_ps7_0_50M_0.vhd" 
+
+nosort

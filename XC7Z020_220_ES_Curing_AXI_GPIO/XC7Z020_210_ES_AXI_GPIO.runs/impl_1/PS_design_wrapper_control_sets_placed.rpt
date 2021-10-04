@@ -1,0 +1,100 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Sep 23 17:33:12 2021
+| Host         : DESKTOP-HMF772I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file PS_design_wrapper_control_sets_placed.rpt
+| Design       : PS_design_wrapper
+| Device       : xc7z020
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    32 |
+| Unused register locations in slices containing registers |    77 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             111 |           39 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             106 |           30 |
+| Yes          | No                    | No                     |             338 |           86 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                   Clock Signal                   |                                                                          Enable Signal                                                                         |                                                              Set/Reset Signal                                                             | Slice Load Count | Bel Load Count |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/p_2_out12_out                                                                           | PS_design_i/axi_gpio_0/U0/I_SLAVE_ATTACHMENT/rst                                                                                          |                1 |              1 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/bresp_push                               |                                                                                                                                           |                1 |              2 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/clear                                                                        |                1 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_valid_i_reg_0                |                2 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_ready_i_reg_0                |                2 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/rst_ps7_0_50M/U0/EXT_LPF/lpf_int                                                                                              |                1 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[7] |                2 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/rst_ps7_0_50M/U0/SEQ/seq_cnt_en                                                                                                                    | PS_design_i/rst_ps7_0_50M/U0/SEQ/SEQ_COUNTER/clear                                                                                        |                1 |              6 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i[8]_i_1_n_0                                                                          | PS_design_i/axi_gpio_0/U0/I_SLAVE_ATTACHMENT/rst                                                                                          |                2 |              8 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                        | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]               |                3 |              8 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axaddr_incr_reg[11]                   |                                                                                                                                           |                3 |             12 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                  |                                                                                                                                           |                6 |             12 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[0]_i_1_n_0 |                                                                                                                                           |                3 |             12 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/wrap_boundary_axaddr_r_reg[11][0]     |                                                                                                                                           |                8 |             12 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                            |                                                                                                                                           |                4 |             13 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/p_1_in                                               |                                                                                                                                           |                2 |             14 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                           |                3 |             14 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start2                                                                                            | PS_design_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_BKEND_CE_REGISTERS[19].ce_out_i[19]_i_1_n_0                    |                6 |             17 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   |                                                                                                                                           |                7 |             20 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    |                                                                                                                                           |                9 |             20 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                |                                                                                                                                           |                5 |             20 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/axi_gpio_0/U0/I_SLAVE_ATTACHMENT/rst                                                                                          |                9 |             32 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_payload_i_reg[0]_1[0]               |                                                                                                                                           |                9 |             32 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  |                                                                                                                                           |                6 |             32 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[0]_0                                |                                                                                                                                           |                8 |             32 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[0]_0                                |                                                                                                                                           |                6 |             32 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                               |                                                                                                                                           |                9 |             34 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/p_1_in                                               |                                                                                                                                           |                8 |             47 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                           |                8 |             47 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | PS_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                     |               15 |             58 |
+|  PS_design_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                |                                                                                                                                           |               40 |            112 |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 4      |                     6 |
+| 6      |                     1 |
+| 8      |                     2 |
+| 12     |                     4 |
+| 13     |                     1 |
+| 14     |                     2 |
+| 16+    |                    14 |
++--------+-----------------------+
+
+

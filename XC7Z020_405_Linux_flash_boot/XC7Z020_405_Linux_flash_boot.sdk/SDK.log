@@ -1,0 +1,6 @@
+13:44:06 INFO  : Registering command handlers for SDK TCF services
+13:44:06 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_405_Linux_flash_boot\XC7Z020_405_Linux_flash_boot.sdk\temp_xsdb_launch_script.tcl
+13:44:10 INFO  : XSCT server has started successfully.
+13:44:13 INFO  : Successfully done setting XSCT server connection channel  
+13:44:13 INFO  : Successfully done setting SDK workspace  
+13:44:13 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_405_Linux_flash_boot/XC7Z020_405_Linux_flash_boot.sdk/flash_boot_design_wrapper.hdf.

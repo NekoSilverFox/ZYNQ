@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="AxiGpio" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="true" key="wholeword"/>
+		<list key="findhistory">
+			<item value="AXI_Gpio"/>
+			<item value="pPsGpio"/>
+			<item value="PS_Gpio"/>
+			<item value="IntcConfig"/>
+			<item value="PsGpio"/>
+			<item value="ConfigPtr"/>
+			<item value="Gpio"/>
+			<item value="INTC_GPIO_INTERRUPT_ID"/>
+		</list>
+		<list key="replacehistory">
+			<item value="AxiGpio"/>
+			<item value="PsGpio"/>
+			<item value="pPsGpio"/>
+			<item value="pIntcConfig"/>
+			<item value=""/>
+			<item value="pConfigPtr"/>
+			<item value="PS_Gpio"/>
+			<item value="PS_GPIO_INTERRUPT_ID"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="1592" key="DIALOG_X_ORIGIN"/>
+		<item value="442" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

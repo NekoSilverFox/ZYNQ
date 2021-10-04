@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;axi_cdma/src/StandaloneCDMA.c&apos; to &apos;StandaloneCDMA.h&apos;" description="Rename resource &apos;StandaloneCDMA.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/StandaloneCDMA.c" name="StandaloneCDMA.h" stamp="1633076638077" updateReferences="true"/>
+</session>

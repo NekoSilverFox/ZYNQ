@@ -1,0 +1,668 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date             : Fri Oct 01 10:36:19 2021
+| Host             : DESKTOP-HMF772I running 64-bit major release  (build 9200)
+| Command          : report_power -file design_axi_cdma_wrapper_power_routed.rpt -pb design_axi_cdma_wrapper_power_summary_routed.pb -rpx design_axi_cdma_wrapper_power_routed.rpx
+| Design           : design_axi_cdma_wrapper
+| Device           : xc7z020clg400-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 1.720  |
+| Dynamic (W)              | 1.565  |
+| Device Static (W)        | 0.155  |
+| Effective TJA (C/W)      | 11.5   |
+| Max Ambient (C)          | 65.2   |
+| Junction Temperature (C) | 44.8   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.019 |        3 |       --- |             --- |
+| Slice Logic              |     0.006 |    29074 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     9666 |     53200 |           18.17 |
+|   Register               |    <0.001 |    14036 |    106400 |           13.19 |
+|   CARRY4                 |    <0.001 |      209 |     13300 |            1.57 |
+|   F7/F8 Muxes            |    <0.001 |      440 |     53200 |            0.83 |
+|   LUT as Distributed RAM |    <0.001 |      156 |     17400 |            0.90 |
+|   LUT as Shift Register  |    <0.001 |      395 |     17400 |            2.27 |
+|   Others                 |     0.000 |      591 |       --- |             --- |
+| Signals                  |     0.007 |    20763 |       --- |             --- |
+| PS7                      |     1.533 |        1 |       --- |             --- |
+| Static Power             |     0.155 |          |           |                 |
+| Total                    |     1.720 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.047 |       0.032 |      0.015 |
+| Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.759 |       0.728 |      0.030 |
+| Vccpaux   |       1.800 |     0.061 |       0.050 |      0.010 |
+| Vccpll    |       1.800 |     0.019 |       0.016 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------+--------------------------------------------------------------------+-----------------+
+| Clock      | Domain                                                             | Constraint (ns) |
++------------+--------------------------------------------------------------------+-----------------+
+| clk_fpga_0 | design_axi_cdma_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            20.0 |
++------------+--------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                     | Power (W) |
++------------------------------------------------------------------------------------------+-----------+
+| design_axi_cdma_wrapper                                                                  |     1.565 |
+|   design_axi_cdma_i                                                                      |     1.565 |
+|     axi_cdma_0                                                                           |     0.011 |
+|       U0                                                                                 |     0.011 |
+|         GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP                                               |     0.011 |
+|           GEN_DM_FULL.I_DATAMOVER_FULL                                                   |     0.010 |
+|             GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER                                            |     0.003 |
+|               I_ADDR_CNTL                                                                |    <0.001 |
+|                 GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                                           |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|               I_CMD_STATUS                                                               |    <0.001 |
+|                 GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                                       |    <0.001 |
+|                 I_CMD_FIFO                                                               |    <0.001 |
+|               I_MSTR_PCC                                                                 |     0.002 |
+|                 I_END_STRB_GEN                                                           |    <0.001 |
+|                 I_STRT_STRB_GEN                                                          |    <0.001 |
+|               I_RD_DATA_CNTL                                                             |    <0.001 |
+|                 GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                                      |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|               I_RD_STATUS_CNTLR                                                          |    <0.001 |
+|               I_RESET                                                                    |    <0.001 |
+|             GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                                            |     0.007 |
+|               GEN_INCLUDE_PCC.I_MSTR_PCC                                                 |     0.002 |
+|                 I_END_STRB_GEN                                                           |    <0.001 |
+|                 I_STRT_STRB_GEN                                                          |    <0.001 |
+|               I_ADDR_CNTL                                                                |    <0.001 |
+|                 GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                                           |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|               I_CMD_STATUS                                                               |    <0.001 |
+|                 GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                                       |    <0.001 |
+|                 I_CMD_FIFO                                                               |    <0.001 |
+|               I_RESET                                                                    |    <0.001 |
+|               I_S2MM_MMAP_SKID_BUF                                                       |     0.004 |
+|               I_WR_DATA_CNTL                                                             |     0.001 |
+|                 GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                                      |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|               I_WR_STATUS_CNTLR                                                          |    <0.001 |
+|                 GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO                               |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|                 I_WRESP_STATUS_FIFO                                                      |    <0.001 |
+|                   USE_SRL_FIFO.I_SYNC_FIFO                                               |    <0.001 |
+|                     I_SRL_FIFO_RBU_F                                                     |    <0.001 |
+|                       CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
+|                       DYNSHREG_F_I                                                       |    <0.001 |
+|           I_SIMPLE_DMA_CNTLR                                                             |    <0.001 |
+|           I_SIMPLE_REG_MODULE                                                            |    <0.001 |
+|             I_AXI_LITE                                                                   |    <0.001 |
+|             I_REGISTER_BLOCK                                                             |    <0.001 |
+|           I_SIMPLE_RST_MODULE                                                            |    <0.001 |
+|             I_SOFT_RST_CLR_PULSE                                                         |    <0.001 |
+|             I_SOFT_RST_POS_EDGE_DTCT                                                     |    <0.001 |
+|             I_SOFT_RST_PULSEGEN                                                          |    <0.001 |
+|     axi_mem_intercon                                                                     |     0.015 |
+|       m00_couplers                                                                       |     0.004 |
+|         auto_ds                                                                          |     0.004 |
+|           inst                                                                           |     0.004 |
+|             gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst                    |     0.003 |
+|               USE_READ.read_addr_inst                                                    |    <0.001 |
+|                 cmd_queue                                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_12_17                                       |    <0.001 |
+|                                 RAM_reg_0_31_18_23                                       |    <0.001 |
+|                                 RAM_reg_0_31_24_29                                       |    <0.001 |
+|                                 RAM_reg_0_31_30_35                                       |    <0.001 |
+|                                 RAM_reg_0_31_36_37                                       |    <0.001 |
+|                                 RAM_reg_0_31_6_11                                        |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_READ.read_data_inst                                                    |     0.002 |
+|               USE_WRITE.USE_SPLIT.write_resp_inst                                        |    <0.001 |
+|               USE_WRITE.write_addr_inst                                                  |    <0.001 |
+|                 USE_B_CHANNEL.cmd_b_queue                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_6_8                                         |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|                 cmd_queue                                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_12_17                                       |    <0.001 |
+|                                 RAM_reg_0_31_18_23                                       |    <0.001 |
+|                                 RAM_reg_0_31_24_29                                       |    <0.001 |
+|                                 RAM_reg_0_31_30_35                                       |    <0.001 |
+|                                 RAM_reg_0_31_36_37                                       |    <0.001 |
+|                                 RAM_reg_0_31_6_11                                        |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_WRITE.write_data_inst                                                  |    <0.001 |
+|             gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst            |    <0.001 |
+|               gen_axi4_axi3.axi3_conv_inst                                               |    <0.001 |
+|                 USE_READ.USE_SPLIT_R.read_addr_inst                                      |    <0.001 |
+|                   USE_R_CHANNEL.cmd_queue                                                |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_0                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                 USE_READ.USE_SPLIT_R.read_data_inst                                      |    <0.001 |
+|                 USE_WRITE.USE_SPLIT_W.write_resp_inst                                    |    <0.001 |
+|                 USE_WRITE.write_addr_inst                                                |    <0.001 |
+|                   USE_BURSTS.cmd_queue                                                   |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_4                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                   USE_B_CHANNEL.cmd_b_queue                                              |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_4                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                 USE_WRITE.write_data_inst                                                |    <0.001 |
+|         auto_pc                                                                          |    <0.001 |
+|           inst                                                                           |    <0.001 |
+|             gen_axi4_axi3.axi3_conv_inst                                                 |    <0.001 |
+|               USE_WRITE.write_addr_inst                                                  |    <0.001 |
+|                 USE_BURSTS.cmd_queue                                                     |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_4                                         |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_WRITE.write_data_inst                                                  |    <0.001 |
+|       m01_couplers                                                                       |     0.004 |
+|         auto_ds                                                                          |     0.004 |
+|           inst                                                                           |     0.004 |
+|             gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst                    |     0.003 |
+|               USE_READ.read_addr_inst                                                    |    <0.001 |
+|                 cmd_queue                                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_12_17                                       |    <0.001 |
+|                                 RAM_reg_0_31_18_23                                       |    <0.001 |
+|                                 RAM_reg_0_31_24_29                                       |    <0.001 |
+|                                 RAM_reg_0_31_30_35                                       |    <0.001 |
+|                                 RAM_reg_0_31_36_37                                       |    <0.001 |
+|                                 RAM_reg_0_31_6_11                                        |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_READ.read_data_inst                                                    |     0.002 |
+|               USE_WRITE.USE_SPLIT.write_resp_inst                                        |    <0.001 |
+|               USE_WRITE.write_addr_inst                                                  |    <0.001 |
+|                 USE_B_CHANNEL.cmd_b_queue                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_6_8                                         |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|                 cmd_queue                                                                |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_5                                         |    <0.001 |
+|                                 RAM_reg_0_31_12_17                                       |    <0.001 |
+|                                 RAM_reg_0_31_18_23                                       |    <0.001 |
+|                                 RAM_reg_0_31_24_29                                       |    <0.001 |
+|                                 RAM_reg_0_31_30_35                                       |    <0.001 |
+|                                 RAM_reg_0_31_36_37                                       |    <0.001 |
+|                                 RAM_reg_0_31_6_11                                        |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_WRITE.write_data_inst                                                  |    <0.001 |
+|             gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst            |    <0.001 |
+|               gen_axi4_axi3.axi3_conv_inst                                               |    <0.001 |
+|                 USE_READ.USE_SPLIT_R.read_addr_inst                                      |    <0.001 |
+|                   USE_R_CHANNEL.cmd_queue                                                |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_0                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                 USE_READ.USE_SPLIT_R.read_data_inst                                      |    <0.001 |
+|                 USE_WRITE.USE_SPLIT_W.write_resp_inst                                    |    <0.001 |
+|                 USE_WRITE.write_addr_inst                                                |    <0.001 |
+|                   USE_BURSTS.cmd_queue                                                   |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_4                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                   USE_B_CHANNEL.cmd_b_queue                                              |    <0.001 |
+|                     inst                                                                 |    <0.001 |
+|                       fifo_gen_inst                                                      |    <0.001 |
+|                         inst_fifo_gen                                                    |    <0.001 |
+|                           gconvfifo.rf                                                   |    <0.001 |
+|                             grf.rf                                                       |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.rd                                   |    <0.001 |
+|                                 gr1.gr1_int.rfwft                                        |    <0.001 |
+|                                 grss.rsts                                                |    <0.001 |
+|                                 rpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.gl0.wr                                   |    <0.001 |
+|                                 gwss.wsts                                                |    <0.001 |
+|                                 wpntr                                                    |    <0.001 |
+|                               gntv_or_sync_fifo.mem                                      |    <0.001 |
+|                                 gdm.dm_gen.dm                                            |    <0.001 |
+|                                   RAM_reg_0_31_0_4                                       |    <0.001 |
+|                               rstblk                                                     |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst |    <0.001 |
+|                                 ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst |    <0.001 |
+|                 USE_WRITE.write_data_inst                                                |    <0.001 |
+|         auto_pc                                                                          |    <0.001 |
+|           inst                                                                           |    <0.001 |
+|             gen_axi4_axi3.axi3_conv_inst                                                 |    <0.001 |
+|               USE_WRITE.write_addr_inst                                                  |    <0.001 |
+|                 USE_BURSTS.cmd_queue                                                     |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_4                                         |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|               USE_WRITE.write_data_inst                                                  |    <0.001 |
+|       xbar                                                                               |     0.007 |
+|         inst                                                                             |     0.007 |
+|           gen_samd.crossbar_samd                                                         |     0.007 |
+|             addr_arbiter_ar                                                              |    <0.001 |
+|             addr_arbiter_aw                                                              |    <0.001 |
+|             gen_decerr_slave.decerr_slave_inst                                           |    <0.001 |
+|             gen_master_slots[0].reg_slice_mi                                             |     0.003 |
+|               b_pipe                                                                     |    <0.001 |
+|               r_pipe                                                                     |     0.003 |
+|             gen_master_slots[1].reg_slice_mi                                             |     0.004 |
+|               b_pipe                                                                     |    <0.001 |
+|               r_pipe                                                                     |     0.004 |
+|             gen_master_slots[2].reg_slice_mi                                             |    <0.001 |
+|               b_pipe                                                                     |    <0.001 |
+|               r_pipe                                                                     |    <0.001 |
+|             gen_slave_slots[0].gen_si_read.si_transactor_ar                              |    <0.001 |
+|               gen_single_thread.mux_resp_single_thread                                   |    <0.001 |
+|             gen_slave_slots[0].gen_si_write.si_transactor_aw                             |    <0.001 |
+|             gen_slave_slots[0].gen_si_write.splitter_aw_si                               |    <0.001 |
+|             gen_slave_slots[0].gen_si_write.wdata_router_w                               |    <0.001 |
+|               wrouter_aw_fifo                                                            |    <0.001 |
+|                 gen_srls[0].gen_rep[0].srl_nx1                                           |    <0.001 |
+|                 gen_srls[0].gen_rep[1].srl_nx1                                           |    <0.001 |
+|             splitter_aw_mi                                                               |    <0.001 |
+|     axi_timer_0                                                                          |     0.001 |
+|       U0                                                                                 |     0.001 |
+|         AXI4_LITE_I                                                                      |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                             |    <0.001 |
+|             I_DECODER                                                                    |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I              |    <0.001 |
+|         TC_CORE_I                                                                        |     0.001 |
+|           COUNTER_0_I                                                                    |    <0.001 |
+|             COUNTER_I                                                                    |    <0.001 |
+|           GEN_SECOND_TIMER.COUNTER_1_I                                                   |    <0.001 |
+|             COUNTER_I                                                                    |    <0.001 |
+|           READ_MUX_I                                                                     |    <0.001 |
+|           TIMER_CONTROL_I                                                                |    <0.001 |
+|             INPUT_DOUBLE_REGS3                                                           |    <0.001 |
+|     processing_system7_0                                                                 |     1.535 |
+|       inst                                                                               |     1.535 |
+|     ps7_0_axi_periph                                                                     |     0.002 |
+|       s00_couplers                                                                       |     0.002 |
+|         auto_pc                                                                          |     0.002 |
+|           inst                                                                           |     0.002 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s                                         |     0.002 |
+|               RD.ar_channel_0                                                            |    <0.001 |
+|                 ar_cmd_fsm_0                                                             |    <0.001 |
+|                 cmd_translator_0                                                         |    <0.001 |
+|                   incr_cmd_0                                                             |    <0.001 |
+|                   wrap_cmd_0                                                             |    <0.001 |
+|               RD.r_channel_0                                                             |    <0.001 |
+|                 rd_data_fifo_0                                                           |    <0.001 |
+|                 transaction_fifo_0                                                       |    <0.001 |
+|               SI_REG                                                                     |    <0.001 |
+|                 ar_pipe                                                                  |    <0.001 |
+|                 aw_pipe                                                                  |    <0.001 |
+|                 b_pipe                                                                   |    <0.001 |
+|                 r_pipe                                                                   |    <0.001 |
+|               WR.aw_channel_0                                                            |    <0.001 |
+|                 aw_cmd_fsm_0                                                             |    <0.001 |
+|                 cmd_translator_0                                                         |    <0.001 |
+|                   incr_cmd_0                                                             |    <0.001 |
+|                   wrap_cmd_0                                                             |    <0.001 |
+|               WR.b_channel_0                                                             |    <0.001 |
+|                 bid_fifo_0                                                               |    <0.001 |
+|                 bresp_fifo_0                                                             |    <0.001 |
+|       xbar                                                                               |    <0.001 |
+|         inst                                                                             |    <0.001 |
+|           gen_sasd.crossbar_sasd_0                                                       |    <0.001 |
+|             addr_arbiter_inst                                                            |    <0.001 |
+|             gen_decerr.decerr_slave_inst                                                 |    <0.001 |
+|             reg_slice_r                                                                  |    <0.001 |
+|             splitter_ar                                                                  |    <0.001 |
+|             splitter_aw                                                                  |    <0.001 |
+|     rst_ps7_0_50M                                                                        |    <0.001 |
+|       U0                                                                                 |    <0.001 |
+|         EXT_LPF                                                                          |    <0.001 |
+|           ACTIVE_LOW_EXT.ACT_LO_EXT                                                      |    <0.001 |
+|         SEQ                                                                              |    <0.001 |
+|           SEQ_COUNTER                                                                    |    <0.001 |
+|     xlconcat_0                                                                           |     0.000 |
++------------------------------------------------------------------------------------------+-----------+
+
+

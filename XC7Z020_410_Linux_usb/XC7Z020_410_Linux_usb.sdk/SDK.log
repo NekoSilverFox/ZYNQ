@@ -1,0 +1,6 @@
+16:21:12 INFO  : Registering command handlers for SDK TCF services
+16:21:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_410_Linux_usb\XC7Z020_410_Linux_usb.sdk\temp_xsdb_launch_script.tcl
+16:21:16 INFO  : XSCT server has started successfully.
+16:21:17 INFO  : Successfully done setting XSCT server connection channel  
+16:21:17 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_410_Linux_usb/XC7Z020_410_Linux_usb.sdk/linux_usb_design_wrapper.hdf.
+16:21:17 INFO  : Successfully done setting SDK workspace  

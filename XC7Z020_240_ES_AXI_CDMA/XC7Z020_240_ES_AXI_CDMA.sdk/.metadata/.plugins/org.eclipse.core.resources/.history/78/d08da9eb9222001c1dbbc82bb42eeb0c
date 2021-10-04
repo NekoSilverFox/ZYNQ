@@ -1,0 +1,15 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021Äê10ÔÂ1ÈÕ
+ *      Author: mi
+ */
+
+#include "StandaloneCDMA.h"
+#include "StandaloneCDMA_Xiline.h"
+
+int main() {
+	//RunStandaloneCDMA();
+
+	testcdmaexample();
+}

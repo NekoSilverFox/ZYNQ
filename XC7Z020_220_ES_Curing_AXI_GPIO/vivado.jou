@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Sep 23 18:14:38 2021
+# Process ID: 104976
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent98208 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_220_ES_Curing_AXI_GPIO\XC7Z020_210_ES_AXI_GPIO.xpr
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/vivado.log
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.xpr
+open_bd_design {C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_220_ES_Curing_AXI_GPIO/XC7Z020_210_ES_AXI_GPIO.srcs/sources_1/bd/PS_design/PS_design.bd}
