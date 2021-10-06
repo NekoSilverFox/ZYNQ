@@ -174,8 +174,6 @@
 
       
 
-      
-
 6. 将 Boot.bin 和 image.ub 拷贝至 SD 卡中
 
 7. 开发板设置为 SD 模式，启动
@@ -188,9 +186,59 @@
 
    ![image-20211003193649748](README.assets/image-20211003193649748.png)
 
+#### 驱动 USB 外设
 
+1. 根据开发板原理图，开启 USB 对应的端口，**并打开 GPIO MIO，设置 USB 的 Reset 端口！**
 
+   可以根据选择，将 USB 的速度设置为 fast
 
+   ![image-20211006183812519](README.assets/image-20211006183812519.png)
+
+   ![image-20211006183527601](README.assets/image-20211006183527601.png)
+
+2. 其他地方同上一实验保持一致，导出硬件设计，打开SDK，得到 `.hdf` 硬件描述文件
+
+3. 使用 PetaLinux 创建并配置工程，这两步同样保持默认配置
+
+4. 配置 USB
+
+   1. 为了支持USB 外设，这里要配置Kernel ，从Xilinx 官方Wiki http://www.wiki.xilinx.com/Zynq+Linux+USB+Device+Driver 可知，USB 设备有三种配置， 即HOST 模式，Peripheral 模式和OTG 模式，各模式的配置如下：
+
+      - HOST 模式
+
+        ![image-20211006184512112](README.assets/image-20211006184512112.png)
+
+      - Peripheral Mode
+
+        ![image-20211006184519835](README.assets/image-20211006184519835.png)
+
+      - OTG
+
+        ![image-20211006184552616](README.assets/image-20211006184552616.png)
+
+      使用以下命令入**kernal 配置界面：**
+
+      ```bash
+      petalinux-config –c kernal
+      ```
+
+      按需要，将 USB 配置成所需的模式，保存退出
+
+5. **修改设备树**
+
+   **为支持 USB 设备的使用**，我们需要在设备树文件中添加关于USB 的相关内容， 打开目录`~工作目录/project-spec/meta-user/recipes-bsp/device-tree/files` 下的 **`system-user.dtsi`** 文件，并在其中添加以下内容并保存。
+
+   ![image-20211006213101546](README.assets/image-20211006213101546.png)
+
+6. 编译工程，得到 zynq_fsbl.elf， u-boot.elf 和image.ub
+
+   ```bash
+   petalinux-build
+   ```
+
+7. 打包（参考上个任务）
+
+8. 开发板验证
 
 
 
