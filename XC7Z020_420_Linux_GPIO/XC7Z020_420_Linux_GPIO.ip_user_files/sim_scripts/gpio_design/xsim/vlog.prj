@@ -1,0 +1,7 @@
+verilog xil_defaultlib "../../../bd/gpio_design/ip/gpio_design_processing_system7_0_0/sim/gpio_design_processing_system7_0_0.v" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/2527/hdl" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/gpio_design/ip/gpio_design_auto_pc_0/sim/gpio_design_auto_pc_0.v" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/2527/hdl" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/gpio_design/hdl/gpio_design.v" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/2527/hdl" --include "../../../../XC7Z020_420_Linux_GPIO.srcs/sources_1/bd/gpio_design/ipshared/7e3a/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

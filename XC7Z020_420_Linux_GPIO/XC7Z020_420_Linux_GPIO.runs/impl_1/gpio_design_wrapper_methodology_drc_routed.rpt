@@ -1,0 +1,45 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Oct 07 11:33:31 2021
+| Host         : DESKTOP-HMF772I running 64-bit major release  (build 9200)
+| Command      : report_methodology -file gpio_design_wrapper_methodology_drc_routed.rpt -rpx gpio_design_wrapper_methodology_drc_routed.rpx
+| Design       : gpio_design_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 2          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on axi_gpio_tri_io[0] relative to clock(s) clk_fpga_0 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on axi_gpio_tri_io[1] relative to clock(s) clk_fpga_0 
+Related violations: <none>
+
+

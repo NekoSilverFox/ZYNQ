@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Oct 07 11:30:53 2021
+# Process ID: 117544
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_420_Linux_GPIO/XC7Z020_420_Linux_GPIO.runs/synth_1
+# Command line: vivado.exe -log gpio_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gpio_design_wrapper.tcl
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_420_Linux_GPIO/XC7Z020_420_Linux_GPIO.runs/synth_1/gpio_design_wrapper.vds
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_420_Linux_GPIO/XC7Z020_420_Linux_GPIO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gpio_design_wrapper.tcl -notrace

@@ -1,0 +1,35 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Oct 07 11:33:30 2021
+| Host         : DESKTOP-HMF772I running 64-bit major release  (build 9200)
+| Command      : report_drc -file gpio_design_wrapper_drc_routed.rpt -pb gpio_design_wrapper_drc_routed.pb -rpx gpio_design_wrapper_drc_routed.rpx
+| Design       : gpio_design_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+

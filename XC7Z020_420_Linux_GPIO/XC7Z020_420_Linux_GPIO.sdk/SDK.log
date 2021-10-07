@@ -1,0 +1,6 @@
+11:36:05 INFO  : Registering command handlers for SDK TCF services
+11:36:06 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_420_Linux_GPIO\XC7Z020_420_Linux_GPIO.sdk\temp_xsdb_launch_script.tcl
+11:36:10 INFO  : XSCT server has started successfully.
+11:36:14 INFO  : Successfully done setting XSCT server connection channel  
+11:36:14 INFO  : Successfully done setting SDK workspace  
+11:36:14 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_420_Linux_GPIO/XC7Z020_420_Linux_GPIO.sdk/gpio_design_wrapper.hdf.
