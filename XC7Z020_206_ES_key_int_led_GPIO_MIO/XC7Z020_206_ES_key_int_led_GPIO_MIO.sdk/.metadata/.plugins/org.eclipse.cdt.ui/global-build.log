@@ -1,0 +1,2237 @@
+15:11:44 **** Build of project key_control_led_GPIO_EMIO_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+15:12:18 **** Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+xil-crt0.S:(.text+0x68): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [key_control_led_GPIO_EMIO.elf] ´íÎó 1
+15:12:21 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+xil-crt0.S:(.text+0x68): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [key_control_led_GPIO_EMIO.elf] ´íÎó 1
+15:13:32 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:21:58 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:22:41 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:22:51 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:23:57 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82144	   2592	  23376	 108112	  1a650	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:28:31 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:116:16: error: expected expression before 'XGpioPs'
+   XGpioPs_Read(XGpioPs *InstancePtr, u8 Bank)
+                ^
+../src/main.c:116:3: error: too few arguments to function 'XGpioPs_Read'
+   XGpioPs_Read(XGpioPs *InstancePtr, u8 Bank)
+   ^
+In file included from ../src/main.c:12:0:
+../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include/xgpiops.h:216:5: note: declared here
+ u32 XGpioPs_Read(XGpioPs *InstancePtr, u8 Bank);
+     ^
+../src/main.c:121:3: error: expected ';' before 'XGpioPs_WritePin'
+   XGpioPs_WritePin(&Gpio, MIO_LED1, 0x0);
+   ^
+make: *** [src/main.o] ´íÎó 1
+15:29:24 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:116:23: error: expected expression before 'u8'
+   XGpioPs_Read(&Gpio, u8 Bank)
+                       ^
+../src/main.c:121:3: error: expected ';' before 'XGpioPs_WritePin'
+   XGpioPs_WritePin(&Gpio, MIO_LED1, 0x0);
+   ^
+make: *** [src/main.o] ´íÎó 1
+15:29:40 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82144	   2592	  23376	 108112	  1a650	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:30:27 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:117:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'XGpioPs_Read'
+   u32 key XGpioPs_Read(&Gpio, MIO_KEY1);
+           ^
+../src/main.c:114:6: warning: unused variable 'key_value' [-Wunused-variable]
+  u32 key_value = 0;
+      ^
+make: *** [src/main.o] ´íÎó 1
+15:30:36 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:117:3: error: 'key_velue' undeclared (first use in this function)
+   key_velue = XGpioPs_Read(&Gpio, MIO_KEY1);
+   ^
+../src/main.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:114:6: warning: unused variable 'key_value' [-Wunused-variable]
+  u32 key_value = 0;
+      ^
+make: *** [src/main.o] ´íÎó 1
+15:30:41 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:114:6: warning: variable 'key_value' set but not used [-Wunused-but-set-variable]
+  u32 key_value = 0;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82144	   2592	  23376	 108112	  1a650	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:32:34 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:33:19 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:33:40 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:36:40 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:37:31 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:38:43 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:39:02 **** Auto Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: key_control_led_GPIO_EMIO.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../key_control_led_GPIO_EMIO_bsp/ps7_cortexa9_0/lib -o "key_control_led_GPIO_EMIO.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: key_control_led_GPIO_EMIO.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size key_control_led_GPIO_EMIO.elf  |tee "key_control_led_GPIO_EMIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82208	   2592	  23376	 108176	  1a690	key_control_led_GPIO_EMIO.elf
+'Finished building: key_control_led_GPIO_EMIO.elf.size'
+' '
+15:42:11 **** Incremental Build of configuration Debug for project key_control_led_GPIO_EMIO ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:58:20 **** Build of project GPIO_MIO_INTERRUPT_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+21:58:51 **** Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22336	   1148	  22568	  46052	   b3e4	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+21:58:55 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/helloworld.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:79: multiple definition of `main'
+./src/helloworld.o:C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/helloworld.c:54: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+21:59:15 **** Clean-only build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/main.o ./src/platform.o  ./src/helloworld.d ./src/main.d ./src/platform.d  GPIO_MIO_INTERRUPT.elf.size  GPIO_MIO_INTERRUPT.elf
+' '
+21:59:16 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82080	   2592	  23376	 108048	  1a610	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+22:04:29 **** Build of configuration Debug for project GPIO_MIO_INTERRUPT_bsp_xgpiops_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpiops_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpiops_intr_example.d" -MT"src/xgpiops_intr_example.o" -o "src/xgpiops_intr_example.o" "../src/xgpiops_intr_example.c"
+In file included from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xil_io.h:68:0,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops_hw.h:67,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:114,
+                 from ../src/xgpiops_intr_example.c:61:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:54:30: fatal error: xpseudo_asm_gcc.h: No such file or directory
+compilation terminated.
+make: *** [src/xgpiops_intr_example.o] ´íÎó 1
+22:04:32 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT_bsp_xgpiops_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpiops_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpiops_intr_example.d" -MT"src/xgpiops_intr_example.o" -o "src/xgpiops_intr_example.o" "../src/xgpiops_intr_example.c"
+In file included from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xil_io.h:68:0,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops_hw.h:67,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:114,
+                 from ../src/xgpiops_intr_example.c:61:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:54:30: fatal error: xpseudo_asm_gcc.h: No such file or directory
+compilation terminated.
+make: *** [src/xgpiops_intr_example.o] ´íÎó 1
+22:10:16 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:38:33: error: unknown type name 'XScuGic'
+ static int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                                 ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:115:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:115:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:115:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+../src/main.c:115:32: error: 'Intc' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+../src/main.c:115:44: error: 'GPIO_INTERRUPT_ID' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                            ^
+make: *** [src/main.o] ´íÎó 1
+22:10:29 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:38:26: error: unknown type name 'XScuGic'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                          ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:115:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:115:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:115:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+../src/main.c:115:32: error: 'Intc' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+../src/main.c:115:44: error: 'GPIO_INTERRUPT_ID' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                            ^
+make: *** [src/main.o] ´íÎó 1
+22:11:18 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:39:26: error: unknown type name 'XScuGic'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                          ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:116:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:116:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:116:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+../src/main.c:116:32: error: 'Intc' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+make: *** [src/main.o] ´íÎó 1
+22:12:32 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:39:26: error: unknown type name 'XScuGic'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                          ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:116:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:116:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:116:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+../src/main.c:116:32: error: 'Intc' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+make: *** [src/main.o] ´íÎó 1
+22:12:33 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:39:26: error: unknown type name 'XScuGic'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                          ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:116:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:116:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:116:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+../src/main.c:116:32: error: 'Intc' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+make: *** [src/main.o] ´íÎó 1
+22:14:24 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:23:1: error: unknown type name 'XScuGic'
+ XScuGic Intc; /* The Instance of the Interrupt Controller Driver */
+ ^
+../src/main.c:46:26: error: unknown type name 'XScuGic'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+                          ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:121:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:121:11: warning: implicit declaration of function 'SetupInterruptSystem' [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+           ^
+make: *** [src/main.o] ´íÎó 1
+22:15:09 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:121:32: error: incompatible type for argument 1 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+../src/main.c:46:5: note: expected 'XScuGic * {aka struct <anonymous> *}' but argument is of type 'XScuGic {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+../src/main.c:121:38: error: incompatible type for argument 2 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                      ^
+../src/main.c:46:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+make: *** [src/main.o] ´íÎó 1
+22:15:17 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:121:32: error: incompatible type for argument 1 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+../src/main.c:46:5: note: expected 'XScuGic * {aka struct <anonymous> *}' but argument is of type 'XScuGic {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+../src/main.c:121:38: error: incompatible type for argument 2 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                      ^
+../src/main.c:46:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+make: *** [src/main.o] ´íÎó 1
+22:15:27 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+  ^
+../src/main.c:121:32: error: incompatible type for argument 1 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                ^
+../src/main.c:46:5: note: expected 'XScuGic * {aka struct <anonymous> *}' but argument is of type 'XScuGic {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+../src/main.c:121:38: error: incompatible type for argument 2 of 'SetupInterruptSystem'
+  Status = SetupInterruptSystem(Intc, Gpio, GPIO_INTERRUPT_ID);
+                                      ^
+../src/main.c:46:5: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+     ^
+make: *** [src/main.o] ´íÎó 1
+22:15:54 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:16:45 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:17:46 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:59:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:59:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:95:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:99:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:121:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:19:13 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:53:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:53:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:74:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:82:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:85:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:89:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:111:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:19:30 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:53:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:53:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:70:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:78:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:81:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:85:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:107:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:19:36 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:53:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^
+../src/main.c:53:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:69:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:77:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:80:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:84:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:106:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:20:17 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:70:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:70:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:78:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:81:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:85:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:107:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:20:53 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:70:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:70:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:78:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:81:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:85:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:107:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:24:59 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:67:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:67:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:75:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:78:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:82:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:104:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:25:26 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:2: error: 'Status' undeclared (first use in this function)
+  Status = XScuGic_Connect(GicInstancePtr, GpioIntrId,
+  ^
+../src/main.c:66:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:74:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:77:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:81:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+../src/main.c: In function 'shift_one_led':
+../src/main.c:103:2: error: 'Status' undeclared (first use in this function)
+  Status = SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+  ^
+make: *** [src/main.o] ´íÎó 1
+22:29:28 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:65:6: error: 'Status' undeclared (first use in this function)
+  if (Status != XST_SUCCESS) {
+      ^
+../src/main.c:65:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:70:28: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_SetIntrType(Gpio, INPUT_BANK, 0x00, 0x00, 0x00);
+                            ^
+../src/main.c:73:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:77:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+make: *** [src/main.o] ´íÎó 1
+22:39:32 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:70:25: warning: passing argument 1 of 'XGpioPs_SetIntrTypePin' from incompatible pointer type [-Wincompatible-pointer-types]
+  XGpioPs_SetIntrTypePin(&Gpio, MIO_KEY1, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
+                         ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:251:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ void XGpioPs_SetIntrTypePin(XGpioPs *InstancePtr, u32 Pin, u8 IrqType);
+      ^
+../src/main.c:73:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:73:49: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:77:27: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                           ^
+../src/main.c:77:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+make: *** [src/main.o] ´íÎó 1
+22:40:14 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:70:25: warning: passing argument 1 of 'XGpioPs_SetIntrTypePin' from incompatible pointer type [-Wincompatible-pointer-types]
+  XGpioPs_SetIntrTypePin(&Gpio, MIO_KEY1, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
+                         ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:251:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs ** {aka struct <anonymous> **}'
+ void XGpioPs_SetIntrTypePin(XGpioPs *InstancePtr, u32 Pin, u8 IrqType);
+      ^
+../src/main.c:73:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:73:49: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:77:27: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                           ^
+../src/main.c:77:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+make: *** [src/main.o] ´íÎó 1
+22:40:36 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:73:49: error: 'IntrHandler' undeclared (first use in this function)
+  XGpioPs_SetCallbackHandler(Gpio, (void *)Gpio, IntrHandler);
+                                                 ^
+../src/main.c:73:49: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:77:27: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                           ^
+../src/main.c:77:45: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnable(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                             ^
+make: *** [src/main.o] ´íÎó 1
+22:45:51 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler,
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:73:30: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                              ^
+../src/main.c:73:48: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                                ^
+../src/main.c:73:2: error: too many arguments to function 'XGpioPs_IntrEnablePin'
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+  ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:254:6: note: declared here
+ void XGpioPs_IntrEnablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:21:53 **** Clean-only build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  GPIO_MIO_INTERRUPT.elf.size  GPIO_MIO_INTERRUPT.elf
+' '
+19:21:54 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:73:30: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                              ^
+../src/main.c:73:48: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                                ^
+../src/main.c:73:2: error: too many arguments to function 'XGpioPs_IntrEnablePin'
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+  ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:254:6: note: declared here
+ void XGpioPs_IntrEnablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:22:44 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:73:30: error: 'INPUT_BANK' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                              ^
+../src/main.c:73:48: error: 'Output_Pin' undeclared (first use in this function)
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+                                                ^
+../src/main.c:73:2: error: too many arguments to function 'XGpioPs_IntrEnablePin'
+  XGpioPs_IntrEnablePin(Gpio, INPUT_BANK, (1 << Output_Pin));
+  ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:254:6: note: declared here
+ void XGpioPs_IntrEnablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:29:25 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:30:39 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:31:10 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:31:13 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:32:00 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:66:27: error: 'IntrHandler' undeclared (first use in this function)
+     (Xil_ExceptionHandler)IntrHandler, /* ÖÐ¶Ï´¦Àíº¯Êý */
+                           ^
+../src/main.c:66:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:32:05 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:30:13: warning: 'IntrHandler' used but never defined
+ static void IntrHandler(void *CallBackRef, u32 Bank, u32 Status);
+             ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:32:08 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:32:51 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:66: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:33:08 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:33:22 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:33:46 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:70: undefined reference to `IntrHandler'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:35:48 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:113:1: error: number of arguments doesn't match prototype
+ void IntrHandler() {
+ ^
+../src/main.c:30:6: error: prototype declaration
+ void IntrHandler(void *CallBackRef, u32 Bank, u32 Status);
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:35:55 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84692	   4168	  23392	 112252	  1b67c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:36:05 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84692	   4168	  23392	 112252	  1b67c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:38:14 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:109:15: warning: implicit declaration of function 'XgpioPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = XgpioPs_ReadPin(&Gpio, MIO_KEY1)
+               ^
+../src/main.c:112:3: error: expected ';' before 'XGpioPs_WritePin'
+   XGpioPs_WritePin(&Gpio, MIO50_LED1, 0x0);
+   ^
+../src/main.c:107:6: warning: variable 'key_value' set but not used [-Wunused-but-set-variable]
+  int key_value;
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:38:16 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:109:15: warning: implicit declaration of function 'XgpioPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = XgpioPs_ReadPin(&Gpio, MIO_KEY1);
+               ^
+../src/main.c:107:6: warning: variable 'key_value' set but not used [-Wunused-but-set-variable]
+  int key_value;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:71: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:71: undefined reference to `IntrHandler'
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:109: undefined reference to `XgpioPs_ReadPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:38:52 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:109:15: warning: implicit declaration of function 'XgpioPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = XgpioPs_ReadPin(&Gpio, MIO_KEY1);
+               ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `SetupInterruptSystem':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:71: undefined reference to `IntrHandler'
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:71: undefined reference to `IntrHandler'
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:109: undefined reference to `XgpioPs_ReadPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:39:35 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:113:15: warning: implicit declaration of function 'XgpioPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = XgpioPs_ReadPin(&Gpio, MIO_KEY1);
+               ^
+../src/main.c: At top level:
+../src/main.c:121:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:39:41 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:113:15: warning: implicit declaration of function 'XgpioPs_ReadPin' [-Wimplicit-function-declaration]
+   key_value = XgpioPs_ReadPin(&Gpio, MIO_KEY1);
+               ^
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO\XC7Z020_206_ES_key_interrupt_control_led_GPIO_MIO.sdk\GPIO_MIO_INTERRUPT\Debug/../src/main.c:113: undefined reference to `XgpioPs_ReadPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GPIO_MIO_INTERRUPT.elf] ´íÎó 1
+19:39:58 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84372	   4168	  23392	 111932	  1b53c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:42:28 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:44:07 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84372	   4168	  23392	 111932	  1b53c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:45:02 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:88:25: error: incompatible type for argument 1 of 'XGpioPs_IntrDisablePin'
+  XGpioPs_IntrDisablePin(Gpio, MIO_KEY1)
+                         ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:255:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ void XGpioPs_IntrDisablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+../src/main.c:89:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:45:14 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:88:25: error: incompatible type for argument 1 of 'XGpioPs_IntrDisablePin'
+  XGpioPs_IntrDisablePin(Gpio, MIO_KEY1)
+                         ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:255:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ void XGpioPs_IntrDisablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+../src/main.c:89:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:45:19 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:88:25: error: incompatible type for argument 1 of 'XGpioPs_IntrDisablePin'
+  XGpioPs_IntrDisablePin(Gpio, MIO_KEY1);
+                         ^
+In file included from ../src/main.c:10:0:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:255:6: note: expected 'XGpioPs * {aka struct <anonymous> *}' but argument is of type 'XGpioPs {aka struct <anonymous>}'
+ void XGpioPs_IntrDisablePin(XGpioPs *InstancePtr, u32 Pin);
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:45:55 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84372	   4168	  23392	 111932	  1b53c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:46:05 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:46:19 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:48:17 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'IntrHandler':
+../src/main.c:87:2: error: 'key_press' undeclared (first use in this function)
+  key_press = 1;
+  ^
+../src/main.c:87:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:48:27 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:49:08 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:119:7: error: expected expression before ')' token
+   if ()
+       ^
+../src/main.c:122:39: error: 'led_value' undeclared (first use in this function)
+   XGpioPs_WritePin(&Gpio, MIO50_LED1, led_value);
+                                       ^
+../src/main.c:122:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:117:6: warning: unused variable 'key_value' [-Wunused-variable]
+  int key_value;
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:49:33 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:119:7: error: expected expression before ')' token
+   if ()
+       ^
+../src/main.c:122:39: error: 'led_value' undeclared (first use in this function)
+   XGpioPs_WritePin(&Gpio, MIO50_LED1, led_value);
+                                       ^
+../src/main.c:122:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:117:6: warning: unused variable 'key_value' [-Wunused-variable]
+  int key_value;
+      ^
+make: *** [src/main.o] ´íÎó 1
+19:49:44 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:119:7: error: expected expression before ')' token
+   if ()
+       ^
+make: *** [src/main.o] ´íÎó 1
+19:49:54 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:119:7: error: expected expression before ')' token
+   if ()
+       ^
+make: *** [src/main.o] ´íÎó 1
+19:50:27 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:50:35 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:50:50 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:51:26 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:51:35 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:126:3: error: stray '\243' in program
+   key_press = 0£»
+   ^
+../src/main.c:126:3: error: stray '\273' in program
+../src/main.c:127:2: error: expected ';' before '}' token
+  }
+  ^
+make: *** [src/main.o] ´íÎó 1
+19:52:09 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:54:04 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:54:19 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84436	   4168	  23392	 111996	  1b57c	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:54:45 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:124:32: error: expected expression before 'u32'
+    XGpioPs_IntrClearPin(&Gpio, u32 Pin);
+                                ^
+make: *** [src/main.o] ´íÎó 1
+19:54:50 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:54:59 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:57:28 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:58:20 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:59:06 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:59:14 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:59:21 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+19:59:23 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:03:05 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+20:03:34 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:04:46 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+20:05:15 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84500	   4168	  23392	 112060	  1b5bc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+20:12:48 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: GPIO_MIO_INTERRUPT.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/lib -o "GPIO_MIO_INTERRUPT.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_MIO_INTERRUPT.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_MIO_INTERRUPT.elf  |tee "GPIO_MIO_INTERRUPT.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84564	   4168	  23392	 112124	  1b5fc	GPIO_MIO_INTERRUPT.elf
+'Finished building: GPIO_MIO_INTERRUPT.elf.size'
+' '
+20:12:51 **** Incremental Build of configuration Debug for project GPIO_MIO_INTERRUPT ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Oct 08 11:53:02 2021
+# Process ID: 107020
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_430_Linux_LCD/XC7Z020_430_Linux_LCD.runs/synth_1
+# Command line: vivado.exe -log lcd_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_design_wrapper.tcl
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_430_Linux_LCD/XC7Z020_430_Linux_LCD.runs/synth_1/lcd_design_wrapper.vds
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_430_Linux_LCD/XC7Z020_430_Linux_LCD.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lcd_design_wrapper.tcl -notrace

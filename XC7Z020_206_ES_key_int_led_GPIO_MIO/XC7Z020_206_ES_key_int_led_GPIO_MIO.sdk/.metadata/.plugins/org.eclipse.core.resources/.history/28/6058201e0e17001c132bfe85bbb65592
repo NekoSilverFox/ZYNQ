@@ -1,0 +1,127 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021年9月14日
+ *      Author: NekoSilverfox
+ */
+
+#include <stdio.h>
+#include "xparameters.h" // 器件参数信息
+#include "xgpiops.h"     // 包含PS GPIO的函数
+#include "xscugic.h"	// Intc
+#include "sleep.h"       // 包含sleep()函数
+
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID	/* GPIO 终断号 */
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID/* SCU GIC ID */
+#define GPIO_INTERRUPT_ID	XPAR_XGPIOPS_0_INTR
+
+//连接到MIO的LED
+#define MIO50_LED1 			50							/* 核心板PS端LED */
+#define MIO51_LED2 			51
+
+//连接到MIO的KEY
+#define MIO_KEY1			0
+
+XGpioPs_Config* ConfigPtr = NULL;
+XScuGic_Config *IntcConfig; /* Instance of the interrupt controller */
+XGpioPs Gpio;	/* The driver instance for GPIO Device. */
+XScuGic Intc; /* The Instance of the Interrupt Controller Driver */
+u32 key_press = 0;
+
+void IntrHandler();
+void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,u16 GpioIntrId);
+
+/*****************************************************************************/
+/**
+*
+* This function sets up the interrupt system for the example. It enables falling
+* edge interrupts for all the pins of bank 0 in the GPIO device.
+*
+* @param	GicInstancePtr is a pointer to the XScuGic driver Instance.
+* @param	GpioInstancePtr contains a pointer to the instance of the GPIO
+*		component which is going to be connected to the interrupt
+*		controller.
+* @param	GpioIntrId is the interrupt Id and is typically
+*		XPAR_<GICPS>_<GPIOPS_instance>_VEC_ID value from
+*		xparameters.h.
+*
+* @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
+*
+* @note		None.
+*
+****************************************************************************/
+void SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+				u16 GpioIntrId)
+{
+	// 查找GIC期间配置信息，并进行初始化
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	XScuGic_CfgInitialize(GicInstancePtr, IntcConfig,IntcConfig->CpuBaseAddress);
+
+
+	// 初始化ARM处理器异常句柄
+	Xil_ExceptionInit();
+	// 给IRQ注册异常处理程序
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+				(Xil_ExceptionHandler)XScuGic_InterruptHandler,
+				GicInstancePtr);
+	// 使能处理器中断
+	Xil_ExceptionEnableMask(XIL_EXCEPTION_IRQ);
+
+
+	// 关联中断处理函数
+	XScuGic_Connect(GicInstancePtr, GpioIntrId,		/* 中断ID */
+				(Xil_ExceptionHandler)IntrHandler,	/* 中断处理函数 */
+				(void *)Gpio);
+
+
+	// 为 GPIO 器件使能中断，打开 GPIO 外设
+	XScuGic_Enable(GicInstancePtr, GpioIntrId);
+	// 设置MIO引脚中断触发类型：										下降沿
+	XGpioPs_SetIntrTypePin(Gpio, MIO_KEY1, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
+	// 打开 MIO 引脚中断使能信号
+	XGpioPs_IntrEnablePin(Gpio, MIO_KEY1);
+}
+
+void IntrHandler() {
+	printf("Interrupt detected!\n\r");
+
+	key_press = 1;
+
+	// 屏蔽（关闭）中断
+	XGpioPs_IntrDisablePin(&Gpio, MIO_KEY1);
+}
+
+int main() {
+	printf("GPIO INTERRUPT TEST!\n\r");
+
+	// 0. 初始化GPIO驱动
+	// 查找器件的ID，查找器件的配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+
+	// 初始化GPIO驱动
+	int Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr, ConfigPtr->BaseAddr);
+    if (Status != XST_SUCCESS){
+        return XST_FAILURE;
+    }
+
+
+	// 1. GPIO方向设置为输出（0 - 输入；1 - 输出）
+	XGpioPs_SetDirectionPin(&Gpio, MIO50_LED1, 1);
+
+	// 2. 设置输出使能（0 - 关闭输出使能；1 - 打开输出使能）
+	XGpioPs_SetOutputEnablePin(&Gpio, MIO50_LED1, 1);
+
+	// 设置中断系统
+	SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+
+	int led_value =0;
+	while(1) {
+		if ()
+
+		// 将 led_value 的值写入变量
+		XGpioPs_WritePin(&Gpio, MIO50_LED1, led_value);
+	}
+
+	return 0;
+}
+

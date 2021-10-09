@@ -1,0 +1,17 @@
+22:04:32 **** Auto Build of configuration Debug for project GPIO_MIO_INTERRUPT_bsp_xgpiops_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xgpiops_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpiops_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpiops_intr_example.d" -MT"src/xgpiops_intr_example.o" -o "src/xgpiops_intr_example.o" "../src/xgpiops_intr_example.c"
+In file included from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xil_io.h:68:0,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops_hw.h:67,
+                 from ../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xgpiops.h:114,
+                 from ../src/xgpiops_intr_example.c:61:
+../../GPIO_MIO_INTERRUPT_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:54:30: fatal error: xpseudo_asm_gcc.h: No such file or directory
+compilation terminated.
+make: *** [src/xgpiops_intr_example.o] ´íÎó 1
+
+22:04:34 Build Finished (took 1s.824ms)
+

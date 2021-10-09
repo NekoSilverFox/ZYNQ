@@ -240,9 +240,21 @@
 
 8. 开发板验证
 
+### 编写Linux应用程序
+
+![image-20211008112326105](README.assets/image-20211008112326105.png)
+
+![image-20211008104918760](README.assets/image-20211008104918760.png)
+
+   ![image-20211008112754203](README.assets/image-20211008112754203.png)
+
+**使用交叉编译工具，由 PetaLinux提供**
+
+```bash
+arm-linux-gnueabinf-gcc -o 输出文件名 main.c
+```
 
 
-   
 
 
 

@@ -15,9 +15,9 @@
 #include "StandaloneCDMA_Linux.h"
 
 int main() {
-//	RunStandaloneCDMA();
+	RunStandaloneCDMA();
 
-	testcdmaexample();
+//	testcdmaexample();
 
 
 	/**
@@ -32,4 +32,6 @@ int main() {
 	 * 9. dow <tutorial_download_path>/u-boot.elf œ¬‘ÿ PetaLinux U-Boot.elf°£
 	 */
 //	RunStandaloneCDMA_Linux();
+
+	while(1);
 }

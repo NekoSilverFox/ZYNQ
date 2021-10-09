@@ -1,42 +1,8 @@
-15:41:41 **** Incremental Build of configuration Debug for project axi_cdma ****
+15:20:42 **** Incremental Build of configuration Debug for project axi_cdma ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../axi_cdma_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../../axi_cdma_bsp/ps7_cortexa9_0/include/xaxicdma_bd.h:58:0,
-                 from ../../axi_cdma_bsp/ps7_cortexa9_0/include/xaxicdma.h:347,
-                 from ../src/StandaloneCDMA.h:13,
-                 from ../src/main.c:13:
-../src/StandaloneCDMA.h: In function 'hs_timer':
-../../axi_cdma_bsp/ps7_cortexa9_0/include/xstatus.h:60:41: warning: 'return' with a value, in function returning void
- #define XST_FAILURE                     1L
-                                         ^
-../src/StandaloneCDMA.h:45:16: note: in expansion of macro 'XST_FAILURE'
-         return XST_FAILURE;
-                ^
-In file included from ../src/main.c:13:0:
-../src/StandaloneCDMA.h: In function 'RunStandaloneCDMA':
-../src/StandaloneCDMA.h:62:10: warning: unused variable 'rd_ram' [-Wunused-variable]
-     u32 *rd_ram    = (u32 *) BRAM_GP0_ADDR;
-          ^
-../src/StandaloneCDMA.h:58:10: warning: unused variable 'Saddr2' [-Wunused-variable]
-     u32 *Saddr2 = (u32 *)0x02000000;
-          ^
-'Finished building: ../src/main.c'
-' '
-'Building target: axi_cdma.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../axi_cdma_bsp/ps7_cortexa9_0/lib -o "axi_cdma.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: axi_cdma.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size axi_cdma.elf  |tee "axi_cdma.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  89908	   4204	  32288	 126400	  1edc0	axi_cdma.elf
-'Finished building: axi_cdma.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-15:41:44 Build Finished (took 2s.326ms)
+15:20:43 Build Finished (took 522ms)
 
