@@ -258,3 +258,192 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
 
 
+### 用户自定义IP（LCD）屏幕上运行Linux
+
+#### SDK 设计部分（所需IP的导入）
+
+1. 新建 Vivado 工程，这里不再赘述
+
+2. 导入自定义IP核【具体创建的过程稍后补充】
+
+   ![image-20211009225106386](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225106386.png)
+
+   可以看到Vivado自动识别了我们创建的IP核
+
+   ![image-20211009225140489](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225140489.png)
+
+3. 导入 Zynq7 IP核并配置
+
+   因为我们之后会使用 Flash、网络、USB、SD卡、串口通信；所以按照开发板的原理图，我们将各个端口做以下设置
+
+   ![image-20211009225932217](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225932217.png)
+
+   为了适配 LCD 屏幕，我们将PL的输出频率设置为100
+
+   ![image-20211009230209550](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009230209550.png)
+
+   配置完成后，得到如下所示
+
+   ![image-20211009230233107](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009230233107.png)
+
+4. 导入 VDMA IP
+
+   > 使用 VDMA IP 核来实现对于 AXI4-Stream 类目标外设的高带宽直接存储器存取来读取 DDR 中的数据。VDMA 读取到数据之后通过 AXI4-Stream to Video Out IP 核将数据流转换成视频协议的数据流，之后在将该数据流转换为符合 RGB LCD 接口的时序就可以在 LCD 屏幕上显示了。
+
+   `Frame Buffers` 选项可以选择 AXI VDMA 要处理的帧缓冲存储位置 的数量。由于本次显示实验只显示一张图片，数据只需要写入一次，因此不需要 设置多个帧缓存区域，这里设置为 1。因为本实验是从 DDR3 中读取数据输出给 LCD，所以只需要勾选 Enable Read Channel 就可以了，无需勾选 Enable Write Channel。
+
+   `Memory Map Data Width` 选项可以为 MM2S 通道选择所需的 AXI4 数据宽度。此处保持默认 64 即可
+
+   `Read Burst Size` 用于指定突发读的大小，此处选择 64
+
+   `Stream Data Width` 选 项可以选择 MM2S 通道的 AXI4-Stream 数据宽度。 有效值是 8 的倍数，最大 到 1024。 必须注意的是该值必须小于或等于 Memory Map Data Width。**此处因输出数据格式为 RGB888，设置为 24**
+
+   `Line Buffer Depth` 选项可以选择 MM2S 通道的行缓冲深度（行缓冲区宽度 为 stream data 的大小） ，此处设置 **2048**
+
+   ![image-20211009231134235](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231134235.png)
+
+5. 导入 Timing IP核 （视频时序控制器）
+
+   配置如下
+
+   ![image-20211009231634423](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231634423.png)
+
+   
+
+6. 导入 video out（视频输出控制器）
+
+   这里我们使用了独立时钟作为输入，所以选择独立时钟
+
+   ![image-20211009231913924](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231913924.png)
+
+7. **导入自定义LCD IP**
+
+    `Reddepth`、` Greendepth` 和 `Buledepth` 用于 设置输出的 Red、Green 和 Blue 颜色的位数，这里我们使用 RGB888，所以分别设置为 8、8、8
+
+   `Vid In Data Width` 用于指定输入的 RGB 总线宽度，为 24 位
+
+   `Vid Out Data Width` 用于指定输出的 RGB 总线宽度，为 24 位
+
+   ![image-20211009232019130](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232019130.png)
+
+8. 导入dynamic 动态时钟控制器 IP
+
+   ![image-20211009232257512](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232257512.png)
+
+9. 因为 Vivado 自动连接会导致错误，所以我们这里手动分配时钟信号如下（玩笑：雪狸上次就是这错了，所以导致了失败）
+
+   ![image-20211010110833860](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010110833860.png)
+
+10. 使用 Vivado自动导出 Zynq7 PS IP核 的引脚
+
+    ![image-20211009232953958](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232953958.png)
+
+11. 手动引出 自定义 IP 的相关引脚
+
+    ![image-20211009233204932](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233204932.png)
+
+12. 让 Vivado 自动帮我们连接相关引脚
+
+    ![image-20211009233302053](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233302053.png)
+
+13. 连接完成后部分信号无法自动连接，需手动连接
+
+    ![image-20211009233949787](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233949787.png)
+
+14. 最终得到以下设计
+
+    ![image-20211009235603921](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009235603921.png)
+
+15. 根据开发板和LCD屏幕的原理图进行引脚约束
+
+    ```xdc
+    set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_hs]
+    set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_vs]
+    set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_de]
+    set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_pclk]
+    set_property IOSTANDARD LVCMOS33 [get_ports lcd_bl0]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[23]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[22]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[21]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[20]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[19]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[18]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[17]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[16]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[15]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[14]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[13]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[12]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[11]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[10]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[9]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[8]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[7]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[6]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[5]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[4]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[3]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[2]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[1]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {lcd_rgb_o[0]}]
+    set_property PACKAGE_PIN V13 [get_ports lcd_lcd_de]
+    set_property PACKAGE_PIN U15 [get_ports lcd_lcd_hs]
+    set_property PACKAGE_PIN Y14 [get_ports lcd_lcd_pclk]
+    set_property PACKAGE_PIN U14 [get_ports lcd_lcd_vs]
+    set_property PACKAGE_PIN W14 [get_ports lcd_bl0]
+    set_property PACKAGE_PIN W19 [get_ports {lcd_rgb_o[0]}]
+    set_property PACKAGE_PIN W18 [get_ports {lcd_rgb_o[1]}]
+    set_property PACKAGE_PIN U19 [get_ports {lcd_rgb_o[2]}]
+    set_property PACKAGE_PIN U18 [get_ports {lcd_rgb_o[3]}]
+    set_property PACKAGE_PIN W16 [get_ports {lcd_rgb_o[4]}]
+    set_property PACKAGE_PIN V16 [get_ports {lcd_rgb_o[5]}]
+    set_property PACKAGE_PIN W15 [get_ports {lcd_rgb_o[6]}]
+    set_property PACKAGE_PIN V15 [get_ports {lcd_rgb_o[7]}]
+    set_property PACKAGE_PIN P19 [get_ports {lcd_rgb_o[8]}]
+    set_property PACKAGE_PIN W20 [get_ports {lcd_rgb_o[9]}]
+    set_property PACKAGE_PIN V20 [get_ports {lcd_rgb_o[10]}]
+    set_property PACKAGE_PIN Y19 [get_ports {lcd_rgb_o[11]}]
+    set_property PACKAGE_PIN N18 [get_ports {lcd_rgb_o[12]}]
+    set_property PACKAGE_PIN Y18 [get_ports {lcd_rgb_o[13]}]
+    set_property PACKAGE_PIN Y17 [get_ports {lcd_rgb_o[14]}]
+    set_property PACKAGE_PIN Y16 [get_ports {lcd_rgb_o[15]}]
+    set_property PACKAGE_PIN U20 [get_ports {lcd_rgb_o[16]}]
+    set_property PACKAGE_PIN T20 [get_ports {lcd_rgb_o[17]}]
+    set_property PACKAGE_PIN R18 [get_ports {lcd_rgb_o[18]}]
+    set_property PACKAGE_PIN T17 [get_ports {lcd_rgb_o[19]}]
+    set_property PACKAGE_PIN P20 [get_ports {lcd_rgb_o[20]}]
+    set_property PACKAGE_PIN N20 [get_ports {lcd_rgb_o[21]}]
+    set_property PACKAGE_PIN P18 [get_ports {lcd_rgb_o[22]}]
+    set_property PACKAGE_PIN N17 [get_ports {lcd_rgb_o[23]}]
+    ```
+
+    
+
+16. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
