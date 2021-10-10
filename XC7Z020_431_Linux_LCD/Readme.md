@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="../../Readme.assets/silverfox.svg" align="center" alt="ZYNQ" />
+ <img width="100px" src="../Readme.assets/silverfox.svg" align="center" alt="ZYNQ" />
  <h1 align="center">ZYNQ</h2>
  <p align="center"><b>Based on XC7Z020clg400-2 Soc</b></p>
 </p>
@@ -55,33 +55,33 @@
 
 2. 导入自定义IP核【具体创建的过程稍后补充】
 
-   ![image-20211009225106386](../Readme.assets/image-20211009225106386.png)
+   ![image-20211009225106386](Readme.assets/image-20211009225106386.png)
 
    可以看到Vivado自动识别了我们创建的IP核
 
-   ![image-20211009225140489](../Readme.assets/image-20211009225140489.png)
+   ![image-20211009225140489](Readme.assets/image-20211009225140489.png)
 
 3. 导入 Zynq7 IP核并配置
 
    因为我们之后会使用 Flash、网络、USB、SD卡、串口通信；所以按照开发板的原理图，我们将各个端口做以下设置
 
-   ![image-20211009225932217](../Readme.assets/image-20211009225932217.png)
+   ![image-20211009225932217](Readme.assets/image-20211009225932217.png)
 
    使能 S_AXI_HP0 
 
-   ![image-20211010145726095](../Readme.assets/image-20211010145726095.png)
+   ![image-20211010145726095](Readme.assets/image-20211010145726095.png)
 
    为了适配 LCD 屏幕，我们将PL的输出频率设置为100
 
-   ![image-20211009230209550](../Readme.assets/image-20211009230209550.png)
+   ![image-20211009230209550](Readme.assets/image-20211009230209550.png)
 
    点击 Interrupt，使能 PL 到 PS 端的中断输入端口
 
-   ![image-20211010123720693](../Readme.assets/image-20211010123720693.png)
+   ![image-20211010123720693](Readme.assets/image-20211010123720693.png)
 
    配置完成后，得到如下所示
 
-   ![image-20211010123747456](../Readme.assets/image-20211010123747456.png)
+   ![image-20211010123747456](Readme.assets/image-20211010123747456.png)
 
 4. 导入 VDMA IP
 
@@ -97,13 +97,13 @@
 
    `Line Buffer Depth` 选项可以选择 MM2S 通道的行缓冲深度（行缓冲区宽度 为 stream data 的大小） ，此处设置 **2048**
 
-   ![image-20211009231134235](../Readme.assets/image-20211009231134235.png)
+   ![image-20211009231134235](Readme.assets/image-20211009231134235.png)
 
 5. 导入 Timing IP核 （视频时序控制器）
 
    配置如下
 
-   ![image-20211009231634423](../Readme.assets/image-20211009231634423.png)
+   ![image-20211009231634423](Readme.assets/image-20211009231634423.png)
 
    
 
@@ -111,7 +111,7 @@
 
    这里我们使用了独立时钟作为输入，所以选择独立时钟
 
-   ![image-20211009231913924](../Readme.assets/image-20211009231913924.png)
+   ![image-20211009231913924](Readme.assets/image-20211009231913924.png)
 
 7. **导入自定义LCD IP**
 
@@ -121,55 +121,55 @@
 
    `Vid Out Data Width` 用于指定输出的 RGB 总线宽度，为 24 位
 
-   ![image-20211009232019130](../Readme.assets/image-20211009232019130.png)
+   ![image-20211009232019130](Readme.assets/image-20211009232019130.png)
 
 8. 导入dynamic 动态时钟控制器 IP
 
-   ![image-20211009232257512](../Readme.assets/image-20211009232257512.png)
+   ![image-20211009232257512](Readme.assets/image-20211009232257512.png)
 
 9. 因为 Vivado 自动连接会导致错误，所以我们这里手动分配时钟信号如下
 
-   ![image-20211010110833860](../Readme.assets/image-20211010110833860.png)
+   ![image-20211010110833860](Readme.assets/image-20211010110833860.png)
 
 10. 使用 Vivado自动导出 Zynq7 PS IP核 的引脚
 
-    ![image-20211009232953958](../Readme.assets/image-20211009232953958.png)
+    ![image-20211009232953958](Readme.assets/image-20211009232953958.png)
 
 11. 手动引出 自定义 IP 的相关引脚
 
-     ![image-20211009233204932](../Readme.assets/image-20211009233204932.png)
+     ![image-20211009233204932](Readme.assets/image-20211009233204932.png)
 
 12. 让 Vivado 自动帮我们连接相关引脚
 
-     ![image-20211009233302053](../Readme.assets/image-20211009233302053.png)
+     ![image-20211009233302053](Readme.assets/image-20211009233302053.png)
 
 13. 连接完成后部分信号无法自动连接，需手动连接
 
-     ![image-20211009233949787](../Readme.assets/image-20211009233949787.png)
+     ![image-20211009233949787](Readme.assets/image-20211009233949787.png)
 
 14. 得到以下设计
 
-     ![image-20211009235603921](../Readme.assets/image-20211009235603921.png)
+     ![image-20211009235603921](Readme.assets/image-20211009235603921.png)
 
 15. 导入 Concat IP核，以连接中断信号
 
      连接 VDMA 的 mm2s_introut 中断信号和 Video Timing Controller 的 irq 中断信号到 concat IP 的输入端，连接 Concat 的输出端到 ZYNQ7 Processing System 的中断信号输入端
 
-     ![image-20211010123908833](../Readme.assets/image-20211010123908833.png)
+     ![image-20211010123908833](Readme.assets/image-20211010123908833.png)
 
 16. 最终得到以下设计
 
-     ![image-20211010123953147](../Readme.assets/image-20211010123953147.png)
+     ![image-20211010123953147](Readme.assets/image-20211010123953147.png)
 
 17. 生成顶层 HDL 文件
 
-     ![image-20211010124239589](../Readme.assets/image-20211010124239589.png)
+     ![image-20211010124239589](Readme.assets/image-20211010124239589.png)
 
-     ![image-20211010124415061](../Readme.assets/image-20211010124415061.png)
+     ![image-20211010124415061](Readme.assets/image-20211010124415061.png)
 
 18. 使用了GPIO0，所以我们根据开发板和LCD屏幕的原理图进行引脚约束
 
-     ![image-20211010152529481](../Readme.assets/image-20211010152529481.png)
+     ![image-20211010152529481](Readme.assets/image-20211010152529481.png)
 
      ```xdc
     set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_hs]
@@ -236,31 +236,31 @@
 
 19. 因为我们使用到了PL端的资源，所以我们需要生成比特流文件
 
-     ![image-20211010124557434](../Readme.assets/image-20211010124557434.png)
+     ![image-20211010124557434](Readme.assets/image-20211010124557434.png)
 
 20. Vivado提示有错误无法生成比特流；经过查看，错误为我们自定义的LCD屏幕IP的端口名称与XDC文件中的不匹配，所以我们进行修改
 
-     ![image-20211010153155356](../Readme.assets/image-20211010153155356.png)
+     ![image-20211010153155356](Readme.assets/image-20211010153155356.png)
 
      重命名端口：
 
-     ![image-20211010160230998](../Readme.assets/image-20211010160230998.png)
+     ![image-20211010160230998](Readme.assets/image-20211010160230998.png)
 
 21. 重新生成比特流，成功（MLGB，这破bug找了4天）
 
-     ![image-20211010160707600](../Readme.assets/image-20211010160707600.png)
+     ![image-20211010160707600](Readme.assets/image-20211010160707600.png)
 
 22. 导出到硬件
 
-     ![image-20211010160813265](../Readme.assets/image-20211010160813265.png)
+     ![image-20211010160813265](Readme.assets/image-20211010160813265.png)
 
-     ![image-20211010160829451](../Readme.assets/image-20211010160829451.png)
+     ![image-20211010160829451](Readme.assets/image-20211010160829451.png)
 
 23. 启动 SDK
 
 24. 成功得到了我们需要用到的硬件描述文件 `system.hdf`
 
-![image-20211010161042609](../Readme.assets/image-20211010161042609.png)
+![image-20211010161042609](Readme.assets/image-20211010161042609.png)
 
 #### 使用 PetaLinux 生成镜像文件
 
@@ -270,7 +270,7 @@
    source ./petalinux/settings.sh
    ```
 
-   ![image-20211010164546678](../Readme.assets/image-20211010164546678.png)
+   ![image-20211010164546678](Readme.assets/image-20211010164546678.png)
 
 2. 创建工程
 
@@ -278,11 +278,11 @@
    petalinux-create --type project --template zynq --name petalinux_431_lab
    ```
 
-   ![image-20211010165016952](../Readme.assets/image-20211010165016952.png)
+   ![image-20211010165016952](Readme.assets/image-20211010165016952.png)
 
 3. 进入工程，并使用 WinSCP 工具将我们获取的硬件描述文件导入当前工程目录
 
-   ![image-20211010165407007](../Readme.assets/image-20211010165407007.png)
+   ![image-20211010165407007](Readme.assets/image-20211010165407007.png)
 
 4. 配置工程
 
@@ -290,23 +290,23 @@
    petalinux_config –get-hw-description=.
    ```
 
-   ![image-20211010165737218](../Readme.assets/image-20211010165737218.png)
+   ![image-20211010165737218](Readme.assets/image-20211010165737218.png)
 
 5. 将内核修为本地内核
 
-   <img src="../Readme.assets/image-20211010165920849.png" alt="image-20211010165920849" style="zoom: 67%;" />
+   <img src="Readme.assets/image-20211010165920849.png" alt="image-20211010165920849" style="zoom: 67%;" />
 
-   <img src="../Readme.assets/image-20211010165942933.png" alt="image-20211010165942933" style="zoom:67%;" />
+   <img src="Readme.assets/image-20211010165942933.png" alt="image-20211010165942933" style="zoom:67%;" />
 
-   <img src="../Readme.assets/image-20211010165959354.png" alt="image-20211010165959354" style="zoom: 67%;" />
+   <img src="Readme.assets/image-20211010165959354.png" alt="image-20211010165959354" style="zoom: 67%;" />
 
-   <img src="../Readme.assets/image-20211010170015695.png" alt="image-20211010170015695" style="zoom:67%;" />
+   <img src="Readme.assets/image-20211010170015695.png" alt="image-20211010170015695" style="zoom:67%;" />
 
-   <img src="../Readme.assets/image-20211010170122684.png" alt="image-20211010170122684" style="zoom:67%;" />
+   <img src="Readme.assets/image-20211010170122684.png" alt="image-20211010170122684" style="zoom:67%;" />
 
    之后保存退出
 
-   <img src="../Readme.assets/image-20211010170541568.png" alt="image-20211010170541568" style="zoom:67%;" />
+   <img src="Readme.assets/image-20211010170541568.png" alt="image-20211010170541568" style="zoom:67%;" />
 
 6. 配置内核
 
@@ -314,15 +314,15 @@
    petalinux-config –c kernel
    ```
 
-   ![image-20211010170940753](../Readme.assets/image-20211010170940753.png)
+   ![image-20211010170940753](Readme.assets/image-20211010170940753.png)
 
-   ![image-20211010171010359](../Readme.assets/image-20211010171010359.png)
+   ![image-20211010171010359](Readme.assets/image-20211010171010359.png)
 
-   ![image-20211010171113245](../Readme.assets/image-20211010171113245.png)
+   ![image-20211010171113245](Readme.assets/image-20211010171113245.png)
 
    保存退出
 
-   ![image-20211010171450314](../Readme.assets/image-20211010171450314.png)
+   ![image-20211010171450314](Readme.assets/image-20211010171450314.png)
 
 7. 添加（修改）设备树
 
@@ -431,7 +431,7 @@
    petalinux-build
    ```
 
-   ![image-20211010173343823](../Readme.assets/image-20211010173343823.png)
+   ![image-20211010173343823](Readme.assets/image-20211010173343823.png)
 
 9. 打包工程，以生成 `BOOT.bin` 和 `image.ub`
 
@@ -439,7 +439,7 @@
    petalinux-package --boot --fsbl ./images/linux/zynq_fsbl.elf --fpga --u-boot --force
    ```
 
-   ![image-20211010175359984](../Readme.assets/image-20211010175359984.png)
+   ![image-20211010175359984](Readme.assets/image-20211010175359984.png)
 
 10. 将时候生成的 `BOOT.bin` 和 `image.ub` 拷贝到 SD（TF）卡
 
@@ -468,7 +468,7 @@
 
 7. 连接电源
 
-   ![image-20211010181248442](../Readme.assets/image-20211010181248442.png)
+   ![image-20211010181248442](Readme.assets/image-20211010181248442.png)
 
 8. 启动端口通信工具并连接开发板
 
@@ -476,23 +476,23 @@
 
 10. 可以看到Linux系统成功启动，并且通过串口打印出了启动信息
 
-    ![image-20211010213315977](../Readme.assets/image-20211010213315977.png)
+    ![image-20211010213315977](Readme.assets/image-20211010213315977.png)
 
-    ![image-20211010213245666](../Readme.assets/image-20211010213245666.png)
+    ![image-20211010213245666](Readme.assets/image-20211010213245666.png)
 
 11. 屏幕也成功显示
 
-    ![image-20211010221012328](../Readme.assets/image-20211010221012328.png)
+    ![image-20211010221012328](Readme.assets/image-20211010221012328.png)
 
 12. 此时我们把键盘插入 USB 口，可以看到终端上打印出了识别成功的信息
 
-    <img src="../Readme.assets/image-20211010221213083.png" alt="image-20211010221213083" style="zoom: 33%;" />
+    <img src="Readme.assets/image-20211010221213083.png" alt="image-20211010221213083" style="zoom: 33%;" />
 
-    ![image-20211010213800330](../Readme.assets/image-20211010213800330.png)
+    ![image-20211010213800330](Readme.assets/image-20211010213800330.png)
 
 13. 键盘可以通过 USB 正常输入内容，并且网络也可以正常连接
 
-    ![image-20211010221244498](../Readme.assets/image-20211010221244498.png)
+    ![image-20211010221244498](Readme.assets/image-20211010221244498.png)
 
 实验结束，取得成功
 
