@@ -1,14 +1,18 @@
 <p align="center">
  <img width="100px" src="README.assets/Silverfox_ZYNQ.svg" align="center" alt="ZYNQ" />
  <h1 align="center">ZYNQ</h2>
- <p align="center">Based on XC7Z020clg400-2 Soc</p>
+ <p align="center"><b>Based on XC7Z020clg400-2 Soc</b></p>
 </p>
 
 <div align=center>
+
 [![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen)](LICENSE)
-[![SoC](https://img.shields.io/badge/ZYNQ-XC7Z020clg400-2-orange)]
-[![Vivado](https://img.shields.io/Vivado/v/v2016.3%20v2018.3)]
+![ZYNQ](https://img.shields.io/badge/ZYNQ-ZYNQ--7-orange)
+![SoC](https://img.shields.io/badge/SoC-XC7Z020clg400--2-orange)
+ 
+![Vivado](https://img.shields.io/badge/Vivado-v2016.3%20v2018.3-blue)
 ![SDK](https://img.shields.io/badge/SDK-v2016.3%20v2018.3-blue.svg)
+![Kernel](https://img.shields.io/badge/Kernel-Linux%20v4.14-yellow)
 
 <div align=left>
 
