@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen)](LICENSE)
 ![ZYNQ](https://img.shields.io/badge/ZYNQ-ZYNQ--7-orange)
 ![SoC](https://img.shields.io/badge/SoC-XC7Z020clg400--2-orange)
- 
+
 ![Vivado](https://img.shields.io/badge/Vivado-v2016.3%20v2018.3-blue)
 ![SDK](https://img.shields.io/badge/SDK-v2016.3%20v2018.3-blue.svg)
 ![Kernel](https://img.shields.io/badge/Kernel-Linux%20v4.14-yellow)
@@ -277,7 +277,7 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
 
 
-#### 用户自定义IP（LCD）屏幕上运行 Linux
+### 用户自定义IP（LCD）屏幕上运行 Linux
 
 任务说明：
 
