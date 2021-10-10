@@ -1,6 +1,0 @@
-12:16:57 INFO  : Registering command handlers for SDK TCF services
-12:16:57 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_430_Linux_LCD\XC7Z020_430_Linux_LCD.sdk\temp_xsdb_launch_script.tcl
-12:16:59 INFO  : XSCT server has started successfully.
-12:16:59 INFO  : Successfully done setting XSCT server connection channel  
-12:16:59 INFO  : Successfully done setting SDK workspace  
-12:16:59 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_430_Linux_LCD/XC7Z020_430_Linux_LCD.sdk/lcd_design_wrapper.hdf.

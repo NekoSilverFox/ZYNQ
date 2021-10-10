@@ -374,7 +374,15 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
      ![image-20211010123953147](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010123953147.png)
 
-17. 根据开发板和LCD屏幕的原理图进行引脚约束
+17. 生成顶层 HDL 文件
+
+     ![image-20211010124239589](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124239589.png)
+
+     ![image-20211010124415061](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124415061.png)
+
+18. 使用了GPIO0，所以我们根据开发板和LCD屏幕的原理图进行引脚约束
+
+     ![image-20211010152529481](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010152529481.png)
 
      ```xdc
      set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_hs]
@@ -439,17 +447,33 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
      
 
-18. 生成顶层 HDL 文件
-
-     ![image-20211010124239589](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124239589.png)
-
-     ![image-20211010124415061](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124415061.png)
-
 19. 因为我们使用到了PL端的资源，所以我们需要生成比特流文件
 
      ![image-20211010124557434](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124557434.png)
 
+20. Vivado提示有错误无法生成比特流；经过查看，错误为我们自定义的LCD屏幕IP的端口名称与XDC文件中的不匹配，所以我们进行修改
 
+     ![image-20211010153155356](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010153155356.png)
+
+     重命名端口：
+
+     ![image-20211010160230998](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160230998.png)
+
+21. 重新生成比特流，成功（MLGB，这破bug找了4天）
+
+     ![image-20211010160707600](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160707600.png)
+
+22. 导出到硬件
+
+     ![image-20211010160813265](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160813265.png)
+
+     ![image-20211010160829451](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160829451.png)
+
+23. 启动 SDK
+
+24. 成功得到了我们需要用到的硬件描述文件 `system.hdf`
+
+![image-20211010161042609](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010161042609.png)
 
 
 

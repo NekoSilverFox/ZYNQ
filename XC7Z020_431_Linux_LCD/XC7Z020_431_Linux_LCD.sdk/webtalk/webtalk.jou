@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sun Oct 10 16:11:06 2021
+# Process ID: 14684
+# Current directory: E:/AFOX/Doc/Programm/ZYNQ/XC7Z020_431_Linux_LCD/XC7Z020_431_Linux_LCD.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/AFOX/Doc/Programm/ZYNQ/XC7Z020_431_Linux_LCD/XC7Z020_431_Linux_LCD.sdk/webtalk/webtalk.log
+# Journal file: E:/AFOX/Doc/Programm/ZYNQ/XC7Z020_431_Linux_LCD/XC7Z020_431_Linux_LCD.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
