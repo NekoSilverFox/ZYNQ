@@ -1,6 +1,16 @@
+<p align="center">
+ <img width="100px" src="README.assets/Silverfox_ZYNQ.svg" align="center" alt="ZYNQ" />
+ <h1 align="center">ZYNQ</h2>
+ <p align="center">Based on XC7Z020clg400-2 Soc</p>
+</p>
 
+<div align=center>
+[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen)](LICENSE)
+[![SoC](https://img.shields.io/badge/ZYNQ-XC7Z020clg400-2-orange)]
+[![Vivado](https://img.shields.io/Vivado/v/v2016.3%20v2018.3)]
+![SDK](https://img.shields.io/badge/SDK-v2016.3%20v2018.3-blue.svg)
 
-# ZYNQ
+<div align=left>
 
 [toc]
 
