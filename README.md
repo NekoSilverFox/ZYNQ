@@ -268,33 +268,33 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
 2. 导入自定义IP核【具体创建的过程稍后补充】
 
-   ![image-20211009225106386](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225106386.png)
+   ![image-20211009225106386](README.assets\image-20211009225106386.png)
 
    可以看到Vivado自动识别了我们创建的IP核
 
-   ![image-20211009225140489](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225140489.png)
+   ![image-20211009225140489](README.assets\image-20211009225140489.png)
 
 3. 导入 Zynq7 IP核并配置
 
    因为我们之后会使用 Flash、网络、USB、SD卡、串口通信；所以按照开发板的原理图，我们将各个端口做以下设置
 
-   ![image-20211009225932217](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009225932217.png)
+   ![image-20211009225932217](README.assets\image-20211009225932217.png)
 
    使能 S_AXI_HP0 
 
-   ![image-20211010145726095](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010145726095.png)
+   ![image-20211010145726095](README.assets\image-20211010145726095.png)
 
    为了适配 LCD 屏幕，我们将PL的输出频率设置为100
 
-   ![image-20211009230209550](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009230209550.png)
+   ![image-20211009230209550](README.assets\image-20211009230209550.png)
 
    点击 Interrupt，使能 PL 到 PS 端的中断输入端口
 
-   ![image-20211010123720693](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010123720693.png)
+   ![image-20211010123720693](README.assets\image-20211010123720693.png)
 
    配置完成后，得到如下所示
 
-   ![image-20211010123747456](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010123747456.png)
+   ![image-20211010123747456](README.assets\image-20211010123747456.png)
 
 4. 导入 VDMA IP
 
@@ -310,13 +310,13 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
    `Line Buffer Depth` 选项可以选择 MM2S 通道的行缓冲深度（行缓冲区宽度 为 stream data 的大小） ，此处设置 **2048**
 
-   ![image-20211009231134235](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231134235.png)
+   ![image-20211009231134235](README.assets\image-20211009231134235.png)
 
 5. 导入 Timing IP核 （视频时序控制器）
 
    配置如下
 
-   ![image-20211009231634423](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231634423.png)
+   ![image-20211009231634423](README.assets\image-20211009231634423.png)
 
    
 
@@ -324,7 +324,7 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
    这里我们使用了独立时钟作为输入，所以选择独立时钟
 
-   ![image-20211009231913924](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009231913924.png)
+   ![image-20211009231913924](README.assets\image-20211009231913924.png)
 
 7. **导入自定义LCD IP**
 
@@ -334,55 +334,55 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
    `Vid Out Data Width` 用于指定输出的 RGB 总线宽度，为 24 位
 
-   ![image-20211009232019130](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232019130.png)
+   ![image-20211009232019130](README.assets\image-20211009232019130.png)
 
 8. 导入dynamic 动态时钟控制器 IP
 
-   ![image-20211009232257512](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232257512.png)
+   ![image-20211009232257512](README.assets\image-20211009232257512.png)
 
 9. 因为 Vivado 自动连接会导致错误，所以我们这里手动分配时钟信号如下
 
-   ![image-20211010110833860](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010110833860.png)
+   ![image-20211010110833860](README.assets\image-20211010110833860.png)
 
 10. 使用 Vivado自动导出 Zynq7 PS IP核 的引脚
 
-    ![image-20211009232953958](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009232953958.png)
+    ![image-20211009232953958](README.assets\image-20211009232953958.png)
 
 11. 手动引出 自定义 IP 的相关引脚
 
-     ![image-20211009233204932](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233204932.png)
+     ![image-20211009233204932](README.assets\image-20211009233204932.png)
 
 12. 让 Vivado 自动帮我们连接相关引脚
 
-     ![image-20211009233302053](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233302053.png)
+     ![image-20211009233302053](README.assets\image-20211009233302053.png)
 
 13. 连接完成后部分信号无法自动连接，需手动连接
 
-     ![image-20211009233949787](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009233949787.png)
+     ![image-20211009233949787](README.assets\image-20211009233949787.png)
 
 14. 得到以下设计
 
-     ![image-20211009235603921](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211009235603921.png)
+     ![image-20211009235603921](README.assets\image-20211009235603921.png)
 
 15. 导入 Concat IP核，以连接中断信号
 
      连接 VDMA 的 mm2s_introut 中断信号和 Video Timing Controller 的 irq 中断信号到 concat IP 的输入端，连接 Concat 的输出端到 ZYNQ7 Processing System 的中断信号输入端
 
-     ![image-20211010123908833](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010123908833.png)
+     ![image-20211010123908833](README.assets\image-20211010123908833.png)
 
 16. 最终得到以下设计
 
-     ![image-20211010123953147](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010123953147.png)
+     ![image-20211010123953147](README.assets\image-20211010123953147.png)
 
 17. 生成顶层 HDL 文件
 
-     ![image-20211010124239589](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124239589.png)
+     ![image-20211010124239589](README.assets\image-20211010124239589.png)
 
-     ![image-20211010124415061](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124415061.png)
+     ![image-20211010124415061](README.assets\image-20211010124415061.png)
 
 18. 使用了GPIO0，所以我们根据开发板和LCD屏幕的原理图进行引脚约束
 
-     ![image-20211010152529481](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010152529481.png)
+     ![image-20211010152529481](README.assets\image-20211010152529481.png)
 
      ```xdc
      set_property IOSTANDARD LVCMOS33 [get_ports lcd_lcd_hs]
@@ -449,51 +449,35 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
 19. 因为我们使用到了PL端的资源，所以我们需要生成比特流文件
 
-     ![image-20211010124557434](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010124557434.png)
+     ![image-20211010124557434](README.assets\image-20211010124557434.png)
 
 20. Vivado提示有错误无法生成比特流；经过查看，错误为我们自定义的LCD屏幕IP的端口名称与XDC文件中的不匹配，所以我们进行修改
 
-     ![image-20211010153155356](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010153155356.png)
+     ![image-20211010153155356](README.assets\image-20211010153155356.png)
 
      重命名端口：
 
-     ![image-20211010160230998](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160230998.png)
+     ![image-20211010160230998](README.assets\image-20211010160230998.png)
 
 21. 重新生成比特流，成功（MLGB，这破bug找了4天）
 
-     ![image-20211010160707600](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160707600.png)
+     ![image-20211010160707600](README.assets\image-20211010160707600.png)
 
 22. 导出到硬件
 
-     ![image-20211010160813265](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160813265.png)
+     ![image-20211010160813265](README.assets\image-20211010160813265.png)
 
-     ![image-20211010160829451](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010160829451.png)
+     ![image-20211010160829451](README.assets\image-20211010160829451.png)
 
 23. 启动 SDK
 
 24. 成功得到了我们需要用到的硬件描述文件 `system.hdf`
 
-![image-20211010161042609](E:\AFOX\Doc\Programm\ZYNQ\README.assets\image-20211010161042609.png)
+![image-20211010161042609](README.assets\image-20211010161042609.png)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Git
 
 
 
