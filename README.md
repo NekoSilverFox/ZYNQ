@@ -719,7 +719,27 @@ arm-linux-gnueabinf-gcc -o 输出文件名 main.c
 
 9. 启动开发板电源
 
-10. 
+10. 可以看到Linux系统成功启动，并且通过串口打印出了启动信息
+
+    ![image-20211010213315977](README.assets/image-20211010213315977.png)
+
+    ![image-20211010213245666](README.assets/image-20211010213245666.png)
+
+11. 屏幕也成功显示
+
+    ![image-20211010221012328](README.assets/image-20211010221012328.png)
+
+12. 此时我们把键盘插入 USB 口，可以看到终端上打印出了识别成功的信息
+
+    <img src="README.assets/image-20211010221213083.png" alt="image-20211010221213083" style="zoom: 33%;" />
+
+    ![image-20211010213800330](README.assets/image-20211010213800330.png)
+
+13. 键盘可以通过 USB 正常输入内容，并且网络也可以正常连接
+
+    ![image-20211010221244498](README.assets/image-20211010221244498.png)
+
+实验结束，取得成功
 
 
 
