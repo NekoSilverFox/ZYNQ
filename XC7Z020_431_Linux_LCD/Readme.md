@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="README.assets/silverfox.svg" align="center" alt="ZYNQ" />
+ <img width="100px" src="../README.assets/silverfox.svg" align="center" alt="ZYNQ" />
  <h1 align="center">ZYNQ</h2>
  <p align="center"><b>Based on XC7Z020clg400-2 Soc</b></p>
 </p>
