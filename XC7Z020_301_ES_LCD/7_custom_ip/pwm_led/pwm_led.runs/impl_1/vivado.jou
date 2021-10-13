@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan  8 17:01:45 2020
+# Process ID: 8512
+# Current directory: D:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/pwm_led/pwm_led.runs/impl_1
+# Command line: vivado.exe -log pwm_led_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pwm_led_wrapper.tcl -notrace
+# Log file: D:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/pwm_led/pwm_led.runs/impl_1/pwm_led_wrapper.vdi
+# Journal file: D:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/pwm_led/pwm_led.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pwm_led_wrapper.tcl -notrace

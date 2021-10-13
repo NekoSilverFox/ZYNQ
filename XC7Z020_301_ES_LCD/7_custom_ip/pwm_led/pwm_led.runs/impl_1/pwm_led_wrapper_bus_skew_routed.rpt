@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan  8 17:02:45 2020
+| Host         : DESKTOP-PFE3LVD running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file pwm_led_wrapper_bus_skew_routed.rpt -pb pwm_led_wrapper_bus_skew_routed.pb -rpx pwm_led_wrapper_bus_skew_routed.rpx
+| Design       : pwm_led_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

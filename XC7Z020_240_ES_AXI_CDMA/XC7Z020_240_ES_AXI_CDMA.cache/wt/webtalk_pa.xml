@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Oct 08 15:25:14 2021">
+<application name="pa" timeStamp="Tue Oct 12 18:05:38 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="05b808a2c26c4609ba00992f2a3569c5" type="ProjectID"/>
 <property name="ProjectIteration" value="3" type="ProjectIteration"/>
@@ -19,14 +19,14 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="CreateBlockDesign" value="2" type="JavaHandler"/>
 <property name="CreateTopHDL" value="1" type="JavaHandler"/>
-<property name="CustomizeRSBBlock" value="4" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="6" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="ManageCompositeTargets" value="2" type="JavaHandler"/>
 <property name="NewExportHardware" value="1" type="JavaHandler"/>
 <property name="NewLaunchHardware" value="3" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenBlockDesign" value="3" type="JavaHandler"/>
-<property name="ProjectSummary" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="4" type="JavaHandler"/>
+<property name="ProjectSummary" value="2" type="JavaHandler"/>
 <property name="RegenerateRSBLayout" value="2" type="JavaHandler"/>
 <property name="RunBitgen" value="1" type="JavaHandler"/>
 <property name="RunImplementation" value="1" type="JavaHandler"/>
@@ -34,17 +34,18 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SaveRSBDesign" value="1" type="JavaHandler"/>
 <property name="ValidateRSBDesign" value="2" type="JavaHandler"/>
 <property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="AddressTreeTablePanel_ADDRESS_TREE_TABLE" value="10" type="GuiResourceData"/>
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="16" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="17" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="3" type="GuiResourceData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="7" type="GuiResourceData"/>
 <property name="CreateNewDiagramDialog_DESIGN_NAME" value="2" type="GuiResourceData"/>
-<property name="DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE" value="2" type="GuiResourceData"/>
+<property name="DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE" value="4" type="GuiResourceData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="4" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="8" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="10" type="GuiResourceData"/>
 <property name="GICTreeTablePanel_GIC_TREE_TABLE" value="8" type="GuiResourceData"/>
 <property name="GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE" value="4" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
@@ -60,13 +61,16 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_EXPORT_HARDWARE" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_GENERATE_COMPOSITE_FILE" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_LAUNCH_HARDWARE" value="3" type="GuiResourceData"/>
-<property name="PACommandNames_PROJECT_SUMMARY" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_PROJECT_SUMMARY" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_REGENERATE_LAYOUT" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_VALIDATE_RSB_DESIGN" value="2" type="GuiResourceData"/>
 <property name="PAViews_DEVICE" value="2" type="GuiResourceData"/>
 <property name="PAViews_SYSTEM" value="1" type="GuiResourceData"/>
 <property name="PartChooser_PARTS" value="2" type="GuiResourceData"/>
+<property name="ProgressDialog_BACKGROUND" value="1" type="GuiResourceData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
+<property name="ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED" value="14" type="GuiResourceData"/>
+<property name="ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED" value="2" type="GuiResourceData"/>
 <property name="RDICommands_DELETE" value="1" type="GuiResourceData"/>
 <property name="RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION" value="1" type="GuiResourceData"/>
 <property name="RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION" value="1" type="GuiResourceData"/>
@@ -80,9 +84,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="36" type="GuiMode"/>
+<property name="GuiMode" value="41" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="33" type="TclMode"/>
+<property name="TclMode" value="38" type="TclMode"/>
 </item>
 </section>
 </application>

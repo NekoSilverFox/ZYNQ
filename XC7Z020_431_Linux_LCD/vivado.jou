@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Oct 10 23:22:27 2021
+# Process ID: 231556
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_431_Linux_LCD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent231176 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_431_Linux_LCD\XC7Z020_431_Linux_LCD.xpr
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_431_Linux_LCD/vivado.log
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_431_Linux_LCD\vivado.jou
+#-----------------------------------------------------------
+start_gui

@@ -26,7 +26,236 @@
 
 ## 嵌入式设计SDK
 
----待补充---
+### 自定义 IP 核
+
+#### 工程创建
+
+1. 打开 Vavido
+
+   ![image-20211013201130030](README.assets/image-20211013201130030.png)
+
+   ![image-20211013201256403](README.assets/image-20211013201256403.png)
+
+   ![image-20211013201318475](README.assets/image-20211013201318475.png)
+
+   因为我们要使用 AXI 总线，所以选择 `Create a new AXI4 peripheral`
+
+   ![image-20211013201431497](README.assets/image-20211013201431497.png)
+
+   修改名称
+
+   ![image-20211013201548976](README.assets/image-20211013201548976.png)
+
+   
+
+   因为我们使用到了 AXI 总线，所以要对AXI总线做一定的设置
+
+   ![image-20211013201710835](README.assets/image-20211013201710835.png)
+
+   
+
+   将IP添加到存储库中
+
+   ![image-20211013201731304](README.assets/image-20211013201731304.png)
+
+   
+
+   可以看到我们创建的 IP 已经被添加到IP库中了
+
+   ![image-20211013201811428](README.assets/image-20211013201811428.png)
+
+   
+
+2. 编辑 IP 核
+
+   右键 IP 核，选择以下。会打开一个新的界面
+
+   ![image-20211013201849404](README.assets/image-20211013201849404.png)
+
+   打开并添加端口
+
+   
+
+   ![image-20211013202036243](README.assets/image-20211013202036243.png)
+
+   ```vhdl
+   
+   `timescale 1 ns / 1 ps
+   
+   	module pwm_ip_v1_0 #
+   	(
+   		// Users to add parameters here
+           
+   		// User parameters ends
+   		// Do not modify the parameters beyond this line
+   
+   
+   		// Parameters of Axi Slave Bus Interface S00_AXI
+   		parameter integer C_S00_AXI_DATA_WIDTH	= 32,
+   		parameter integer C_S00_AXI_ADDR_WIDTH	= 4
+   	)
+   	(
+   		// Users to add ports here
+           output pwm,
+   		// User ports ends
+   		// Do not modify the ports beyond this line
+   
+   
+   		// Ports of Axi Slave Bus Interface S00_AXI
+   		input wire  s00_axi_aclk,
+   		input wire  s00_axi_aresetn,
+   		input wire [C_S00_AXI_ADDR_WIDTH-1 : 0] s00_axi_awaddr,
+   		input wire [2 : 0] s00_axi_awprot,
+   		input wire  s00_axi_awvalid,
+   		output wire  s00_axi_awready,
+   		input wire [C_S00_AXI_DATA_WIDTH-1 : 0] s00_axi_wdata,
+   		input wire [(C_S00_AXI_DATA_WIDTH/8)-1 : 0] s00_axi_wstrb,
+   		input wire  s00_axi_wvalid,
+   		output wire  s00_axi_wready,
+   		output wire [1 : 0] s00_axi_bresp,
+   		output wire  s00_axi_bvalid,
+   		input wire  s00_axi_bready,
+   		input wire [C_S00_AXI_ADDR_WIDTH-1 : 0] s00_axi_araddr,
+   		input wire [2 : 0] s00_axi_arprot,
+   		input wire  s00_axi_arvalid,
+   		output wire  s00_axi_arready,
+   		output wire [C_S00_AXI_DATA_WIDTH-1 : 0] s00_axi_rdata,
+   		output wire [1 : 0] s00_axi_rresp,
+   		output wire  s00_axi_rvalid,
+   		input wire  s00_axi_rready
+   	);
+   // Instantiation of Axi Bus Interface S00_AXI
+   	pwm_ip_v1_0_S00_AXI # ( 
+   		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
+   		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
+   	) pwm_ip_v1_0_S00_AXI_inst (
+   	    .pwm(pwm),
+   		.S_AXI_ACLK(s00_axi_aclk),
+   		.S_AXI_ARESETN(s00_axi_aresetn),
+   		.S_AXI_AWADDR(s00_axi_awaddr),
+   		.S_AXI_AWPROT(s00_axi_awprot),
+   		.S_AXI_AWVALID(s00_axi_awvalid),
+   		.S_AXI_AWREADY(s00_axi_awready),
+   		.S_AXI_WDATA(s00_axi_wdata),
+   		.S_AXI_WSTRB(s00_axi_wstrb),
+   		.S_AXI_WVALID(s00_axi_wvalid),
+   		.S_AXI_WREADY(s00_axi_wready),
+   		.S_AXI_BRESP(s00_axi_bresp),
+   		.S_AXI_BVALID(s00_axi_bvalid),
+   		.S_AXI_BREADY(s00_axi_bready),
+   		.S_AXI_ARADDR(s00_axi_araddr),
+   		.S_AXI_ARPROT(s00_axi_arprot),
+   		.S_AXI_ARVALID(s00_axi_arvalid),
+   		.S_AXI_ARREADY(s00_axi_arready),
+   		.S_AXI_RDATA(s00_axi_rdata),
+   		.S_AXI_RRESP(s00_axi_rresp),
+   		.S_AXI_RVALID(s00_axi_rvalid),
+   		.S_AXI_RREADY(s00_axi_rready)
+   	);
+   
+   	// Add user logic here
+   
+   	// User logic ends
+   
+   	endmodule
+   
+   ```
+
+   ![image-20211013202844701](README.assets/image-20211013202844701.png)
+
+   编辑此文件
+
+   ![image-20211013202917671](README.assets/image-20211013202917671.png)
+
+   添加以下代码
+
+   ```hdl
+   
+   module pwm_ip(
+       input sys_clk ,
+       input sys_rst_n , 
+       input [9:0] set_freq_step , 
+       output pwm 
+   );
+    //*****************************************************
+    //** main code
+    //*****************************************************
+    //reg define
+   reg [15:0] period_cnt ; 
+   reg [15:0] duty_cycle ; 
+   reg inc_flag ; 
+   //wire define
+   wire led_t ;
+   
+   assign led_t = ( period_cnt <= duty_cycle ) ? 1'b1 : 1'b0 ;
+   assign pwm = led_t;
+   always @ (posedge sys_clk) begin
+       if (!sys_rst_n)
+           period_cnt <= 16'd0;
+       else if( period_cnt == 16'd50_0000 )
+           period_cnt <= 16'd0;
+       else
+           period_cnt <= period_cnt + 16'd1;
+       end
+   always @(posedge sys_clk) begin
+       if (sys_rst_n == 1'b0) begin
+           duty_cycle <= 16'd0;
+           inc_flag <= 1'b0;
+       end
+       else if( period_cnt == 16'd50_0000 ) begin
+           if( inc_flag ) begin 
+               if( duty_cycle == 16'd0 )
+                   inc_flag <= 1'b0;
+               else if(duty_cycle < 10'd100)
+                   duty_cycle <= 16'd0;
+           else
+               duty_cycle <= duty_cycle - set_freq_step;
+           end
+       else begin 
+           if( duty_cycle >= 16'd50_0000 )
+               inc_flag <= 1'b1;
+           else
+               duty_cycle <= duty_cycle + set_freq_step;
+           end
+       end
+       else 
+           duty_cycle <= duty_cycle ;
+       end
+    endmodule
+   
+   ```
+
+   
+
+3. 进行仿真
+
+   ![image-20211013203146604](README.assets/image-20211013203146604.png)
+
+   
+
+   
+
+4. 点击以下文件
+
+   ![image-20211013203612218](README.assets/image-20211013203612218.png)
+
+   ![image-20211013203636065](README.assets/image-20211013203636065.png)
+
+   点击
+
+   ![image-20211013203651088](README.assets/image-20211013203651088.png)
+
+   ![image-20211013203732421](README.assets/image-20211013203732421.png)
+
+   ![image-20211013203809387](README.assets/image-20211013203809387.png)
+
+   
+
+   
+
+5. 
+
+
 
 ## PetaLinux
 

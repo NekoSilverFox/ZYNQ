@@ -1,0 +1,3 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.srcs/sources_1/bd/design_axi_cdma/ip/design_axi_cdma_processing_system7_0_0/design_axi_cdma_processing_system7_0_0.xdc rfile:../XC7Z020_240_ES_AXI_CDMA.srcs/sources_1/bd/design_axi_cdma/ip/design_axi_cdma_processing_system7_0_0/design_axi_cdma_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:design_axi_cdma_i/processing_system7_0/inst} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_0 0.6
