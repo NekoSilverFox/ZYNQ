@@ -199,7 +199,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eac38226</spirit:value>
+            <spirit:value>a51cc31e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eac38226</spirit:value>
+            <spirit:value>a51cc31e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -310,7 +310,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dda4df14</spirit:value>
+            <spirit:value>090117ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -331,11 +331,24 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
+        <spirit:name>pwm</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>s00_axi_awaddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;))-1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -395,7 +408,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;))-1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -412,7 +425,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;))/8)-1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -498,7 +511,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;))-1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -558,7 +571,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;))-1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -661,6 +674,11 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_pairs_ce1226b1</spirit:name>
       <spirit:enumeration spirit:text="true">1</spirit:enumeration>
       <spirit:enumeration spirit:text="false">0</spirit:enumeration>
@@ -670,7 +688,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>pwm_ip.v</spirit:name>
+        <spirit:name>hdl/pwm_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -680,13 +698,13 @@
       <spirit:file>
         <spirit:name>hdl/pwm_ip_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_9c41dc9e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_0695f14a</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>pwm_ip.v</spirit:name>
+        <spirit:name>hdl/pwm_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -735,7 +753,7 @@
       <spirit:file>
         <spirit:name>xgui/pwm_ip_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_fd592ead</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_090117ad</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -753,7 +771,7 @@
       <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
       <spirit:description>Width of S_AXI data bus</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">32</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -807,26 +825,210 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">virtex7</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>pwm_ip_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-10-13T17:38:04Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-01-08T09:00:02Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="xilinx.com:user:pwm_ip:1.0_ARCHIVE_LOCATION">C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_216_ES_custom_ip_LED/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@199c419f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11191e99_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5afe8f61_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71fe0388_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ecea7a6_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d51a26_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ccc0e69_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65808c41_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@507dead5_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6486d885_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c651b73_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ba30df_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777ed36e_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fad6e08_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d261b82_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1506ecb1_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55ee2b09_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64500d67_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@198a5091_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61910910_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63550cb6_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24e3b545_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370ee1a2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43315db9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c26b877_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@601e954f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53b63774_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e41b8e7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ea4bd7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb7cabc_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c42dad5_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@638a3a5b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7334b21_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a507c93_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3a69bc_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f672479_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9f7684b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e670ac4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b0e338_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b3b9e67_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c174231_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2185e9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51cc65de_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@326b03ef_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c702e02_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76163790_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@763b8502_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@731407dc_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ea9b171_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22eca57b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7846e7a9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1649e688_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@157ed898_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5a9a39_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a76b924_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b1ccb20_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@768af87a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5c34be_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16509196_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e5206b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@340b306d_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43555006_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50cc329a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@347c7ea9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cc82b2c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b4113e5_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@562a23a0_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b8ab992_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b8b06d_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@475ff0a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11970d0a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72a7683_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@248a834f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@291766a3_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2736b203_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fc1ea77_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797d4ec9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2191f54_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cc1933f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d696026_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5848e0c4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1064908b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2754d202_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d5a093_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18c798d1_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6067b5a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@137f7e50_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@337a4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@550ec527_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ed6d50_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cda7114_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f35e86a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e90716_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@390f3568_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@421f98c2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@209e8a76_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72e64b2b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e95795_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2af6c87a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f3e38b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d055ed_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35daa676_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b7fc3b0_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b015827_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10ca0683_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec02cab_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40960d31_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f79b13a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49260cd8_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21fd6d66_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67e5d08f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29878124_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b30d87_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@126af5d1_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b3749e_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2050e7f4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@562743dc_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@339344c2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312de1e2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b345074_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f851b46_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14fc9f8c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59bc676e_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34406757_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aef67b0_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62e57b43_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11690df0_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29d1179c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d3c28b7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63eeb3af_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5325152c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@325488ee_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@462d3318_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fa2bb8d_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@700bd330_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b29ee9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63c738c5_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@394d57b2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a6f4700_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d1a0c4a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45217410_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7143d4cd_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b0a21a6_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4889992d_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d690e4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@831dcd5_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb9b019_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c81610_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24cb765_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9c6e961_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d1f326e_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223ff5ca_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61780ed4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c80f96c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@419101e7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a38c055_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ed4ada2_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d1c10a_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46636537_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e34d022_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4847d11c_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44cb20d7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a012199_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@711eaac9_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442c8670_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b51fa9d_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c0797f1_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c56316b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74a18089_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e33b914_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d3828b8_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b5492f_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@152146c7_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67c586a4_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5372c4b6_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15381b09_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14eabb2e_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa3c9c0_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69eb8a65_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ab67845_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65938141_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@482d9f8b_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5404e640_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58dfb485_ARCHIVE_LOCATION">d:/ZYNQ_Mizar/SDK_Demo/7_custom_ip/ip_repo/pwm_ip_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2016.3</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d9a0b4b8"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="493665f4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4553b4a8"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="8d51a344"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="4429bb0c"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="566b486b"/>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5e6dd8ab"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="b29677c2"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="839f938b"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

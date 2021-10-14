@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../pwm_led.srcs/sources_1/bd/pwm_led/ip/pwm_led_rst_ps7_0_50M_0/sim/pwm_led_rst_ps7_0_50M_0.vhd" \
+
+nosort

@@ -13,15 +13,17 @@ proc create_ipi_design { offsetfile design_name } {
 	set pwm_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:pwm_ip:1.0 pwm_ip_0]
 
 	# Create instance: master_0, and set properties
-	set master_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:cdn_axi_bfm master_0]
-	set_property -dict [ list CONFIG.C_PROTOCOL_SELECTION {2} ] $master_0
+	set master_0 [ create_bd_cell -type ip -vlnv  xilinx.com:ip:axi_vip master_0]
+	set_property -dict [ list CONFIG.PROTOCOL {AXI4LITE} CONFIG.INTERFACE_MODE {MASTER} ] $master_0
 
 	# Create interface connections
-	connect_bd_intf_net [get_bd_intf_pins master_0/M_AXI_LITE] [get_bd_intf_pins pwm_ip_0/S00_AXI]
+	connect_bd_intf_net [get_bd_intf_pins master_0/M_AXI ] [get_bd_intf_pins pwm_ip_0/S00_AXI]
 
 	# Create port connections
-	connect_bd_net -net aclk_net [get_bd_ports ACLK] [get_bd_pins master_0/M_AXI_LITE_ACLK] [get_bd_pins pwm_ip_0/S00_AXI_ACLK]
-	connect_bd_net -net aresetn_net [get_bd_ports ARESETN] [get_bd_pins master_0/M_AXI_LITE_ARESETN] [get_bd_pins pwm_ip_0/S00_AXI_ARESETN]
+	connect_bd_net -net aclk_net [get_bd_ports ACLK] [get_bd_pins master_0/ACLK] [get_bd_pins pwm_ip_0/S00_AXI_ACLK]
+	connect_bd_net -net aresetn_net [get_bd_ports ARESETN] [get_bd_pins master_0/ARESETN] [get_bd_pins pwm_ip_0/S00_AXI_ARESETN]
+set_property target_simulator XSim [current_project]
+set_property -name {xsim.simulate.runtime} -value {100ms} -objects [get_filesets sim_1]
 
 	# Auto assign address
 	assign_bd_address
@@ -29,25 +31,22 @@ proc create_ipi_design { offsetfile design_name } {
 	# Copy all address to interface_address.vh file
 	set bd_path [file dirname [get_property NAME [get_files ${design_name}.bd]]]
 	upvar 1 $offsetfile offset_file
-	set offset_file "${bd_path}/pwm_ip_v1_0_tb_include.vh"
+	set offset_file "${bd_path}/pwm_ip_v1_0_tb_include.svh"
 	set fp [open $offset_file "w"]
 	puts $fp "`ifndef pwm_ip_v1_0_tb_include_vh_"
 	puts $fp "`define pwm_ip_v1_0_tb_include_vh_\n"
 	puts $fp "//Configuration current bd names"
+	puts $fp "`define BD_NAME ${design_name}"
 	puts $fp "`define BD_INST_NAME ${design_name}_i"
 	puts $fp "`define BD_WRAPPER ${design_name}_wrapper\n"
 	puts $fp "//Configuration address parameters"
-
-	set offset [get_property OFFSET [get_bd_addr_segs -of_objects [get_bd_addr_spaces master_0/Data_lite]]]
-	set offset_hex [string replace $offset 0 1 "32'h"]
-	puts $fp "`define S00_AXI_SLAVE_ADDRESS ${offset_hex}"
 
 	puts $fp "`endif"
 	close $fp
 }
 
 set ip_path [file dirname [file normalize [get_property XML_FILE_NAME [ipx::get_cores xilinx.com:user:pwm_ip:1.0]]]]
-set test_bench_file ${ip_path}/example_designs/bfm_design/pwm_ip_v1_0_tb.v
+set test_bench_file ${ip_path}/example_designs/bfm_design/pwm_ip_v1_0_tb.sv
 set interface_address_vh_file ""
 
 # Set IP Repository and Update IP Catalogue 
@@ -86,6 +85,4 @@ import_files -fileset sim_1 -norecurse -force $interface_address_vh_file
 set_property top pwm_ip_v1_0_tb [get_filesets sim_1]
 set_property top_lib {} [get_filesets sim_1]
 set_property top_file {} [get_filesets sim_1]
-launch_xsim -simset sim_1 -mode behavioral
-restart
-run 1000 us
+launch_simulation -simset sim_1 -mode behavioral

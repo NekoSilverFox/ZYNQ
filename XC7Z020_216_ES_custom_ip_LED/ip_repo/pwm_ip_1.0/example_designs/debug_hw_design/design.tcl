@@ -8,73 +8,16 @@ proc create_ipi_design { offsetfile design_name } {
 	create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz sys_clk_0
 	create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset sys_reset_0
 
-	#check if current_board is set, if true - figure out required clocks.
-	set is_board_clock_found 0
-	set is_board_reset_found 0
-	set external_reset_port ""
-	set external_clock_port ""
-
-	if { [current_board_part -quiet] != "" } {
-
-		#check if any reset interface exists in board.
-		set board_reset [lindex [get_board_part_interfaces -filter { BUSDEF_NAME == reset_rtl && MODE == slave }] 0 ]
-		if { $board_reset ne "" } {
-			set is_board_reset_found 1
-			apply_board_connection -board_interface $board_reset -ip_intf sys_clk_0/reset -diagram [current_bd_design]
-			apply_board_connection -board_interface $board_reset -ip_intf sys_reset_0/ext_reset -diagram [current_bd_design]
-			set external_rst [get_bd_ports -quiet -of_objects [get_bd_nets -quiet -of_objects [get_bd_pins -quiet sys_clk_0/reset]]]
-			if { $external_rst ne "" } {
-				set external_reset_port [get_property NAME $external_rst]
-			}
-		} else {
-			send_msg "ptgen 51-200" WARNING "No reset interface found in current_board, Users may need to specify the location constraints manually."
-		}
-
-		# check for differential clock, exclude any special clocks which has TYPE property.
-		set board_clock_busifs ""
-		foreach busif [get_board_part_interfaces -filter "BUSDEF_NAME == diff_clock_rtl"] {
-			set type [get_property PARAM.TYPE $busif]
-			if { $type == "" } {
-				set board_clock_busifs $busif
-				break
-			}
-		}
-		if { $board_clock_busifs ne "" } {
-			apply_board_connection -board_interface $board_clock_busifs -ip_intf sys_clk_0/CLK_IN1_D -diagram [current_bd_design]
-			set is_board_clock_found 1
-		} else {
-			# check for single ended clock
-			set board_sclock_busifs [lindex [get_board_part_interfaces -filter "BUSDEF_NAME == clock_rtl"] 0 ]
-			if { $board_sclock_busifs ne "" } {
-			    apply_board_connection -board_interface $board_sclock_busifs -ip_intf sys_clk_0/clock_CLK_IN1 -diagram [current_bd_design]
-				set external_clk [get_bd_ports -quiet -of_objects [get_bd_nets -quiet -of_objects [get_bd_pins -quiet sys_clk_0/clk_in1]]]
-				if { $external_clk ne "" } {
-					set external_clock_port [get_property NAME $external_clk]
-				}
-				set is_board_clock_found 1
-			} else {
-				send_msg "ptgen 51-200" WARNING "No clock interface found in current_board, Users may need to specify the location constraints manually."
-			}
-		}
-
-	} else {
-		send_msg "ptgen 51-201" WARNING "No board selected in current_project. Users may need to specify the location constraints manually."
-	}
-
-	#if there is no corresponding board interface found, assume constraints will be provided manually while pin planning.
-	if { $is_board_reset_found == 0 } {
+	#Constraints will be provided manually while pin planning.
 		create_bd_port -dir I -type rst reset_rtl
 		set_property CONFIG.POLARITY [get_property CONFIG.POLARITY [get_bd_pins sys_clk_0/reset]] [get_bd_ports reset_rtl]
 		connect_bd_net [get_bd_pins sys_reset_0/ext_reset_in] [get_bd_ports reset_rtl]
 		connect_bd_net [get_bd_ports reset_rtl] [get_bd_pins sys_clk_0/reset]
 		set external_reset_port reset_rtl
-	}
-	if { $is_board_clock_found == 0 } {
 		create_bd_port -dir I -type clk clock_rtl
 		connect_bd_net [get_bd_pins sys_clk_0/clk_in1] [get_bd_ports clock_rtl]
 		set external_clock_port clock_rtl
-	}
-
+	
 	#Avoid IPI DRC, make clock port synchronous to reset
 	if { $external_clock_port ne "" && $external_reset_port ne "" } {
 		set_property CONFIG.ASSOCIATED_RESET $external_reset_port [get_bd_ports $external_clock_port]
