@@ -935,6 +935,105 @@
 
 8. 开发板验证
 
+### 使用自定义 IP 核（基于SDK部分实验之自定义LED IP核）
+
+#### Vivado设计部分
+
+1. 创建工程
+
+2. 导入自定义ip
+
+   ![image-20211014162741778](README.assets/image-20211014162741778.png)
+
+3. 配置PS，并设置所有引脚为fast
+
+   ![image-20211014200445027](README.assets/image-20211014200445027.png)
+
+4. 自动导出引脚
+
+   ![image-20211014163646718](README.assets/image-20211014163646718.png)
+
+   ![image-20211014163659515](README.assets/image-20211014163659515.png)
+
+5. 添加自定义IP核
+
+   ![image-20211014163736067](README.assets/image-20211014163736067.png)
+
+6. 自动连接
+
+   ![image-20211014163756806](README.assets/image-20211014163756806.png)
+
+7. 导出自定义IP核引脚，并命名为 pwm
+
+   ![image-20211014163851010](README.assets/image-20211014163851010.png)
+
+8. 导出HDL顶层设计
+
+9. 分配引脚
+
+   ![image-20211014164018068](README.assets/image-20211014164018068.png)
+
+   我们使用 PL_LED_1，根据原理图，分配引脚如下
+
+   ![image-20211014164448133](README.assets/image-20211014164448133.png)
+
+10. 生成比特流
+
+    ![image-20211014164535546](README.assets/image-20211014164535546.png)
+
+11. 导出至硬件，打开SDK，获得 `system.hdf` 硬件描述文件
+
+#### PetaLinux 部分
+
+1. 创建项目
+
+   ```shell
+   petalinux-create --type project --template zynq --name petalinux_422_custom_ip
+   ```
+
+   
+
+2. 导入 `system.hdf` 硬件描述文件，并配置。
+
+   ```shell
+   petlinux-config --get-hw-description=.
+   ```
+
+   打开界面后无需配置，直接保存退出
+
+3. 配置内核
+
+   ```shell
+   petalinux-config –c kernel
+   ```
+
+   无需修改任何东西，直接应用当前配置并保存退出，等待编译结束
+
+4. 编译工程
+
+   ```shell
+   petalinux-build
+   ```
+
+5. 打包工程
+
+   ```shell
+   petalinux-package --boot --fsbl ./images/linux/zynq_fsbl.elf --fpga --u-boot --force
+   ```
+
+6. 将生成的 `BOOT.bin` 和 `image.ug`拷贝至 SD 卡
+
+#### 开发板验证
+
+1. SD插到开发板
+2. 开发板调整至SD模式
+3. 串口连接电脑，打开Putty工具
+4. 
+
+
+
+
+
 ### 编写Linux应用程序
 
 ![image-20211008112326105](README.assets/image-20211008112326105.png)

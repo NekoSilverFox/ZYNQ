@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 15 13:17:10 2021
+# Process ID: 11768
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_432_Linux_LCD_LED/XC7Z020_432_Linux_LCD_LED.runs/impl_1
+# Command line: vivado.exe -log ip_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ip_design_wrapper.tcl -notrace
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_432_Linux_LCD_LED/XC7Z020_432_Linux_LCD_LED.runs/impl_1/ip_design_wrapper.vdi
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_432_Linux_LCD_LED/XC7Z020_432_Linux_LCD_LED.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ip_design_wrapper.tcl -notrace

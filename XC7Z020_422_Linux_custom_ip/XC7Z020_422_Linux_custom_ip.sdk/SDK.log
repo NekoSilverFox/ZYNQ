@@ -1,0 +1,6 @@
+20:10:24 INFO  : Registering command handlers for SDK TCF services
+20:10:24 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_422_Linux_custom_ip\XC7Z020_422_Linux_custom_ip.sdk\temp_xsdb_launch_script.tcl
+20:10:27 INFO  : XSCT server has started successfully.
+20:10:28 INFO  : Successfully done setting XSCT server connection channel  
+20:10:28 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_422_Linux_custom_ip/XC7Z020_422_Linux_custom_ip.sdk/sys_design_wrapper.hdf.
+20:10:28 INFO  : Successfully done setting SDK workspace  

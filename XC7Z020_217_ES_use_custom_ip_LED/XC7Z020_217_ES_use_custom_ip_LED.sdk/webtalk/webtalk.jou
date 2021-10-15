@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Thu Oct 14 16:14:14 2021
+# Process ID: 22184
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_217_ES_use_custom_ip_LED/XC7Z020_217_ES_use_custom_ip_LED.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_217_ES_use_custom_ip_LED/XC7Z020_217_ES_use_custom_ip_LED.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_217_ES_use_custom_ip_LED/XC7Z020_217_ES_use_custom_ip_LED.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
