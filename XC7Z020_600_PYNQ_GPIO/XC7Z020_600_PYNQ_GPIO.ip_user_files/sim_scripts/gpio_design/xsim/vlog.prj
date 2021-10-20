@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "../../../../XC7Z020_600_PYNQ_GPIO.srcs/sources_1/bd/gpio_design/ipshared/ec67/hdl" --include "../../../../XC7Z020_600_PYNQ_GPIO.srcs/sources_1/bd/gpio_design/ipshared/70cf/hdl" --include "../../../../XC7Z020_600_PYNQ_GPIO.srcs/sources_1/bd/gpio_design/ip/gpio_design_processing_system7_0_0" \
+"../../../bd/gpio_design/ip/gpio_design_processing_system7_0_0/sim/gpio_design_processing_system7_0_0.v" \
+"../../../bd/gpio_design/ip/gpio_design_xbar_0/sim/gpio_design_xbar_0.v" \
+"../../../bd/gpio_design/ip/gpio_design_auto_pc_0/sim/gpio_design_auto_pc_0.v" \
+"../../../bd/gpio_design/sim/gpio_design.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

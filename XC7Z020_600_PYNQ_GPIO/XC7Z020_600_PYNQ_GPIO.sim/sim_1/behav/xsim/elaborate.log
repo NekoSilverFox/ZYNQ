@@ -1,0 +1,99 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 313161c845a9487bbc14b26daa4ff36a --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_2 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_20 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L axi_protocol_converter_v2_1_18 -L proc_sys_reset_v5_0_13 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gpio_design_wrapper_behav xil_defaultlib.gpio_design_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5463]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5481]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10170]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10188]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10189]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/proj/xbuilds/2018.3_1207_2324/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_6_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7074]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7092]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7093]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3726]
+WARNING: [VRFC 10-3283] element index 64 into 'wrp_strb' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6051]
+WARNING: [VRFC 10-3283] element index 128 into 'wrp_strb' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10811]
+WARNING: [VRFC 10-3283] element index 128 into 'wrp_strb' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7689]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7902]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8041]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8138]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8157]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8298]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8303]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8308]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_20.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=4...]
+Compiling architecture imp of entity axi_gpio_v2_0_20.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture gpio_design_axi_gpio_0_0_arch of entity xil_defaultlib.gpio_design_axi_gpio_0_0 [gpio_design_axi_gpio_0_0_default]
+Compiling architecture imp of entity axi_gpio_v2_0_20.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=4...]
+Compiling architecture imp of entity axi_gpio_v2_0_20.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture gpio_design_axi_gpio_0_1_arch of entity xil_defaultlib.gpio_design_axi_gpio_0_1 [gpio_design_axi_gpio_0_1_default]
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ge...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ge...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_fm...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ar...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ss...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_in...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_sp...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_dd...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_oc...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_oc...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_re...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_re...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_4.axi_vip_v1_1_4_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ax...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ax...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_4.axi_vip_v1_1_4_top(C_AXI_PROTOCO...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ax...
+Compiling module processing_system7_vip_v1_0_6.processing_system7_vip_v1_0_6_ax...
