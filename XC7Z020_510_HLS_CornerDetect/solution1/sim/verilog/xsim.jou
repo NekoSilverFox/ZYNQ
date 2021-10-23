@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 13 10:21:04 2020
+# Process ID: 1240
+# Current directory: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/doCorner/xsim_script.tcl}
+# Log file: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog/xsim.log
+# Journal file: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/doCorner/xsim_script.tcl
+source doCorner.tcl

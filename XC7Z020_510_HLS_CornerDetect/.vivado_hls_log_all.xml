@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="XC7Z020_510_HLS_CornerDetect" solutionName="solution1" date="2021-10-23T20:27:18.935+0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="XC7Z020_510_HLS_CornerDetect" solutionName="solution1" date="2021-10-23T20:22:03.987+0300"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'max&lt;int>' to 'max_int_s'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:39.051+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'reg&lt;int>' to 'reg_int_s'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:39.018+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'min&lt;int>' to 'min_int_s'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:39.007+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[3]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.966+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[5]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.213+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[4]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.202+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'core_buf.val[0].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:223)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.188+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'core_buf.val[1].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:223)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.178+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'core_buf.val[0].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:223)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.167+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'core_buf.val[1].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:223)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.158+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[2].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.148+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[3].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.138+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[0].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.126+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[4].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.117+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[5].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.107+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val[1].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.096+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[2].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.085+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[3].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.074+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[0].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.065+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[4].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.055+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[5].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.045+0300" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val[1].V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:222)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.034+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;24, 768, 1024, 4096>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:49:9)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:38.023+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Dilate&lt;0, 0, 768, 1024>' to 'Dilate' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:118:33)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.840+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::FAST_t_opr&lt;16, 7, 0, 768, 1024>' to 'FAST_t_opr' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:61:5)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.831+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;24, 768, 1024, 4096>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.820+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::PaintMask&lt;4096, 0, 768, 1024>' to 'PaintMask' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_fast.h:472:43)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.806+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::max&lt;int>' to 'max&lt;int>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_math.h:249)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.795+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::min&lt;int>' to 'min&lt;int>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_math.h:255)" projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:37.771+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 768 for loop 'loop_height' in function 'hls::AXIvideo2Mat&lt;24, 768, 1024, 4096>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.206+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1024 for loop 'loop_width' in function 'hls::AXIvideo2Mat&lt;24, 768, 1024, 4096>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.062+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 10 to 770 for loop 'loop_height' in function 'hls::Dilate&lt;0, 0, 768, 1024>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.052+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 10 to 1026 for loop 'loop_width' in function 'hls::Dilate&lt;0, 0, 768, 1024>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.041+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 768 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;24, 768, 1024, 4096>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.031+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1024 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;24, 768, 1024, 4096>'." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:36.017+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (CornerDetect/code/CornerDetect.cpp:35)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:33.892+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'mask.data_stream.V' (CornerDetect/code/CornerDetect.cpp:39)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:33.637+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_3.data_stream.V' (CornerDetect/code/CornerDetect.cpp:38)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:33.627+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_2.data_stream.V' (CornerDetect/code/CornerDetect.cpp:37)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:33.618+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_1.data_stream.V' (CornerDetect/code/CornerDetect.cpp:36)." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:16:33.606+0300" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:15:59.991+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'screen.bmp'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="CornerDetect" solutionName="solution1" date="2020-05-13T05:15:11.557+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

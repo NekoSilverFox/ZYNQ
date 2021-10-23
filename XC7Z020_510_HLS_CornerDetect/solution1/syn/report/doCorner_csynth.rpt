@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vivado HLS Report for 'doCorner'
+================================================================
+* Date:           Wed May 13 10:16:53 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CornerDetect
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  20.00|    17.108|        2.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+----------+
+    |     Latency     |     Interval    | Pipeline |
+    |   min  |   max  |   min  |   max  |   Type   |
+    +--------+--------+--------+--------+----------+
+    |  802113|  802113|  802110|  802110| dataflow |
+    +--------+--------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------+--------------+--------+--------+--------+--------+---------+
+        |                 |              |     Latency     |     Interval    | Pipeline|
+        |     Instance    |    Module    |   min  |   max  |   min  |   max  |   Type  |
+        +-----------------+--------------+--------+--------+--------+--------+---------+
+        |FAST_t_opr_U0    |FAST_t_opr    |  802109|  802109|  802109|  802109|   none  |
+        |Dilate_U0        |Dilate        |  793101|  793101|  793101|  793101|   none  |
+        |AXIvideo2Mat_U0  |AXIvideo2Mat  |  790275|  790275|  790275|  790275|   none  |
+        |Mat2AXIvideo_U0  |Mat2AXIvideo  |  789505|  789505|  789505|  789505|   none  |
+        |PaintMask_U0     |PaintMask     |  788737|  788737|  788737|  788737|   none  |
+        |rgb2gray_U0      |rgb2gray      |  787969|  787969|  787969|  787969|   none  |
+        +-----------------+--------------+--------+--------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|      2|
+|FIFO             |       48|      -|    693|   2043|
+|Instance         |       13|      2|   7748|   7791|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |       61|      2|   8441|   9836|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |       50|      2|     23|     55|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF  |  LUT |
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |AXIvideo2Mat_U0            |AXIvideo2Mat             |        0|      0|   262|   148|
+    |Dilate_U0                  |Dilate                   |        3|      0|   175|   361|
+    |FAST_t_opr_U0              |FAST_t_opr               |       10|      0|  7080|  6936|
+    |Mat2AXIvideo_U0            |Mat2AXIvideo             |        0|      0|   119|   117|
+    |PaintMask_U0               |PaintMask                |        0|      0|    40|   106|
+    |doCorner_CTRL_BUS_s_axi_U  |doCorner_CTRL_BUS_s_axi  |        0|      0|    36|    40|
+    |rgb2gray_U0                |rgb2gray                 |        0|      2|    36|    83|
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |Total                      |                         |       13|      2|  7748|  7791|
+    +---------------------------+-------------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------+---------+-----+-----+-------+-----+---------+
+    |          Name          | BRAM_18K|  FF | LUT | Depth | Bits| Size:D*B|
+    +------------------------+---------+-----+-----+-------+-----+---------+
+    |dmask_data_stream_0_U   |        0|    5|   20|      2|    8|       16|
+    |img_0_data_stream_0_U   |        0|    5|   20|      2|    8|       16|
+    |img_0_data_stream_1_U   |        0|    5|   20|      2|    8|       16|
+    |img_0_data_stream_2_U   |        0|    5|   20|      2|    8|       16|
+    |img_1_data_stream_0_U   |       16|  216|  621|  20000|    8|   160000|
+    |img_1_data_stream_1_U   |       16|  216|  621|  20000|    8|   160000|
+    |img_1_data_stream_2_U   |       16|  216|  621|  20000|    8|   160000|
+    |img_2_data_stream_0_U   |        0|    5|   20|      2|    8|       16|
+    |img_3_data_stream_0_U   |        0|    5|   20|      2|    8|       16|
+    |img_3_data_stream_1_U   |        0|    5|   20|      2|    8|       16|
+    |img_3_data_stream_2_U   |        0|    5|   20|      2|    8|       16|
+    |mask_data_stream_0_s_U  |        0|    5|   20|      2|    8|       16|
+    +------------------------+---------+-----+-----+-------+-----+---------+
+    |Total                   |       48|  693| 2043|  60018|   96|   480144|
+    +------------------------+---------+-----+-----+-------+-----+---------+
+
+    * Expression: 
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |ap_idle                   |    and   |      0|  0|   1|           1|           1|
+    |rgb2gray_U0_start_full_n  |    and   |      0|  0|   1|           1|           1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |Total                     |          |      0|  0|   2|           2|           2|
+    +--------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |  in |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_AWREADY  | out |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_AWADDR   |  in |    4|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_WVALID   |  in |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_WREADY   | out |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_WDATA    |  in |   32|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_WSTRB    |  in |    4|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_ARVALID  |  in |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_ARREADY  | out |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_ARADDR   |  in |    4|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_RVALID   | out |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_RREADY   |  in |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_RDATA    | out |   32|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_RRESP    | out |    2|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_BVALID   | out |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_BREADY   |  in |    1|    s_axi   |      CTRL_BUS      |  return void |
+|s_axi_CTRL_BUS_BRESP    | out |    2|    s_axi   |      CTRL_BUS      |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs |      doCorner      | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |      doCorner      | return value |
+|interrupt               | out |    1| ap_ctrl_hs |      doCorner      | return value |
+|inStream_TDATA          |  in |   24|    axis    |  inStream_V_data_V |    pointer   |
+|inStream_TKEEP          |  in |    3|    axis    |  inStream_V_keep_V |    pointer   |
+|inStream_TSTRB          |  in |    3|    axis    |  inStream_V_strb_V |    pointer   |
+|inStream_TUSER          |  in |    1|    axis    |  inStream_V_user_V |    pointer   |
+|inStream_TLAST          |  in |    1|    axis    |  inStream_V_last_V |    pointer   |
+|inStream_TID            |  in |    1|    axis    |   inStream_V_id_V  |    pointer   |
+|inStream_TDEST          |  in |    1|    axis    |  inStream_V_dest_V |    pointer   |
+|inStream_TVALID         |  in |    1|    axis    |  inStream_V_dest_V |    pointer   |
+|inStream_TREADY         | out |    1|    axis    |  inStream_V_dest_V |    pointer   |
+|outStream_TDATA         | out |   24|    axis    | outStream_V_data_V |    pointer   |
+|outStream_TKEEP         | out |    3|    axis    | outStream_V_keep_V |    pointer   |
+|outStream_TSTRB         | out |    3|    axis    | outStream_V_strb_V |    pointer   |
+|outStream_TUSER         | out |    1|    axis    | outStream_V_user_V |    pointer   |
+|outStream_TLAST         | out |    1|    axis    | outStream_V_last_V |    pointer   |
+|outStream_TID           | out |    1|    axis    |  outStream_V_id_V  |    pointer   |
+|outStream_TDEST         | out |    1|    axis    | outStream_V_dest_V |    pointer   |
+|outStream_TVALID        | out |    1|    axis    | outStream_V_dest_V |    pointer   |
+|outStream_TREADY        |  in |    1|    axis    | outStream_V_dest_V |    pointer   |
++------------------------+-----+-----+------------+--------------------+--------------+
+

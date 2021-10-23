@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado/2018.3/msys64/mingw64/bin/g++"
+   Compiling CornerDetect.cpp_pre.cpp.tb.cpp
+   Compiling apatb_doCorner.cpp
+   Compiling testCorner.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

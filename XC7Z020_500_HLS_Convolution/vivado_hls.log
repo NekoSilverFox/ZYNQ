@@ -1,0 +1,28 @@
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'mi' on host 'desktop-hmf772i' (Windows NT_amd64 version 6.2) on Sat Oct 23 20:03:24 +0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_500_HLS_Convolution'
+INFO: [HLS 200-10] Opening project 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_500_HLS_Convolution/kernel'.
+WARNING: [HLS 200-40] Cannot find design file 'kernel.h'
+WARNING: [HLS 200-40] Cannot find design file 'kernel.cpp'
+WARNING: [HLS 200-40] Cannot find design file 'Lena.bmp'
+INFO: [HLS 200-10] Adding test bench file 'kernel/code/test_kernel.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_500_HLS_Convolution/kernel/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Cannot find source file Lena.bmp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file kernel.cpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file kernel.h; skipping it.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+Error in linking the design.
+    while executing
+"source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_500_HLS_Convolution/kernel/solution1/csynth.tcl"
+    invoked from within
+"hls::main C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_500_HLS_Convolution/kernel/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

@@ -1,0 +1,30 @@
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'mi' on host 'desktop-hmf772i' (Windows NT_amd64 version 6.2) on Sat Oct 23 20:27:17 +0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/mi/Desktop/Programma/ZYNQ'
+INFO: [HLS 200-10] Opening project 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_510_HLS_CornerDetect'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_510_HLS_CornerDetect/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-2'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: *** No rule to make target 'C:/Xilinx/Vivado/2018.3/include/opencv2/opencv.hpp', needed by 'obj/testCorner.o'.  Stop.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_510_HLS_CornerDetect/solution1/csim.tcl"
+    invoked from within
+"hls::main C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_510_HLS_CornerDetect/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

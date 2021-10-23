@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'doCorner'" level="0">
+<item name = "Date">Wed May 13 10:16:45 2020
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">CornerDetect</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00, 17.108, 2.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">802113, 802113, 802110, 802110, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_FAST_t_opr_fu_318">FAST_t_opr, 802109, 802109, 802109, 802109, none</column>
+<column name="grp_Dilate_fu_324">Dilate, 793101, 793101, 793101, 793101, none</column>
+<column name="grp_AXIvideo2Mat_fu_330">AXIvideo2Mat, 790275, 790275, 790275, 790275, none</column>
+<column name="grp_Mat2AXIvideo_fu_351">Mat2AXIvideo, 789505, 789505, 789505, 789505, none</column>
+<column name="grp_PaintMask_fu_372">PaintMask, 788737, 788737, 788737, 788737, none</column>
+<column name="grp_rgb2gray_fu_383">rgb2gray, 787969, 787969, 787969, 787969, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

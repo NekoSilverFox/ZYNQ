@@ -1,0 +1,44 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port cmos_vsync -pg 1 -y 0 -defaultsOSRD
+preplace port cmos_href -pg 1 -y 20 -defaultsOSRD
+preplace port cmos_pclk -pg 1 -y -20 -defaultsOSRD
+preplace portBus cmos_data -pg 1 -y 40 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 5 -y -220 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 4 -y -150 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 2 -y -540 -defaultsOSRD
+preplace inst ddr3_hdmi_ov5640_0 -pg 1 -lvl 1 -y -10 -defaultsOSRD
+preplace inst doKernel_0 -pg 1 -lvl 3 -y -470 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -y -20 -defaultsOSRD
+preplace inst hdmi_trans_0 -pg 1 -lvl 6 -y -280 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 3 -y 0 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y -300 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -320 -defaultsOSRD
+preplace netloc v_axi4s_vid_out_0_vid_data 1 5 1 1130
+preplace netloc cmos_pclk_0_1 1 0 1 NJ
+preplace netloc clk_wiz_0_locked 1 3 2 460 -240 780
+preplace netloc ddr3_hdmi_ov5640_0_data_active 1 1 2 -280 -120 N
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 5 1 1110
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 2 3 90 -570 480 -300 N
+preplace netloc ddr3_hdmi_ov5640_0_pclk 1 1 2 N -20 90
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 -280 -310 N
+preplace netloc util_vector_logic_0_Res 1 4 2 790 -410 1140
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 5 1 1120
+preplace netloc ddr3_hdmi_ov5640_0_capture_data 1 1 2 -270 -100 N
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 480J 40 NJ 40 1130
+preplace netloc cmos_href_0_1 1 0 1 NJ
+preplace netloc ddr3_hdmi_ov5640_0_vsync 1 1 2 -260 0 N
+preplace netloc clk_wiz_0_clk_out1 1 3 3 470 -250 810 -420 1150
+preplace netloc clk_wiz_0_clk_out2 1 3 3 NJ -280 780J -430 1160
+preplace netloc cmos_data_0_1 1 0 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 -270 -290 N
+preplace netloc v_tc_0_vtiming_out 1 4 1 800
+preplace netloc cmos_vsync_0_1 1 0 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 5 1 1150
+preplace netloc ddr3_hdmi_ov5640_0_cmos_clk_en 1 1 2 N 20 80
+levelinfo -pg 1 -700 -480 -90 280 630 960 1300 1450 -top -1000 -bot 510
+"
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CornerDetect.cpp" path="C:\Users\mi\Desktop\Programma\ZYNQ\CornerDetect.cpp"/>
+    <originFiles name="CornerDetect.cpp" path="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_510_HLS_CornerDetect\code\CornerDetect.cpp"/>
+    <originFiles name="CornerDetect.h" path="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_510_HLS_CornerDetect\code\CornerDetect.h"/>
+    <originFiles name="testCorner.cpp" path="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_510_HLS_CornerDetect\code\testCorner.cpp"/>
+    <originFiles name="screen.bmp" path="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_510_HLS_CornerDetect\code\screen.bmp"/>
+  </source>
+  <testbench>
+    <originFiles name="testCorner.cpp" path="C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_510_HLS_CornerDetect\code\testCorner.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

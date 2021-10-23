@@ -1,26 +1,33 @@
 #-----------------------------------------------------------
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Oct 12 17:37:48 2021
-# Process ID: 24088
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 21 17:25:35 2021
+# Process ID: 28676
 # Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11100 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_425_Linux_HDMI\XC7Z020_425_Linux_HDMI.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33416 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_425_Linux_HDMI\XC7Z020_425_Linux_HDMI.xpr
 # Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/vivado.log
 # Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/XC7Z020_425_Linux_HDMI.xpr
+open_project -read_only C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/XC7Z020_425_Linux_HDMI.xpr
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/XC7Z020_425_Linux_HDMI.cache/ip'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1663] The design 'hdmi_design.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'hdmi_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+hdmi_design_processing_system7_0_0
+
+WARNING: [Project 1-229] Project 'XC7Z020_425_Linux_HDMI.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 722.934 ; gain = 89.805
+update_compile_order -fileset sources_1
 open_bd_design {C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/XC7Z020_425_Linux_HDMI.srcs/sources_1/bd/hdmi_design/hdmi_design.bd}
 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Successfully read diagram <hdmi_design> from BD file <C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_425_Linux_HDMI/XC7Z020_425_Linux_HDMI.srcs/sources_1/bd/hdmi_design/hdmi_design.bd>
-open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 850.398 ; gain = 30.805
-set_property location {0.5 -129 134} [get_bd_cells processing_system7_0]
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 12 17:39:31 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 21 17:26:32 2021...

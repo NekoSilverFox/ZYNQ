@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 13 10:23:16 2020
+# Process ID: 9544
+# Current directory: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog/xsim.dir/doCorner/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog/webtalk.log
+# Journal file: E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source E:/demo/Mizair/7020/HLS/Lab10_HLS_ConerDetect/CornerDetect/solution1/sim/verilog/xsim.dir/doCorner/webtalk/xsim_webtalk.tcl -notrace

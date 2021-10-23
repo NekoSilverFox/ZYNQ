@@ -1,0 +1,125 @@
+<stg><name>max<int></name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:0  %y_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %y) nounwind
+
+]]></Node>
+<StgValue><ssdm name="y_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:1  %x_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %x) nounwind
+
+]]></Node>
+<StgValue><ssdm name="x_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:2  %tmp = icmp sgt i32 %x_read, %y_read
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+:3  %tmp_s = select i1 %tmp, i32 %x_read, i32 %y_read
+
+]]></Node>
+<StgValue><ssdm name="tmp_s"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="32">
+<![CDATA[
+:4  ret i32 %tmp_s
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="8" name="x" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="x"/></StgValue>
+</port>
+<port id="9" name="y" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="y"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="11" from="_ssdm_op_Read.ap_auto.i32" to="y_read" fromId="10" toId="2">
+</dataflow>
+<dataflow id="12" from="y" to="y_read" fromId="9" toId="2">
+</dataflow>
+<dataflow id="13" from="_ssdm_op_Read.ap_auto.i32" to="x_read" fromId="10" toId="3">
+</dataflow>
+<dataflow id="14" from="x" to="x_read" fromId="8" toId="3">
+</dataflow>
+<dataflow id="15" from="x_read" to="tmp" fromId="3" toId="4">
+</dataflow>
+<dataflow id="16" from="y_read" to="tmp" fromId="2" toId="4">
+</dataflow>
+<dataflow id="17" from="tmp" to="tmp_s" fromId="4" toId="5">
+</dataflow>
+<dataflow id="18" from="x_read" to="tmp_s" fromId="3" toId="5">
+</dataflow>
+<dataflow id="19" from="y_read" to="tmp_s" fromId="2" toId="5">
+</dataflow>
+<dataflow id="20" from="tmp_s" to="StgValue_6" fromId="5" toId="6">
+</dataflow>
+</dataflows>
+
+
+</stg>

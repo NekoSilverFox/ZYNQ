@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 21 17:26:34 2021
+# Process ID: 40540
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39732 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_305_ES_OV5640_HDMI\XC7Z020_305_ES_OV5640_HDMI.xpr
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/vivado.log
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.xpr
+open_bd_design {C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd}
+update_compile_order -fileset sources_1
+write_bd_tcl -force C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/ov5640_hdmi_design.tcl

@@ -1,0 +1,160 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'rgb2gray'" level="0">
+<item name = "Date">Wed May 13 10:16:46 2020
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">CornerDetect</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00, 15.082, 2.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">787969, 787969, 787969, 787969, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">787968, 787968, 1026, -, -, 768, no</column>
+<column name=" + Loop 1.1">1024, 1024, 1, -, -, 1024, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 2, -, -</column>
+<column name="Expression">-, -, 0, 47</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 36</column>
+<column name="Register">-, -, 36, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
+<specialColumn name="Utilization (%)">0, 2, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="doCorner_mac_mulabkb_U11">doCorner_mac_mulabkb, i0 * i1 + i2</column>
+<column name="doCorner_mac_mulacud_U12">doCorner_mac_mulacud, i0 + i1 * i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="idxCol_1_fu_248_p2">+, 0, 0, 11, 11, 1</column>
+<column name="idxRow_1_fu_236_p2">+, 0, 0, 10, 10, 1</column>
+<column name="tmp_6_fu_286_p2">-, 0, 0, 14, 14, 14</column>
+<column name="exitcond1_fu_230_p2">icmp, 0, 0, 5, 10, 10</column>
+<column name="exitcond_fu_242_p2">icmp, 0, 0, 5, 11, 12</column>
+<column name="ap_block_state1">or, 0, 0, 1, 1, 1</column>
+<column name="ap_block_state3">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">3, 4, 1, 4</column>
+<column name="ap_done">3, 2, 1, 2</column>
+<column name="idxCol_reg_219">3, 2, 11, 22</column>
+<column name="idxRow_reg_208">3, 2, 10, 20</column>
+<column name="imgIn_data_stream_0_V_blk_n">3, 2, 1, 2</column>
+<column name="imgIn_data_stream_1_V_blk_n">3, 2, 1, 2</column>
+<column name="imgIn_data_stream_2_V_blk_n">3, 2, 1, 2</column>
+<column name="imgOut_1C_data_stream_V_blk_n">3, 2, 1, 2</column>
+<column name="imgOut_3C_data_stream_0_V_blk_n">3, 2, 1, 2</column>
+<column name="imgOut_3C_data_stream_1_V_blk_n">3, 2, 1, 2</column>
+<column name="imgOut_3C_data_stream_2_V_blk_n">3, 2, 1, 2</column>
+<column name="real_start">3, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="idxCol_reg_219">11, 0, 11, 0</column>
+<column name="idxRow_1_reg_329">10, 0, 10, 0</column>
+<column name="idxRow_reg_208">10, 0, 10, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, rgb2gray, return value</column>
+<column name="imgIn_data_stream_0_V_dout">in, 8, ap_fifo, imgIn_data_stream_0_V, pointer</column>
+<column name="imgIn_data_stream_0_V_empty_n">in, 1, ap_fifo, imgIn_data_stream_0_V, pointer</column>
+<column name="imgIn_data_stream_0_V_read">out, 1, ap_fifo, imgIn_data_stream_0_V, pointer</column>
+<column name="imgIn_data_stream_1_V_dout">in, 8, ap_fifo, imgIn_data_stream_1_V, pointer</column>
+<column name="imgIn_data_stream_1_V_empty_n">in, 1, ap_fifo, imgIn_data_stream_1_V, pointer</column>
+<column name="imgIn_data_stream_1_V_read">out, 1, ap_fifo, imgIn_data_stream_1_V, pointer</column>
+<column name="imgIn_data_stream_2_V_dout">in, 8, ap_fifo, imgIn_data_stream_2_V, pointer</column>
+<column name="imgIn_data_stream_2_V_empty_n">in, 1, ap_fifo, imgIn_data_stream_2_V, pointer</column>
+<column name="imgIn_data_stream_2_V_read">out, 1, ap_fifo, imgIn_data_stream_2_V, pointer</column>
+<column name="imgOut_3C_data_stream_0_V_din">out, 8, ap_fifo, imgOut_3C_data_stream_0_V, pointer</column>
+<column name="imgOut_3C_data_stream_0_V_full_n">in, 1, ap_fifo, imgOut_3C_data_stream_0_V, pointer</column>
+<column name="imgOut_3C_data_stream_0_V_write">out, 1, ap_fifo, imgOut_3C_data_stream_0_V, pointer</column>
+<column name="imgOut_3C_data_stream_1_V_din">out, 8, ap_fifo, imgOut_3C_data_stream_1_V, pointer</column>
+<column name="imgOut_3C_data_stream_1_V_full_n">in, 1, ap_fifo, imgOut_3C_data_stream_1_V, pointer</column>
+<column name="imgOut_3C_data_stream_1_V_write">out, 1, ap_fifo, imgOut_3C_data_stream_1_V, pointer</column>
+<column name="imgOut_3C_data_stream_2_V_din">out, 8, ap_fifo, imgOut_3C_data_stream_2_V, pointer</column>
+<column name="imgOut_3C_data_stream_2_V_full_n">in, 1, ap_fifo, imgOut_3C_data_stream_2_V, pointer</column>
+<column name="imgOut_3C_data_stream_2_V_write">out, 1, ap_fifo, imgOut_3C_data_stream_2_V, pointer</column>
+<column name="imgOut_1C_data_stream_V_din">out, 8, ap_fifo, imgOut_1C_data_stream_V, pointer</column>
+<column name="imgOut_1C_data_stream_V_full_n">in, 1, ap_fifo, imgOut_1C_data_stream_V, pointer</column>
+<column name="imgOut_1C_data_stream_V_write">out, 1, ap_fifo, imgOut_1C_data_stream_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

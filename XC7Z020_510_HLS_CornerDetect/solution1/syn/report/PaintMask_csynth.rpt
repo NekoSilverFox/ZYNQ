@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vivado HLS Report for 'PaintMask'
+================================================================
+* Date:           Wed May 13 10:16:51 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CornerDetect
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  20.00|     8.564|        2.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  788737|  788737|  788737|  788737|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+--------+--------+----------+-----------+-----------+------+----------+
+        |               |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- loop_height  |  788736|  788736|      1027|          -|          -|   768|    no    |
+        | + loop_width  |    1024|    1024|         2|          1|          1|  1024|    yes   |
+        +---------------+--------+--------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|     66|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     40|
+|Register         |        -|      -|     40|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|     40|    106|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_V_fu_231_p2                     |     +    |      0|  0|  10|          10|           1|
+    |j_V_fu_243_p2                     |     +    |      0|  0|  11|          11|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   1|           1|           1|
+    |exitcond1_fu_225_p2               |   icmp   |      0|  0|   5|          10|          10|
+    |exitcond_fu_237_p2                |   icmp   |      0|  0|   5|          11|          12|
+    |tmp_s_fu_249_p2                   |   icmp   |      0|  0|   4|           8|           1|
+    |ap_block_state1                   |    or    |      0|  0|   1|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   1|           1|           1|
+    |p_dst_data_stream_0_V_din         |  select  |      0|  0|   8|           1|           8|
+    |p_dst_data_stream_1_V_din         |  select  |      0|  0|   8|           1|           8|
+    |p_dst_data_stream_2_V_din         |  select  |      0|  0|   8|           1|           8|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  66|          59|          55|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |   4|          5|    1|          5|
+    |ap_done                      |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   3|          3|    1|          3|
+    |p_dst_data_stream_0_V_blk_n  |   3|          2|    1|          2|
+    |p_dst_data_stream_1_V_blk_n  |   3|          2|    1|          2|
+    |p_dst_data_stream_2_V_blk_n  |   3|          2|    1|          2|
+    |p_mask_data_stream_V_blk_n   |   3|          2|    1|          2|
+    |p_src_data_stream_0_V_blk_n  |   3|          2|    1|          2|
+    |p_src_data_stream_1_V_blk_n  |   3|          2|    1|          2|
+    |p_src_data_stream_2_V_blk_n  |   3|          2|    1|          2|
+    |real_start                   |   3|          2|    1|          2|
+    |t_V_1_reg_214                |   3|          2|   11|         22|
+    |t_V_reg_203                  |   3|          2|   10|         20|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  40|         30|   32|         68|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |exitcond_reg_291         |   1|   0|    1|          0|
+    |i_V_reg_286              |  10|   0|   10|          0|
+    |start_once_reg           |   1|   0|    1|          0|
+    |t_V_1_reg_214            |  11|   0|   11|          0|
+    |t_V_reg_203              |  10|   0|   10|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  40|   0|   40|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+-----------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                         |  in |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_rst                         |  in |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_start                       |  in |    1| ap_ctrl_hs |       PaintMask       | return value |
+|start_full_n                   |  in |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_done                        | out |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_continue                    |  in |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_idle                        | out |    1| ap_ctrl_hs |       PaintMask       | return value |
+|ap_ready                       | out |    1| ap_ctrl_hs |       PaintMask       | return value |
+|start_out                      | out |    1| ap_ctrl_hs |       PaintMask       | return value |
+|start_write                    | out |    1| ap_ctrl_hs |       PaintMask       | return value |
+|p_src_data_stream_0_V_dout     |  in |    8|   ap_fifo  | p_src_data_stream_0_V |    pointer   |
+|p_src_data_stream_0_V_empty_n  |  in |    1|   ap_fifo  | p_src_data_stream_0_V |    pointer   |
+|p_src_data_stream_0_V_read     | out |    1|   ap_fifo  | p_src_data_stream_0_V |    pointer   |
+|p_src_data_stream_1_V_dout     |  in |    8|   ap_fifo  | p_src_data_stream_1_V |    pointer   |
+|p_src_data_stream_1_V_empty_n  |  in |    1|   ap_fifo  | p_src_data_stream_1_V |    pointer   |
+|p_src_data_stream_1_V_read     | out |    1|   ap_fifo  | p_src_data_stream_1_V |    pointer   |
+|p_src_data_stream_2_V_dout     |  in |    8|   ap_fifo  | p_src_data_stream_2_V |    pointer   |
+|p_src_data_stream_2_V_empty_n  |  in |    1|   ap_fifo  | p_src_data_stream_2_V |    pointer   |
+|p_src_data_stream_2_V_read     | out |    1|   ap_fifo  | p_src_data_stream_2_V |    pointer   |
+|p_mask_data_stream_V_dout      |  in |    8|   ap_fifo  |  p_mask_data_stream_V |    pointer   |
+|p_mask_data_stream_V_empty_n   |  in |    1|   ap_fifo  |  p_mask_data_stream_V |    pointer   |
+|p_mask_data_stream_V_read      | out |    1|   ap_fifo  |  p_mask_data_stream_V |    pointer   |
+|p_dst_data_stream_0_V_din      | out |    8|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_full_n   |  in |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_write    | out |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_1_V_din      | out |    8|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_full_n   |  in |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_write    | out |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_2_V_din      | out |    8|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_full_n   |  in |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_write    | out |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
++-------------------------------+-----+-----+------------+-----------------------+--------------+
+
