@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="ov5640_hdmi_design" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1635027114"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1635027114"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1635027114"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1635027114"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1635089601"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1635089601"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1635089601"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1635089601"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\ov5640_hdmi_design_processing_system7_0_0\ov5640_hdmi_design_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -48,7 +48,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\ov5640_hdmi_design_axi_vdma_0_0\ov5640_hdmi_design_axi_vdma_0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_vdma_0"/>
+        <Instance HierarchyPath="axi_vdma_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="1634590083" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -147,7 +147,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\ov5640_hdmi_design_axi_vdma_1_0\ov5640_hdmi_design_axi_vdma_1_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_vdma_1"/>
+        <Instance HierarchyPath="axi_vdma_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

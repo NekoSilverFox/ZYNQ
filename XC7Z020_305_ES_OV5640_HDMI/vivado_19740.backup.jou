@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 24 00:32:41 2021
+# Process ID: 19740
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent102816 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_305_ES_OV5640_HDMI\XC7Z020_305_ES_OV5640_HDMI.xpr
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/vivado.log
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd}
+save_project_as XC7Z020_316_ES_ConerDetect C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect -force
+set_property  ip_repo_paths  {c:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/ip_repo C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/ip_repo} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  c:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/ip_repo [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  c:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/ip_repo [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:image_filter:1.0 image_filter_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_1
+endgroup
+set_property location {4.5 1329 -151} [get_bd_cells axi_vdma_1]
+set_property -dict [list CONFIG.c_m_axis_mm2s_tdata_width {24} CONFIG.c_mm2s_max_burst_length {32} CONFIG.c_s2mm_max_burst_length {32}] [get_bd_cells axi_vdma_1]
+set_property location {4 1230 282} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {5 1663 225} [get_bd_cells axi_vdma_1]
+set_property location {3.5 1137 290} [get_bd_cells v_vid_in_axi4s_0]
+set_property location {4.5 1454 215} [get_bd_cells axi_vdma_1]
+set_property location {6 1800 212} [get_bd_cells image_filter_0]
+connect_bd_intf_net [get_bd_intf_pins image_filter_0/inStream] [get_bd_intf_pins axi_vdma_1/M_AXIS_MM2S]
+delete_bd_objs [get_bd_intf_nets v_vid_in_axi4s_0_video_out]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins axi_vdma_1/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins image_filter_0/outStream] [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins v_vid_in_axi4s_0/vid_field_id] [get_bd_pins v_vid_in_axi4s_0/vid_hblank]
+delete_bd_objs [get_bd_nets Net]
+connect_bd_net [get_bd_pins axi_vdma_1/s_axi_lite_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/m_axi_mm2s_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/m_axis_mm2s_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/m_axi_s2mm_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_vdma_1/s_axis_s2mm_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/image_filter_0/s_axi_CTRL_BUS} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins image_filter_0/s_axi_CTRL_BUS]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_vdma_1/S_AXI_LITE} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_vdma_1/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/axi_vdma_1/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_vdma_1/M_AXI_MM2S]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/axi_vdma_1/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_vdma_1/M_AXI_S2MM]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+validate_bd_design -force
+save_bd_design
+generate_target all [get_files  C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd]
+export_ip_user_files -of_objects [get_files C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd] -directory C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.ip_user_files -ipstatic_source_dir C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/compile_simlib/modelsim} {questa=C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/compile_simlib/questa} {riviera=C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/compile_simlib/riviera} {activehdl=C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.runs/synth_1'
+HD_PWD='C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

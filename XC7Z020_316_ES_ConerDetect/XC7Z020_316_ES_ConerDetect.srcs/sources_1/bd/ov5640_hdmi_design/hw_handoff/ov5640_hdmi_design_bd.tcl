@@ -157,13 +157,14 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
-  set emio_sccb [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 emio_sccb ]
 
   # Create ports
   set cmos_data [ create_bd_port -dir I -from 9 -to 0 cmos_data ]
   set cmos_href [ create_bd_port -dir I cmos_href ]
   set cmos_pclk [ create_bd_port -dir I cmos_pclk ]
   set cmos_rst_n [ create_bd_port -dir O -type rst cmos_rst_n ]
+  set cmos_scl [ create_bd_port -dir O cmos_scl ]
+  set cmos_sda [ create_bd_port -dir IO cmos_sda ]
   set cmos_vsync [ create_bd_port -dir I cmos_vsync ]
   set hdmi_oen [ create_bd_port -dir O -from 0 -to 0 hdmi_oen ]
   set hdmi_tx_chn_b_n [ create_bd_port -dir O hdmi_tx_chn_b_n ]
@@ -243,7 +244,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {10.000000} \
    CONFIG.PCW_ACT_PCAP_PERIPHERAL_FREQMHZ {200.000000} \
    CONFIG.PCW_ACT_QSPI_PERIPHERAL_FREQMHZ {10.000000} \
-   CONFIG.PCW_ACT_SDIO_PERIPHERAL_FREQMHZ {10.000000} \
+   CONFIG.PCW_ACT_SDIO_PERIPHERAL_FREQMHZ {100.000000} \
    CONFIG.PCW_ACT_SMC_PERIPHERAL_FREQMHZ {10.000000} \
    CONFIG.PCW_ACT_SPI_PERIPHERAL_FREQMHZ {10.000000} \
    CONFIG.PCW_ACT_TPIU_PERIPHERAL_FREQMHZ {200.000000} \
@@ -274,7 +275,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR1 {1} \
    CONFIG.PCW_ENET1_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_ENET1_PERIPHERAL_DIVISOR1 {1} \
-   CONFIG.PCW_EN_EMIO_GPIO {1} \
+   CONFIG.PCW_EN_EMIO_GPIO {0} \
+   CONFIG.PCW_EN_SDIO0 {1} \
    CONFIG.PCW_EN_UART1 {1} \
    CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0 {6} \
    CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR1 {6} \
@@ -288,12 +290,36 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FPGA_FCLK1_ENABLE {0} \
    CONFIG.PCW_FPGA_FCLK2_ENABLE {0} \
    CONFIG.PCW_FPGA_FCLK3_ENABLE {0} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_IO {2} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {2} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_IO {<Select>} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {64} \
    CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {25} \
    CONFIG.PCW_IOPLL_CTRL_FBDIV {54} \
    CONFIG.PCW_IO_IO_PLL_FREQMHZ {1800.000} \
+   CONFIG.PCW_MIO_40_DIRECTION {inout} \
+   CONFIG.PCW_MIO_40_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_40_PULLUP {enabled} \
+   CONFIG.PCW_MIO_40_SLEW {slow} \
+   CONFIG.PCW_MIO_41_DIRECTION {inout} \
+   CONFIG.PCW_MIO_41_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_41_PULLUP {enabled} \
+   CONFIG.PCW_MIO_41_SLEW {slow} \
+   CONFIG.PCW_MIO_42_DIRECTION {inout} \
+   CONFIG.PCW_MIO_42_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_42_PULLUP {enabled} \
+   CONFIG.PCW_MIO_42_SLEW {slow} \
+   CONFIG.PCW_MIO_43_DIRECTION {inout} \
+   CONFIG.PCW_MIO_43_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_43_PULLUP {enabled} \
+   CONFIG.PCW_MIO_43_SLEW {slow} \
+   CONFIG.PCW_MIO_44_DIRECTION {inout} \
+   CONFIG.PCW_MIO_44_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_44_PULLUP {enabled} \
+   CONFIG.PCW_MIO_44_SLEW {slow} \
+   CONFIG.PCW_MIO_45_DIRECTION {inout} \
+   CONFIG.PCW_MIO_45_IOTYPE {LVCMOS 1.8V} \
+   CONFIG.PCW_MIO_45_PULLUP {enabled} \
+   CONFIG.PCW_MIO_45_SLEW {slow} \
    CONFIG.PCW_MIO_48_DIRECTION {out} \
    CONFIG.PCW_MIO_48_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_48_PULLUP {enabled} \
@@ -302,12 +328,19 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_49_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_49_PULLUP {enabled} \
    CONFIG.PCW_MIO_49_SLEW {slow} \
-   CONFIG.PCW_MIO_TREE_PERIPHERALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned} \
-   CONFIG.PCW_MIO_TREE_SIGNALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned} \
+   CONFIG.PCW_MIO_TREE_PERIPHERALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned} \
+   CONFIG.PCW_MIO_TREE_SIGNALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#clk#cmd#data[0]#data[1]#data[2]#data[3]#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned} \
    CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0 {9} \
    CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} \
    CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_SDIO_PERIPHERAL_DIVISOR0 {1} \
+   CONFIG.PCW_SD0_GRP_CD_ENABLE {0} \
+   CONFIG.PCW_SD0_GRP_POW_ENABLE {0} \
+   CONFIG.PCW_SD0_GRP_WP_ENABLE {0} \
+   CONFIG.PCW_SD0_PERIPHERAL_ENABLE {1} \
+   CONFIG.PCW_SD0_SD0_IO {MIO 40 .. 45} \
+   CONFIG.PCW_SDIO_PERIPHERAL_DIVISOR0 {18} \
+   CONFIG.PCW_SDIO_PERIPHERAL_FREQMHZ {100} \
+   CONFIG.PCW_SDIO_PERIPHERAL_VALID {1} \
    CONFIG.PCW_SMC_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_SPI_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_TPIU_PERIPHERAL_DIVISOR0 {1} \
@@ -404,24 +437,24 @@ proc create_root_design { parentCell } {
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_smc_M00_AXI [get_bd_intf_pins axi_smc/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
-  connect_bd_intf_net -intf_net axi_vdma_0_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
-  connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
-  connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_S2MM [get_bd_intf_pins axi_smc/S01_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM]
-  connect_bd_intf_net -intf_net axi_vdma_1_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_1/M_AXIS_MM2S] [get_bd_intf_pins image_filter_0/inStream]
-  connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_MM2S [get_bd_intf_pins axi_smc/S02_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_MM2S]
-  connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_S2MM [get_bd_intf_pins axi_smc/S03_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_S2MM]
-  connect_bd_intf_net -intf_net image_filter_0_outStream [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM] [get_bd_intf_pins image_filter_0/outStream]
+  connect_bd_intf_net -intf_net axi_vdma_0_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_1/M_AXIS_MM2S] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+  connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_MM2S]
+  connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_S2MM [get_bd_intf_pins axi_smc/S01_AXI] [get_bd_intf_pins axi_vdma_1/M_AXI_S2MM]
+  connect_bd_intf_net -intf_net axi_vdma_1_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins image_filter_0/inStream]
+  connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_MM2S [get_bd_intf_pins axi_smc/S02_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S]
+  connect_bd_intf_net -intf_net axi_vdma_1_M_AXI_S2MM [get_bd_intf_pins axi_smc/S03_AXI] [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM]
+  connect_bd_intf_net -intf_net image_filter_0_outStream [get_bd_intf_pins axi_vdma_1/S_AXIS_S2MM] [get_bd_intf_pins image_filter_0/outStream]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
-  connect_bd_intf_net -intf_net processing_system7_0_GPIO_0 [get_bd_intf_ports emio_sccb] [get_bd_intf_pins processing_system7_0/GPIO_0]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins axi_vdma_0/S_AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins axi_vdma_1/S_AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins image_filter_0/s_axi_CTRL_BUS] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_vdma_1/S_AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_vdma_0/S_AXI_LITE] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
-  connect_bd_intf_net -intf_net v_vid_in_axi4s_0_video_out [get_bd_intf_pins axi_vdma_1/S_AXIS_S2MM] [get_bd_intf_pins v_vid_in_axi4s_0/video_out]
+  connect_bd_intf_net -intf_net v_vid_in_axi4s_0_video_out [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM] [get_bd_intf_pins v_vid_in_axi4s_0/video_out]
 
   # Create port connections
+  connect_bd_net -net Net [get_bd_ports cmos_sda] [get_bd_pins ddr3_hdmi_ov5640_0/cmos_sda]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins hdmi_trans_0/clk1x] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_clk] [get_bd_pins v_tc_0/clk]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins hdmi_trans_0/clk5x]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins util_vector_logic_1/Op1] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken] [get_bd_pins v_tc_0/resetn]
@@ -432,6 +465,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ddr3_hdmi_ov5640_0_capture_data [get_bd_pins ddr3_hdmi_ov5640_0/capture_data] [get_bd_pins v_vid_in_axi4s_0/vid_data]
   connect_bd_net -net ddr3_hdmi_ov5640_0_cmos_clk_en [get_bd_pins ddr3_hdmi_ov5640_0/cmos_clk_en] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_ce]
   connect_bd_net -net ddr3_hdmi_ov5640_0_cmos_rst_n [get_bd_ports cmos_rst_n] [get_bd_pins ddr3_hdmi_ov5640_0/cmos_rst_n]
+  connect_bd_net -net ddr3_hdmi_ov5640_0_cmos_scl [get_bd_ports cmos_scl] [get_bd_pins ddr3_hdmi_ov5640_0/cmos_scl]
   connect_bd_net -net ddr3_hdmi_ov5640_0_data_active [get_bd_pins ddr3_hdmi_ov5640_0/data_active] [get_bd_pins v_vid_in_axi4s_0/vid_active_video]
   connect_bd_net -net ddr3_hdmi_ov5640_0_pclk [get_bd_pins ddr3_hdmi_ov5640_0/pclk] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_clk]
   connect_bd_net -net ddr3_hdmi_ov5640_0_vsync [get_bd_pins ddr3_hdmi_ov5640_0/vsync] [get_bd_pins v_vid_in_axi4s_0/vid_vsync]
@@ -460,8 +494,8 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x40000000 -offset 0x00000000 [get_bd_addr_spaces axi_vdma_0/Data_S2MM] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
   create_bd_addr_seg -range 0x40000000 -offset 0x00000000 [get_bd_addr_spaces axi_vdma_1/Data_MM2S] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
   create_bd_addr_seg -range 0x40000000 -offset 0x00000000 [get_bd_addr_spaces axi_vdma_1/Data_S2MM] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM
-  create_bd_addr_seg -range 0x00010000 -offset 0x43000000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_vdma_0/S_AXI_LITE/Reg] SEG_axi_vdma_0_Reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43010000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_vdma_1/S_AXI_LITE/Reg] SEG_axi_vdma_1_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43000000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_vdma_1/S_AXI_LITE/Reg] SEG_axi_vdma_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43010000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_vdma_0/S_AXI_LITE/Reg] SEG_axi_vdma_1_Reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs image_filter_0/s_axi_CTRL_BUS/Reg] SEG_image_filter_0_Reg
 
 

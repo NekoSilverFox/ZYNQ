@@ -1,0 +1,19 @@
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'mi' on host 'desktop-hmf772i' (Windows NT_amd64 version 6.2) on Sun Oct 24 17:23:28 +0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS'
+INFO: [HLS 200-10] Opening project 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 24 17:23:39 2021...

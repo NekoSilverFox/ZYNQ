@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Oct 18 23:51:24 2021
-# Process ID: 95612
-# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.runs/synth_1
+# Start of session at: Sun Oct 24 18:44:56 2021
+# Process ID: 114400
+# Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.runs/synth_1
 # Command line: vivado.exe -log ov5640_hdmi_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov5640_hdmi_design_wrapper.tcl
-# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.runs/synth_1/ov5640_hdmi_design_wrapper.vds
-# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.runs/synth_1\vivado.jou
+# Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.runs/synth_1/ov5640_hdmi_design_wrapper.vds
+# Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source ov5640_hdmi_design_wrapper.tcl -notrace

@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Oct 24 01:11:41 2021
+//Date        : Sun Oct 24 18:33:08 2021
 //Host        : DESKTOP-HMF772I running 64-bit major release  (build 9200)
 //Command     : generate_target ov5640_hdmi_design_wrapper.bd
 //Design      : ov5640_hdmi_design_wrapper
@@ -35,8 +35,9 @@ module ov5640_hdmi_design_wrapper
     cmos_href,
     cmos_pclk,
     cmos_rst_n,
+    cmos_scl,
+    cmos_sda,
     cmos_vsync,
-    emio_sccb_tri_io,
     hdmi_oen,
     hdmi_tx_chn_b_n,
     hdmi_tx_chn_b_p,
@@ -71,8 +72,9 @@ module ov5640_hdmi_design_wrapper
   input cmos_href;
   input cmos_pclk;
   output cmos_rst_n;
+  output cmos_scl;
+  inout cmos_sda;
   input cmos_vsync;
-  inout [1:0]emio_sccb_tri_io;
   output [0:0]hdmi_oen;
   output hdmi_tx_chn_b_n;
   output hdmi_tx_chn_b_p;
@@ -108,15 +110,9 @@ module ov5640_hdmi_design_wrapper
   wire cmos_href;
   wire cmos_pclk;
   wire cmos_rst_n;
+  wire cmos_scl;
+  wire cmos_sda;
   wire cmos_vsync;
-  wire [0:0]emio_sccb_tri_i_0;
-  wire [1:1]emio_sccb_tri_i_1;
-  wire [0:0]emio_sccb_tri_io_0;
-  wire [1:1]emio_sccb_tri_io_1;
-  wire [0:0]emio_sccb_tri_o_0;
-  wire [1:1]emio_sccb_tri_o_1;
-  wire [0:0]emio_sccb_tri_t_0;
-  wire [1:1]emio_sccb_tri_t_1;
   wire [0:0]hdmi_oen;
   wire hdmi_tx_chn_b_n;
   wire hdmi_tx_chn_b_p;
@@ -127,16 +123,6 @@ module ov5640_hdmi_design_wrapper
   wire hdmi_tx_clk_n;
   wire hdmi_tx_clk_p;
 
-  IOBUF emio_sccb_tri_iobuf_0
-       (.I(emio_sccb_tri_o_0),
-        .IO(emio_sccb_tri_io[0]),
-        .O(emio_sccb_tri_i_0),
-        .T(emio_sccb_tri_t_0));
-  IOBUF emio_sccb_tri_iobuf_1
-       (.I(emio_sccb_tri_o_1),
-        .IO(emio_sccb_tri_io[1]),
-        .O(emio_sccb_tri_i_1),
-        .T(emio_sccb_tri_t_1));
   ov5640_hdmi_design ov5640_hdmi_design_i
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -163,10 +149,9 @@ module ov5640_hdmi_design_wrapper
         .cmos_href(cmos_href),
         .cmos_pclk(cmos_pclk),
         .cmos_rst_n(cmos_rst_n),
+        .cmos_scl(cmos_scl),
+        .cmos_sda(cmos_sda),
         .cmos_vsync(cmos_vsync),
-        .emio_sccb_tri_i({emio_sccb_tri_i_1,emio_sccb_tri_i_0}),
-        .emio_sccb_tri_o({emio_sccb_tri_o_1,emio_sccb_tri_o_0}),
-        .emio_sccb_tri_t({emio_sccb_tri_t_1,emio_sccb_tri_t_0}),
         .hdmi_oen(hdmi_oen),
         .hdmi_tx_chn_b_n(hdmi_tx_chn_b_n),
         .hdmi_tx_chn_b_p(hdmi_tx_chn_b_p),

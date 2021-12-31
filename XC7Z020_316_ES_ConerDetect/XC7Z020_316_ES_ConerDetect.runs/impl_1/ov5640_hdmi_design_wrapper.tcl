@@ -68,19 +68,19 @@ set rc [catch {
   create_project -in_memory -part xc7z020clg400-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.cache/wt [current_project]
-  set_property parent.project_path C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/wt [current_project]
+  set_property parent.project_path C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.xpr [current_project]
   set_property ip_repo_paths C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/ip_repo [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.cache/ip [current_project]
+  set_property ip_output_repo C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.runs/synth_1/ov5640_hdmi_design_wrapper.dcp
+  add_files -quiet C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.runs/synth_1/ov5640_hdmi_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd
+  add_files C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ov5640_hdmi_design.bd
   set_param project.isImplRun false
-  read_xdc C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.srcs/constrs_1/new/ov5640_hdmi.xdc
+  read_xdc C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.srcs/constrs_1/new/ov5640_hdmi.xdc
   set_param project.isImplRun true
   link_design -top ov5640_hdmi_design_wrapper -part xc7z020clg400-2
   set_param project.isImplRun false

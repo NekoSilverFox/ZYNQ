@@ -173,6 +173,7 @@ vlog -work xlconstant_v1_1_5 -64 "+incdir+../../../../XC7Z020_316_ES_ConerDetect
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/ec67/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/70cf/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/85a3" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/58e2/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/979d/hdl/verilog" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/b2d0/hdl/verilog" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_processing_system7_0_0" "+incdir+G:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_xlconstant_0_0/sim/ov5640_hdmi_design_xlconstant_0_0.v" \
+"../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/sim/bd_c6bb.v" \
 "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/ip/ip_0/sim/bd_c6bb_one_0.v" \
 
 vcom -work proc_sys_reset_v5_0_13 -64 -93 \
@@ -261,7 +262,6 @@ vlog -work xil_defaultlib -64 -sv -L axi_vip_v1_1_4 -L processing_system7_vip_v1
 "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/ip/ip_39/sim/bd_c6bb_m00e_0.sv" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/ec67/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/70cf/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/85a3" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/58e2/hdl" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/979d/hdl/verilog" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ipshared/b2d0/hdl/verilog" "+incdir+../../../../XC7Z020_316_ES_ConerDetect.srcs/sources_1/bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_processing_system7_0_0" "+incdir+G:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
-"../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/sim/bd_c6bb.v" \
 "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/sim/ov5640_hdmi_design_axi_smc_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \

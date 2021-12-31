@@ -1,0 +1,12 @@
+19:42:34 INFO  : Registering command handlers for SDK TCF services
+19:42:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_316_ES_ConerDetect\XC7Z020_316_ES_ConerDetect.sdk\temp_xsdb_launch_script.tcl
+19:42:39 INFO  : XSCT server has started successfully.
+19:42:39 INFO  : Successfully done setting XSCT server connection channel  
+19:42:39 INFO  : Successfully done setting SDK workspace  
+19:42:39 INFO  : Processing command line option -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.sdk/ov5640_hdmi_design_wrapper.hdf.
+19:43:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:43:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+19:43:15 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.sdk/ov5640_hdmi_design_wrapper_hw_platform_0/ov5640_hdmi_design_wrapper.bit"
+19:46:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS2 201706300081" && level==0} -index 1' command is executed.
+19:47:01 INFO  : FPGA configured successfully with bitstream "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/XC7Z020_316_ES_ConerDetect.sdk/ov5640_hdmi_design_wrapper_hw_platform_0/ov5640_hdmi_design_wrapper.bit"

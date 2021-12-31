@@ -2,12 +2,14 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Oct 24 00:32:41 2021
-# Process ID: 19740
+# Start of session at: Sun Oct 24 14:35:36 2021
+# Process ID: 110800
 # Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent102816 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_305_ES_OV5640_HDMI\XC7Z020_305_ES_OV5640_HDMI.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent110516 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_305_ES_OV5640_HDMI\XC7Z020_305_ES_OV5640_HDMI.xpr
 # Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/vivado.log
 # Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.sdk -hwspec C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_305_ES_OV5640_HDMI/XC7Z020_305_ES_OV5640_HDMI.sdk/ov5640_hdmi_design_wrapper.hdf

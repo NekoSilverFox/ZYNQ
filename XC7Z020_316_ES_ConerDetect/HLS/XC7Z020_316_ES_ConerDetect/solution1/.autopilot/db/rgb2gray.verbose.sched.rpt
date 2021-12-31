@@ -1,0 +1,202 @@
+
+
+================================================================
+== Vivado HLS Report for 'rgb2gray'
+================================================================
+* Date:           Sun Oct 24 17:05:18 2021
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        XC7Z020_316_ES_ConerDetect
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.280|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  2360833|  2360833|  2360833|  2360833|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |      Latency      | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  2360832|  2360832|      3074|          -|          -|   768|    no    |
+        | + Loop 1.1  |     3072|     3072|         3|          -|          -|  1024|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond1)
+3 --> 
+	4  / (!exitcond)
+	2  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgOut_1C_data_stream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str139, i32 0, i32 0, [1 x i8]* @p_str140, [1 x i8]* @p_str141, [1 x i8]* @p_str142, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str143, [1 x i8]* @p_str144)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgOut_3C_data_stream_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str132, i32 0, i32 0, [1 x i8]* @p_str133, [1 x i8]* @p_str134, [1 x i8]* @p_str135, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str136, [1 x i8]* @p_str137)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgOut_3C_data_stream_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str125, i32 0, i32 0, [1 x i8]* @p_str126, [1 x i8]* @p_str127, [1 x i8]* @p_str128, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str129, [1 x i8]* @p_str130)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgOut_3C_data_stream_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str118, i32 0, i32 0, [1 x i8]* @p_str119, [1 x i8]* @p_str120, [1 x i8]* @p_str121, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str122, [1 x i8]* @p_str123)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgIn_data_stream_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str111, i32 0, i32 0, [1 x i8]* @p_str112, [1 x i8]* @p_str113, [1 x i8]* @p_str114, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str115, [1 x i8]* @p_str116)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgIn_data_stream_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str104, i32 0, i32 0, [1 x i8]* @p_str105, [1 x i8]* @p_str106, [1 x i8]* @p_str107, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str108, [1 x i8]* @p_str109)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %imgIn_data_stream_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str97, i32 0, i32 0, [1 x i8]* @p_str98, [1 x i8]* @p_str99, [1 x i8]* @p_str100, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str101, [1 x i8]* @p_str102)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.46ns)   --->   "br label %.loopexit" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 1.94>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%idxRow = phi i10 [ 0, %0 ], [ %idxRow_1, %.loopexit.loopexit ]"   --->   Operation 14 'phi' 'idxRow' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.94ns)   --->   "%exitcond1 = icmp eq i10 %idxRow, -256" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8]   --->   Operation 15 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.94> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 768, i64 768, i64 768)"   --->   Operation 16 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.41ns)   --->   "%idxRow_1 = add i10 %idxRow, 1" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8]   --->   Operation 17 'add' 'idxRow_1' <Predicate = true> <Delay = 1.41> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %1, label %.preheader.preheader" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.46ns)   --->   "br label %.preheader" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:9]   --->   Operation 19 'br' <Predicate = (!exitcond1)> <Delay = 0.46>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "ret void" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:27]   --->   Operation 20 'ret' <Predicate = (exitcond1)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.40>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%idxCol = phi i11 [ %idxCol_1, %"operator>>.exit" ], [ 0, %.preheader.preheader ]"   --->   Operation 21 'phi' 'idxCol' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (1.88ns)   --->   "%exitcond = icmp eq i11 %idxCol, -1024" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:9]   --->   Operation 22 'icmp' 'exitcond' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1024, i64 1024, i64 1024)"   --->   Operation 23 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (1.48ns)   --->   "%idxCol_1 = add i11 %idxCol, 1" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:9]   --->   Operation 24 'add' 'idxCol_1' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %"operator>>.exit"" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:9]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str51)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:672->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 26 'specregionbegin' 'tmp' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:676->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 27 'specprotocol' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (3.40ns)   --->   "%tmp_10 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %imgIn_data_stream_0_V)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 28 'read' 'tmp_10' <Predicate = (!exitcond)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 29 [1/1] (3.40ns)   --->   "%tmp_11 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %imgIn_data_stream_1_V)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 29 'read' 'tmp_11' <Predicate = (!exitcond)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 30 [1/1] (3.40ns)   --->   "%tmp_7 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %imgIn_data_stream_2_V)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 30 'read' 'tmp_7' <Predicate = (!exitcond)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str51, i32 %tmp)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:681->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11]   --->   Operation 31 'specregionend' 'empty' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 32 'br' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 8.28>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_1_cast = zext i8 %tmp_10 to i16" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 33 'zext' 'tmp_1_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (2.82ns) (grouped into DSP with root node tmp_8)   --->   "%tmp_2 = mul i16 %tmp_1_cast, 76" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 34 'mul' 'tmp_2' <Predicate = true> <Delay = 2.82> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_3_cast = zext i8 %tmp_11 to i16" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 35 'zext' 'tmp_3_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (2.82ns) (grouped into DSP with root node tmp1)   --->   "%tmp_4 = mul i16 %tmp_3_cast, 150" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 36 'mul' 'tmp_4' <Predicate = true> <Delay = 2.82> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%p_shl = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %tmp_7, i5 0)" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 37 'bitconcatenate' 'p_shl' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%p_shl_cast = zext i13 %p_shl to i14" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 38 'zext' 'p_shl_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%p_shl1 = call i9 @_ssdm_op_BitConcatenate.i9.i8.i1(i8 %tmp_7, i1 false)" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 39 'bitconcatenate' 'p_shl1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%p_shl1_cast = zext i9 %p_shl1 to i14" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 40 'zext' 'p_shl1_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (1.53ns)   --->   "%tmp_6 = sub i14 %p_shl_cast, %p_shl1_cast" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 41 'sub' 'tmp_6' <Predicate = true> <Delay = 1.53> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.53> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_6_cast = sext i14 %tmp_6 to i16" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 42 'sext' 'tmp_6_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (2.73ns) (root node of the DSP)   --->   "%tmp1 = add i16 %tmp_6_cast, %tmp_4" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 43 'add' 'tmp1' <Predicate = true> <Delay = 2.73> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 44 [1/1] (2.73ns) (root node of the DSP)   --->   "%tmp_8 = add i16 %tmp_2, %tmp1" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 44 'add' 'tmp_8' <Predicate = true> <Delay = 2.73> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_9 = call i8 @_ssdm_op_PartSelect.i8.i16.i32.i32(i16 %tmp_8, i32 8, i32 15)" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17]   --->   Operation 45 'partselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 3.40>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str49)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:696->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 46 'specregionbegin' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:700->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 47 'specprotocol' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %imgOut_3C_data_stream_0_V, i8 %tmp_9)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 48 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_5 : Operation 49 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %imgOut_3C_data_stream_1_V, i8 %tmp_9)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 49 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_5 : Operation 50 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %imgOut_3C_data_stream_2_V, i8 %tmp_9)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 50 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str49, i32 %tmp_3)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:705->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23]   --->   Operation 51 'specregionend' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str47)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:696->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:24]   --->   Operation 52 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str2) nounwind" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:700->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:24]   --->   Operation 53 'specprotocol' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %imgOut_1C_data_stream_V, i8 %tmp_9)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:24]   --->   Operation 54 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str47, i32 %tmp_s)" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:705->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:24]   --->   Operation 55 'specregionend' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "br label %.preheader" [XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:9]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.466ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('idxRow') with incoming values : ('idxRow', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8) [17]  (0.466 ns)
+
+ <State 2>: 1.94ns
+The critical path consists of the following:
+	'phi' operation ('idxRow') with incoming values : ('idxRow', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8) [17]  (0 ns)
+	'icmp' operation ('exitcond1', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:8) [18]  (1.94 ns)
+
+ <State 3>: 3.4ns
+The critical path consists of the following:
+	fifo read on port 'imgIn_data_stream_0_V' (G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:11) [33]  (3.4 ns)
+
+ <State 4>: 8.28ns
+The critical path consists of the following:
+	'mul' operation of DSP[47] ('tmp_4', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17) [40]  (2.82 ns)
+	'add' operation of DSP[47] ('tmp1', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17) [47]  (2.73 ns)
+	'add' operation of DSP[48] ('tmp_8', XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:17) [48]  (2.73 ns)
+
+ <State 5>: 3.4ns
+The critical path consists of the following:
+	fifo write on port 'imgOut_3C_data_stream_0_V' (G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->G:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->XC7Z020_316_ES_ConerDetect/code/CornerDetect.cpp:23) [52]  (3.4 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

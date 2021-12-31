@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x622B9EED3BB64466",
+      "boundary_crc": "0xD28FAE5D69278E65",
       "device": "xc7z020clg400-2",
       "name": "ov5640_hdmi_design",
       "synth_flow_mode": "None",
@@ -14,7 +14,7 @@
       "v_vid_in_axi4s_0": "",
       "clk_wiz_0": "",
       "util_vector_logic_0": "",
-      "axi_vdma_0": "",
+      "axi_vdma_1": "",
       "v_tc_0": "",
       "v_axi4s_vid_out_0": "",
       "util_vector_logic_1": "",
@@ -32,7 +32,7 @@
         "m02_couplers": {}
       },
       "image_filter_0": "",
-      "axi_vdma_1": ""
+      "axi_vdma_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -98,10 +98,6 @@
             "value_src": "default"
           }
         }
-      },
-      "emio_sccb": {
-        "mode": "Master",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
       }
     },
     "ports": {
@@ -199,6 +195,12 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "cmos_scl": {
+        "direction": "O"
+      },
+      "cmos_sda": {
+        "direction": "IO"
       }
     },
     "components": {
@@ -240,7 +242,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "100.000000"
           },
           "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -291,6 +293,9 @@
             "value": "0x3FFFFFFF"
           },
           "PCW_EN_EMIO_GPIO": {
+            "value": "0"
+          },
+          "PCW_EN_SDIO0": {
             "value": "1"
           },
           "PCW_EN_UART1": {
@@ -300,13 +305,61 @@
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
-            "value": "1"
+            "value": "0"
           },
-          "PCW_GPIO_EMIO_GPIO_IO": {
-            "value": "2"
+          "PCW_MIO_40_IOTYPE": {
+            "value": "LVCMOS 1.8V"
           },
-          "PCW_GPIO_EMIO_GPIO_WIDTH": {
-            "value": "2"
+          "PCW_MIO_40_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_40_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_41_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_41_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_41_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_42_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_42_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_42_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_43_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_43_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_43_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_44_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_44_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_44_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_45_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_45_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_45_SLEW": {
+            "value": "slow"
           },
           "PCW_MIO_48_IOTYPE": {
             "value": "LVCMOS 1.8V"
@@ -327,13 +380,34 @@
             "value": "slow"
           },
           "PCW_MIO_TREE_PERIPHERALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#unassigned#unassigned#UART 1#UART 1#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_MIO_TREE_SIGNALS": {
-            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned"
+            "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#clk#cmd#data[0]#data[1]#data[2]#data[3]#unassigned#unassigned#tx#rx#unassigned#unassigned#unassigned#unassigned"
           },
           "PCW_PRESET_BANK1_VOLTAGE": {
             "value": "LVCMOS 1.8V"
+          },
+          "PCW_SD0_GRP_CD_ENABLE": {
+            "value": "0"
+          },
+          "PCW_SD0_GRP_POW_ENABLE": {
+            "value": "0"
+          },
+          "PCW_SD0_GRP_WP_ENABLE": {
+            "value": "0"
+          },
+          "PCW_SD0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_SD0_SD0_IO": {
+            "value": "MIO 40 .. 45"
+          },
+          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "100"
+          },
+          "PCW_SDIO_PERIPHERAL_VALID": {
+            "value": "1"
           },
           "PCW_UART1_GRP_FULL_ENABLE": {
             "value": "0"
@@ -446,7 +520,7 @@
           }
         }
       },
-      "axi_vdma_0": {
+      "axi_vdma_1": {
         "vlnv": "xilinx.com:ip:axi_vdma:6.3",
         "xci_name": "ov5640_hdmi_design_axi_vdma_0_0",
         "parameters": {
@@ -733,16 +807,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -943,16 +1017,16 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -1009,7 +1083,7 @@
         "vlnv": "xilinx.com:hls:image_filter:1.0",
         "xci_name": "ov5640_hdmi_design_image_filter_0_0"
       },
-      "axi_vdma_1": {
+      "axi_vdma_0": {
         "vlnv": "xilinx.com:ip:axi_vdma:6.3",
         "xci_name": "ov5640_hdmi_design_axi_vdma_1_0",
         "parameters": {
@@ -1026,93 +1100,27 @@
       }
     },
     "interface_nets": {
-      "processing_system7_0_FIXED_IO": {
+      "axi_vdma_1_M_AXIS_MM2S": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "axi_vdma_0_M_AXIS_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXIS_MM2S",
-          "v_axi4s_vid_out_0/video_in"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S00_AXI"
-        ]
-      },
-      "v_tc_0_vtiming_out": {
-        "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
-        ]
-      },
-      "axi_vdma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "axi_smc/S00_AXI"
-        ]
-      },
-      "processing_system7_0_GPIO_0": {
-        "interface_ports": [
-          "emio_sccb",
-          "processing_system7_0/GPIO_0"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "axi_vdma_0/S_AXI_LITE"
-        ]
-      },
-      "axi_vdma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_S2MM",
-          "axi_smc/S01_AXI"
-        ]
-      },
-      "axi_smc_M00_AXI": {
-        "interface_ports": [
-          "axi_smc/M00_AXI",
-          "processing_system7_0/S_AXI_HP0"
-        ]
-      },
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
+          "image_filter_0/inStream",
+          "axi_vdma_0/M_AXIS_MM2S"
         ]
       },
       "axi_vdma_1_M_AXI_MM2S": {
         "interface_ports": [
-          "axi_vdma_1/M_AXI_MM2S",
+          "axi_vdma_0/M_AXI_MM2S",
           "axi_smc/S02_AXI"
-        ]
-      },
-      "axi_vdma_1_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_vdma_1/M_AXI_S2MM",
-          "axi_smc/S03_AXI"
-        ]
-      },
-      "axi_vdma_1_M_AXIS_MM2S": {
-        "interface_ports": [
-          "image_filter_0/inStream",
-          "axi_vdma_1/M_AXIS_MM2S"
-        ]
-      },
-      "v_vid_in_axi4s_0_video_out": {
-        "interface_ports": [
-          "v_vid_in_axi4s_0/video_out",
-          "axi_vdma_1/S_AXIS_S2MM"
         ]
       },
       "image_filter_0_outStream": {
         "interface_ports": [
           "image_filter_0/outStream",
+          "axi_vdma_1/S_AXIS_S2MM"
+        ]
+      },
+      "v_vid_in_axi4s_0_video_out": {
+        "interface_ports": [
+          "v_vid_in_axi4s_0/video_out",
           "axi_vdma_0/S_AXIS_S2MM"
         ]
       },
@@ -1125,7 +1133,67 @@
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
+          "axi_vdma_0/S_AXI_LITE"
+        ]
+      },
+      "axi_vdma_1_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXI_S2MM",
+          "axi_smc/S03_AXI"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
+      "axi_smc_M00_AXI": {
+        "interface_ports": [
+          "axi_smc/M00_AXI",
+          "processing_system7_0/S_AXI_HP0"
+        ]
+      },
+      "v_tc_0_vtiming_out": {
+        "interface_ports": [
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
+        ]
+      },
+      "axi_vdma_0_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_vdma_1/M_AXI_MM2S",
+          "axi_smc/S00_AXI"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
           "axi_vdma_1/S_AXI_LITE"
+        ]
+      },
+      "axi_vdma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_vdma_1/M_AXI_S2MM",
+          "axi_smc/S01_AXI"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "axi_vdma_0_M_AXIS_MM2S": {
+        "interface_ports": [
+          "axi_vdma_1/M_AXIS_MM2S",
+          "v_axi4s_vid_out_0/video_in"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S00_AXI"
         ]
       }
     },
@@ -1167,23 +1235,23 @@
           "clk_wiz_0/clk_in1",
           "v_vid_in_axi4s_0/aclk",
           "v_axi4s_vid_out_0/aclk",
-          "axi_vdma_0/m_axi_mm2s_aclk",
+          "axi_vdma_1/m_axi_mm2s_aclk",
           "axi_smc/aclk",
           "processing_system7_0/S_AXI_HP0_ACLK",
           "rst_ps7_0_50M/slowest_sync_clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
-          "axi_vdma_0/s_axi_lite_aclk",
+          "axi_vdma_1/s_axi_lite_aclk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "axi_vdma_0/m_axis_mm2s_aclk",
-          "axi_vdma_0/s_axis_s2mm_aclk",
-          "axi_vdma_0/m_axi_s2mm_aclk",
-          "axi_vdma_1/s_axi_lite_aclk",
-          "axi_vdma_1/m_axi_mm2s_aclk",
           "axi_vdma_1/m_axis_mm2s_aclk",
-          "axi_vdma_1/m_axi_s2mm_aclk",
           "axi_vdma_1/s_axis_s2mm_aclk",
+          "axi_vdma_1/m_axi_s2mm_aclk",
+          "axi_vdma_0/s_axi_lite_aclk",
+          "axi_vdma_0/m_axi_mm2s_aclk",
+          "axi_vdma_0/m_axis_mm2s_aclk",
+          "axi_vdma_0/m_axi_s2mm_aclk",
+          "axi_vdma_0/s_axis_s2mm_aclk",
           "image_filter_0/ap_clk",
           "ps7_0_axi_periph/M01_ACLK",
           "ps7_0_axi_periph/M02_ACLK"
@@ -1354,13 +1422,25 @@
           "rst_ps7_0_50M/peripheral_aresetn",
           "axi_smc/aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "axi_vdma_0/axi_resetn",
+          "axi_vdma_1/axi_resetn",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
           "image_filter_0/ap_rst_n",
           "ps7_0_axi_periph/M01_ARESETN",
-          "axi_vdma_1/axi_resetn",
+          "axi_vdma_0/axi_resetn",
           "ps7_0_axi_periph/M02_ARESETN"
+        ]
+      },
+      "ddr3_hdmi_ov5640_0_cmos_scl": {
+        "ports": [
+          "ddr3_hdmi_ov5640_0/cmos_scl",
+          "cmos_scl"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "cmos_sda",
+          "ddr3_hdmi_ov5640_0/cmos_sda"
         ]
       }
     },
@@ -1372,12 +1452,12 @@
             "width": "32",
             "segments": {
               "SEG_axi_vdma_0_Reg": {
-                "address_block": "/axi_vdma_0/S_AXI_LITE/Reg",
+                "address_block": "/axi_vdma_1/S_AXI_LITE/Reg",
                 "offset": "0x43000000",
                 "range": "64K"
               },
               "SEG_axi_vdma_1_Reg": {
-                "address_block": "/axi_vdma_1/S_AXI_LITE/Reg",
+                "address_block": "/axi_vdma_0/S_AXI_LITE/Reg",
                 "offset": "0x43010000",
                 "range": "64K"
               },
@@ -1390,7 +1470,7 @@
           }
         }
       },
-      "/axi_vdma_0": {
+      "/axi_vdma_1": {
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",
@@ -1416,7 +1496,7 @@
           }
         }
       },
-      "/axi_vdma_1": {
+      "/axi_vdma_0": {
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",

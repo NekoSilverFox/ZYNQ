@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Oct 21 18:54:12 2021">
+<application name="pa" timeStamp="Sun Oct 24 14:36:23 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b495bab4b3b445d78813ea1a608aaa59" type="ProjectID"/>
 <property name="ProjectIteration" value="2" type="ProjectIteration"/>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExportRSBTclScript" value="1" type="JavaHandler"/>
 <property name="ManageCompositeTargets" value="1" type="JavaHandler"/>
 <property name="NewExportHardware" value="1" type="JavaHandler"/>
-<property name="NewLaunchHardware" value="1" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="3" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenBlockDesign" value="1" type="JavaHandler"/>
 <property name="ProjectSummary" value="1" type="JavaHandler"/>
@@ -42,7 +42,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_APPLY" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="19" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="21" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_CREATE_FILE" value="1" type="GuiHandlerData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="26" type="GuiHandlerData"/>
@@ -61,12 +61,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="MIOTablePagePanel_MIO_TABLE" value="1" type="GuiHandlerData"/>
 <property name="MIOTablePagePanel_MIO_TABLE_PARAMETER" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_CHECKPOINT" value="3" type="GuiHandlerData"/>
-<property name="MainMenuMgr_EXPORT" value="3" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="6" type="GuiHandlerData"/>
-<property name="MainMenuMgr_IP" value="3" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="3" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TEXT_EDITOR" value="2" type="GuiHandlerData"/>
+<property name="MainMenuMgr_CHECKPOINT" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EXPORT" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="10" type="GuiHandlerData"/>
+<property name="MainMenuMgr_IP" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="5" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TEXT_EDITOR" value="4" type="GuiHandlerData"/>
 <property name="NewExportHardwareDialog_INCLUDE_BITSTREAM" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="1" type="GuiHandlerData"/>
@@ -74,13 +74,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_EXPORT_BD_TCL" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_EXPORT_HARDWARE" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_GENERATE_COMPOSITE_FILE" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_LAUNCH_HARDWARE" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_LAUNCH_HARDWARE" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_PROJECT_SUMMARY" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_REGENERATE_LAYOUT" value="7" type="GuiHandlerData"/>
 <property name="PACommandNames_VALIDATE_RSB_DESIGN" value="1" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="2" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiHandlerData"/>
+<property name="ProjectSummaryPowerPanel_TABBED_PANE" value="1" type="GuiHandlerData"/>
 <property name="RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION" value="1" type="GuiHandlerData"/>
 <property name="RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION" value="2" type="GuiHandlerData"/>
 <property name="RSBExternalInterfacePropPanels_NAME" value="1" type="GuiHandlerData"/>
@@ -95,9 +96,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="52" type="GuiMode"/>
+<property name="GuiMode" value="2" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="49" type="TclMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
 </item>
 </section>
 </application>

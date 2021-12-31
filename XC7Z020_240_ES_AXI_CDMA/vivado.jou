@@ -1,15 +1,15 @@
 #-----------------------------------------------------------
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue Oct 12 17:39:40 2021
-# Process ID: 28572
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 30 00:45:08 2021
+# Process ID: 171352
 # Current directory: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23880 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent266796 C:\Users\mi\Desktop\Programma\ZYNQ\XC7Z020_240_ES_AXI_CDMA\XC7Z020_240_ES_AXI_CDMA.xpr
 # Log file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/vivado.log
 # Journal file: C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.xpr
+open_project -read_only C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.xpr
+update_compile_order -fileset sources_1
 open_bd_design {C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_240_ES_AXI_CDMA/XC7Z020_240_ES_AXI_CDMA.srcs/sources_1/bd/design_axi_cdma/design_axi_cdma.bd}
-synth_design -rtl -name rtl_1

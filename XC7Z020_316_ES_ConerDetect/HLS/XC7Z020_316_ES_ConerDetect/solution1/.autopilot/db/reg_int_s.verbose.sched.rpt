@@ -1,0 +1,119 @@
+
+
+================================================================
+== Vivado HLS Report for 'reg_int_s'
+================================================================
+* Date:           Sun Oct 24 17:05:19 2021
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        XC7Z020_316_ES_ConerDetect
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 2
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%in_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %in_r) nounwind" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot\utils/x_hls_utils.h:242]   --->   Operation 3 'read' 'in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [2/2] (0.00ns)   --->   "ret i32 %in_read" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot\utils/x_hls_utils.h:248]   --->   Operation 4 'ret' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [8 x i8]* @p_str42, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot\utils/x_hls_utils.h:246]   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "ret i32 %in_read" [G:/Xilinx/Vivado/2018.3/common/technology/autopilot\utils/x_hls_utils.h:248]   --->   Operation 6 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

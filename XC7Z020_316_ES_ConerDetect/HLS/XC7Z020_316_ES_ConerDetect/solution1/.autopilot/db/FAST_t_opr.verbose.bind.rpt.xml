@@ -1,0 +1,208 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'FAST_t_opr'" level="0">
+<item name = "Date">Sun Oct 24 17:05:21 2021
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">XC7Z020_316_ES_ConerDetect</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.724, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">806741, 806741, 806741, 806741, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="tmp_76_1_min_int_s_fu_581">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_3_min_int_s_fu_587">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_5_min_int_s_fu_593">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_7_min_int_s_fu_599">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_9_min_int_s_fu_605">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_s_min_int_s_fu_611">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_1_min_int_s_fu_617">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_3_min_int_s_fu_623">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_5_min_int_s_fu_629">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_7_min_int_s_fu_635">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_2_min_int_s_fu_641">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_76_4_min_int_s_fu_647">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_9_min_int_s_fu_653">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_1_min_int_s_fu_659">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_3_min_int_s_fu_665">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_s_min_int_s_fu_671">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_2_min_int_s_fu_677">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_83_4_min_int_s_fu_683">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_5_min_int_s_fu_689">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_27_min_int_s_fu_695">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_29_min_int_s_fu_701">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_1_min_int_s_fu_707">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_1_min_int_s_fu_713">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_min_int_s_fu_719">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_min_int_s_fu_726">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_7_min_int_s_fu_733">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_9_min_int_s_fu_739">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_s_min_int_s_fu_745">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_2_min_int_s_fu_751">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_90_4_min_int_s_fu_757">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_2_min_int_s_fu_763">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_2_min_int_s_fu_769">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_s_min_int_s_fu_775">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_1_min_int_s_fu_781">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_2_min_int_s_fu_788">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_3_min_int_s_fu_795">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_3_min_int_s_fu_801">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_4_min_int_s_fu_807">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_4_min_int_s_fu_813">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_2_min_int_s_fu_819">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_3_min_int_s_fu_825">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_3_min_int_s_fu_832">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_5_min_int_s_fu_839">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_5_min_int_s_fu_845">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_4_min_int_s_fu_851">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_4_min_int_s_fu_857">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_5_min_int_s_fu_864">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_6_min_int_s_fu_871">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_6_min_int_s_fu_877">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_98_7_min_int_s_fu_883">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_101_7_min_int_s_fu_889">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_5_min_int_s_fu_895">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_6_min_int_s_fu_901">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_6_min_int_s_fu_908">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_7_min_int_s_fu_915">min_int_s, 0, 0, 1, 1, function</column>
+<column name="b0_1_7_min_int_s_fu_921">min_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_1_max_int_s_fu_928">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_3_max_int_s_fu_934">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_5_max_int_s_fu_940">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_7_max_int_s_fu_946">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_9_max_int_s_fu_952">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_s_max_int_s_fu_958">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_1_max_int_s_fu_964">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_3_max_int_s_fu_970">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_5_max_int_s_fu_976">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_7_max_int_s_fu_982">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_2_max_int_s_fu_988">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_78_4_max_int_s_fu_994">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_9_max_int_s_fu_1000">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_1_max_int_s_fu_1006">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_3_max_int_s_fu_1012">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_s_max_int_s_fu_1018">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_2_max_int_s_fu_1024">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_85_4_max_int_s_fu_1030">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_5_max_int_s_fu_1036">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_max_int_s_fu_1042">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_max_int_s_fu_1050">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_30_max_int_s_fu_1058">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_31_max_int_s_fu_1065">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_1_max_int_s_fu_1072">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_1_max_int_s_fu_1078">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_7_max_int_s_fu_1084">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_9_max_int_s_fu_1090">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_s_max_int_s_fu_1096">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_2_max_int_s_fu_1102">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_92_4_max_int_s_fu_1108">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_s_max_int_s_fu_1114">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_1_max_int_s_fu_1120">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_2_max_int_s_fu_1127">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_2_max_int_s_fu_1135">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_2_max_int_s_fu_1142">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_2_max_int_s_fu_1148">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_3_max_int_s_fu_1154">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_3_max_int_s_fu_1162">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_3_max_int_s_fu_1170">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_3_max_int_s_fu_1177">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_4_max_int_s_fu_1184">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_4_max_int_s_fu_1190">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_4_max_int_s_fu_1196">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_4_max_int_s_fu_1202">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_5_max_int_s_fu_1209">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_5_max_int_s_fu_1217">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_5_max_int_s_fu_1224">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_5_max_int_s_fu_1230">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_6_max_int_s_fu_1236">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_6_max_int_s_fu_1244">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_6_max_int_s_fu_1252">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_6_max_int_s_fu_1259">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_106_7_max_int_s_fu_1266">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_109_7_max_int_s_fu_1272">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_7_max_int_s_fu_1278">max_int_s, 0, 0, 1, 1, function</column>
+<column name="a0_1_7_max_int_s_fu_1284">max_int_s, 0, 0, 1, 1, function</column>
+<column name="tmp_10_max_int_s_fu_1291">max_int_s, 0, 0, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3646">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3653">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3660">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3668">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3676">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3684">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3692">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3700">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3708">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3715">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3732">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3739">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3746">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3753">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3760">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3767">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3774">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3781">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3788">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3795">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3822">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3830">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3838">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3846">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3854">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3861">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3868">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3876">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3884">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3892">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3900">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3908">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3916">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3924">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3932">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3940">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3948">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3956">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3964">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3972">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3980">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3988">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_3996">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_4003">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_4010">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_4017">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_4024">reg_int_s, 1, 1, 1, 1, function</column>
+<column name="grp_reg_int_s_fu_4031">reg_int_s, 1, 1, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_height">806740, 806740, 1045, -, -, 772, no</column>
+<column name=" + loop_width">1042, 1042, 16, 1, 1, 1028, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

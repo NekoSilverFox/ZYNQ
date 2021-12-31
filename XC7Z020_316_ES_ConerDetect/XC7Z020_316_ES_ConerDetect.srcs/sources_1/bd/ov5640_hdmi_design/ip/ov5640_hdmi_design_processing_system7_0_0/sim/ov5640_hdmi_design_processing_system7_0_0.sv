@@ -56,9 +56,9 @@
       bit  ENET1_MDIO_I;
       bit  ENET1_EXT_INTIN;
       bit  [7 : 0] ENET1_GMII_RXD;
-      bit  [1 : 0] GPIO_I;
-      bit  [1 : 0] GPIO_O;
-      bit  [1 : 0] GPIO_T;
+      bit  [63 : 0] GPIO_I;
+      bit  [63 : 0] GPIO_O;
+      bit  [63 : 0] GPIO_T;
       bit  I2C0_SDA_I;
       bit  I2C0_SDA_O;
       bit  I2C0_SDA_T;
@@ -677,9 +677,6 @@
 
 //MODULE DECLARATION
  module ov5640_hdmi_design_processing_system7_0_0 (
-  GPIO_I,
-  GPIO_O,
-  GPIO_T,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -800,7 +797,7 @@
       parameter USE_TRACE_DATA_EDGE_DETECTOR = 0;
       parameter C_TRACE_PIPELINE_WIDTH = 8;
       parameter C_TRACE_BUFFER_CLOCK_DELAY = 12;
-      parameter C_EMIO_GPIO_WIDTH = 2;
+      parameter C_EMIO_GPIO_WIDTH = 64;
       parameter C_INCLUDE_ACP_TRANS_CHECK = 0;
       parameter C_USE_DEFAULT_ACP_USER_VAL = 0;
       parameter C_S_AXI_ACP_ARUSER_VAL = 31;
@@ -850,9 +847,6 @@
 
 //INPUT AND OUTPUT PORTS
 
-      input  [1 : 0] GPIO_I;
-      output  [1 : 0] GPIO_O;
-      output  [1 : 0] GPIO_T;
       output  M_AXI_GP0_ARVALID;
       output  M_AXI_GP0_AWVALID;
       output  M_AXI_GP0_BREADY;
@@ -963,8 +957,6 @@
 
 //REG DECLARATIONS
 
-      reg [1 : 0] GPIO_O;
-      reg [1 : 0] GPIO_T;
       reg M_AXI_GP0_ARVALID;
       reg M_AXI_GP0_AWVALID;
       reg M_AXI_GP0_BREADY;

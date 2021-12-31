@@ -1,0 +1,134 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "G:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_doCorner_top glbl -prj doCorner.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile G:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s doCorner 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/AXIvideo2Mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIvideo2Mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/Dilate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dilate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_doCorner_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doCorner
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doCorner_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner_mac_mulabkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doCorner_mac_mulabkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module doCorner_mac_mulabkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner_mac_mulacud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doCorner_mac_mulacud_DSP48_1
+INFO: [VRFC 10-311] analyzing module doCorner_mac_mulacud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/doCorner_mux_32_8ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doCorner_mux_32_8ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/FAST_t_opr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FAST_t_opr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/FAST_t_opr_core_bjbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FAST_t_opr_core_bjbC_ram
+INFO: [VRFC 10-311] analyzing module FAST_t_opr_core_bjbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/FAST_t_opr_k_buf_dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FAST_t_opr_k_buf_dEe_ram
+INFO: [VRFC 10-311] analyzing module FAST_t_opr_k_buf_dEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/fifo_w8_d20000_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d20000_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/fifo_w8_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/Mat2AXIvideo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mat2AXIvideo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/max_int_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_int_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/min_int_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module min_int_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/PaintMask.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PaintMask
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/reg_int_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_int_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/rgb2gray.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2gray
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/start_for_Dilate_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Dilate_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Dilate_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/start_for_FAST_t_qcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_FAST_t_qcK_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_FAST_t_qcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/start_for_Mat2AXIsc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIsc4_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIsc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/start_for_PaintMarcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_PaintMarcU_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_PaintMarcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mi/Desktop/Programma/ZYNQ/XC7Z020_316_ES_ConerDetect/HLS/XC7Z020_316_ES_ConerDetect/solution1/sim/verilog/start_for_rgb2grapcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_rgb2grapcA_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_rgb2grapcA
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.doCorner_CTRL_BUS_s_axi
+Compiling module xil_defaultlib.AXIvideo2Mat
+Compiling module xil_defaultlib.doCorner_mac_mulabkb_DSP48_0
+Compiling module xil_defaultlib.doCorner_mac_mulabkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.doCorner_mac_mulacud_DSP48_1
+Compiling module xil_defaultlib.doCorner_mac_mulacud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.rgb2gray
+Compiling module xil_defaultlib.FAST_t_opr_k_buf_dEe_ram
+Compiling module xil_defaultlib.FAST_t_opr_k_buf_dEe(DataWidth=8...
+Compiling module xil_defaultlib.FAST_t_opr_core_bjbC_ram
+Compiling module xil_defaultlib.FAST_t_opr_core_bjbC(DataWidth=1...
+Compiling module xil_defaultlib.min_int_s
+Compiling module xil_defaultlib.max_int_s
+Compiling module xil_defaultlib.reg_int_s
+Compiling module xil_defaultlib.FAST_t_opr
+Compiling module xil_defaultlib.doCorner_mux_32_8ocq(ID=1,din0_W...
+Compiling module xil_defaultlib.Dilate
+Compiling module xil_defaultlib.PaintMask
+Compiling module xil_defaultlib.Mat2AXIvideo
+Compiling module xil_defaultlib.fifo_w8_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w8_d2_A
+Compiling module xil_defaultlib.fifo_w8_d20000_A
+Compiling module xil_defaultlib.start_for_rgb2grapcA_shiftReg
+Compiling module xil_defaultlib.start_for_rgb2grapcA
+Compiling module xil_defaultlib.start_for_FAST_t_qcK_shiftReg
+Compiling module xil_defaultlib.start_for_FAST_t_qcK
+Compiling module xil_defaultlib.start_for_PaintMarcU_shiftReg
+Compiling module xil_defaultlib.start_for_PaintMarcU
+Compiling module xil_defaultlib.start_for_Dilate_U0_shiftReg
+Compiling module xil_defaultlib.start_for_Dilate_U0
+Compiling module xil_defaultlib.start_for_Mat2AXIsc4_shiftReg
+Compiling module xil_defaultlib.start_for_Mat2AXIsc4
+Compiling module xil_defaultlib.doCorner
+Compiling module xil_defaultlib.fifo(DEPTH=786432,WIDTH=24)
+Compiling module xil_defaultlib.fifo(DEPTH=786432,WIDTH=3)
+Compiling module xil_defaultlib.fifo(DEPTH=786432,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_inStream
+Compiling module xil_defaultlib.AESL_axi_s_outStream
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_doCorner_top
+Compiling module work.glbl
+Built simulation snapshot doCorner

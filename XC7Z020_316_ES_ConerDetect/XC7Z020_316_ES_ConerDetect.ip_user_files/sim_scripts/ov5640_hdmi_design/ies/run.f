@@ -112,6 +112,7 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_xlconstant_0_0/sim/ov5640_hdmi_design_xlconstant_0_0.v" \
+  "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/sim/bd_c6bb.v" \
   "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/ip/ip_0/sim/bd_c6bb_one_0.v" \
 -endlib
 -makelib ies_lib/proc_sys_reset_v5_0_13 \
@@ -200,7 +201,6 @@
   "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/ip/ip_39/sim/bd_c6bb_m00e_0.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/bd_0/sim/bd_c6bb.v" \
   "../../../bd/ov5640_hdmi_design/ip/ov5640_hdmi_design_axi_smc_0/sim/ov5640_hdmi_design_axi_smc_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

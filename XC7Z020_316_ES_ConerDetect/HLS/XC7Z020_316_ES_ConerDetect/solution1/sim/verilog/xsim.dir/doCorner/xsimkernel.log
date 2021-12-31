@@ -1,0 +1,4 @@
+Running: xsim.dir/doCorner/xsimk.exe -simmode gui -wdb doCorner.wdb -simrunnum 0 -socket 56158
+Design successfully loaded
+Design Loading Memory Usage: 20536 KB (Peak: 20536 KB)
+Design Loading CPU Usage: 31 ms

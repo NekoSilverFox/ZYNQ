@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Oct 19 00:01:55 2021
+| Date         : Sun Oct 24 19:05:47 2021
 | Host         : DESKTOP-HMF772I running 64-bit major release  (build 9200)
 | Command      : report_drc -file ov5640_hdmi_design_wrapper_drc_opted.rpt -pb ov5640_hdmi_design_wrapper_drc_opted.pb -rpx ov5640_hdmi_design_wrapper_drc_opted.rpx
 | Design       : ov5640_hdmi_design_wrapper
@@ -24,17 +24,85 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
-+----------+----------+-----------------------+------------+
-| Rule     | Severity | Description           | Violations |
-+----------+----------+-----------------------+------------+
-| IOSR-1   | Warning  | IOB set reset sharing | 1          |
-| REQP-165 | Advisory | writefirst            | 2          |
-| REQP-181 | Advisory | writefirst            | 2          |
-+----------+----------+-----------------------+------------+
+             Violations found: 21
++----------+----------+------------------------+------------+
+| Rule     | Severity | Description            | Violations |
++----------+----------+------------------------+------------+
+| DPIP-1   | Warning  | Input pipelining       | 3          |
+| DPOP-1   | Warning  | PREG Output pipelining | 4          |
+| DPOP-2   | Warning  | MREG Output pipelining | 6          |
+| IOSR-1   | Warning  | IOB set reset sharing  | 1          |
+| REQP-165 | Advisory | writefirst             | 3          |
+| REQP-181 | Advisory | writefirst             | 4          |
++----------+----------+------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m input ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p input ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p input ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2 output ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2__0 output ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m output ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p output ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2 multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2__0 multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/bound_fu_173_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_reg_329_reg__0 multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/bound_reg_329_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/bound_reg_329_reg__2 multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/bound_reg_329_reg__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/m/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p multiplier stage ov5640_hdmi_design_i/image_filter_0/inst/image_filter_mac_bkb_U1/image_filter_mac_bkb_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
 IOSR-1#1 Warning
 IOB set reset sharing  
 IO cmos_vsync connects to flops which have these ov5640_hdmi_design_i/util_vector_logic_0/Res[0], ov5640_hdmi_design_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/overflow set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
@@ -50,6 +118,11 @@ writefirst
 Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 Related violations: <none>
 
+REQP-165#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
 REQP-181#1 Advisory
 writefirst  
 Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
@@ -58,6 +131,16 @@ Related violations: <none>
 REQP-181#2 Advisory
 writefirst  
 Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ov5640_hdmi_design_i/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 Related violations: <none>
 
 

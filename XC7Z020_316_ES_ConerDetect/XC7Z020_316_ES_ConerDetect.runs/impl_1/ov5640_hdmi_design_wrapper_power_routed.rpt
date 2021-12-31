@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Oct 19 00:03:40 2021
+| Date             : Sun Oct 24 19:08:34 2021
 | Host             : DESKTOP-HMF772I running 64-bit major release  (build 9200)
 | Command          : report_power -file ov5640_hdmi_design_wrapper_power_routed.rpt -pb ov5640_hdmi_design_wrapper_power_summary_routed.pb -rpx ov5640_hdmi_design_wrapper_power_routed.rpx
 | Design           : ov5640_hdmi_design_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.975        |
+| Total On-Chip Power (W)  | 1.986        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.825        |
-| Device Static (W)        | 0.150        |
+| Dynamic (W)              | 1.835        |
+| Device Static (W)        | 0.151        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 62.2         |
-| Junction Temperature (C) | 47.8         |
+| Max Ambient (C)          | 62.1         |
+| Junction Temperature (C) | 47.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.020 |        7 |       --- |             --- |
-| Slice Logic              |     0.006 |    17260 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     5285 |     53200 |            9.93 |
-|   Register               |    <0.001 |     8567 |    106400 |            8.05 |
-|   CARRY4                 |    <0.001 |      200 |     13300 |            1.50 |
-|   LUT as Distributed RAM |    <0.001 |      430 |     17400 |            2.47 |
+| Clocks                   |     0.028 |        7 |       --- |             --- |
+| Slice Logic              |     0.008 |    29147 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     9363 |     53200 |           17.60 |
+|   Register               |    <0.001 |    14163 |    106400 |           13.31 |
+|   CARRY4                 |    <0.001 |      350 |     13300 |            2.63 |
+|   LUT as Distributed RAM |    <0.001 |      660 |     17400 |            3.79 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   LUT as Shift Register  |    <0.001 |      246 |     17400 |            1.41 |
-|   F7/F8 Muxes            |    <0.001 |        5 |     53200 |           <0.01 |
-|   Others                 |     0.000 |      782 |       --- |             --- |
-| Signals                  |     0.008 |    11857 |       --- |             --- |
-| Block RAM                |     0.003 |        7 |       140 |            5.00 |
+|   LUT as Shift Register  |    <0.001 |      404 |     17400 |            2.32 |
+|   F7/F8 Muxes            |    <0.001 |       47 |     53200 |            0.09 |
+|   Others                 |     0.000 |     1189 |       --- |             --- |
+| Signals                  |     0.010 |    20207 |       --- |             --- |
+| Block RAM                |     0.003 |       11 |       140 |            7.86 |
 | MMCM                     |     0.121 |        1 |         4 |           25.00 |
-| I/O                      |     0.137 |       23 |       125 |           18.40 |
-| PS7                      |     1.531 |        1 |       --- |             --- |
-| Static Power             |     0.150 |          |           |                 |
-| Total                    |     1.975 |          |           |                 |
+| DSPs                     |    <0.001 |        6 |       220 |            2.73 |
+| I/O                      |     0.132 |       23 |       125 |           18.40 |
+| PS7                      |     1.532 |        1 |       --- |             --- |
+| Static Power             |     0.151 |          |           |                 |
+| Total                    |     1.986 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,9 +79,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.056 |       0.038 |      0.017 |
+| Vccint    |       1.000 |     0.069 |       0.052 |      0.018 |
 | Vccaux    |       1.800 |     0.083 |       0.067 |      0.016 |
-| Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |
+| Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -96,7 +97,7 @@ Table of Contents
 | Vccpll    |       1.800 |     0.019 |       0.016 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
 | Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.002 |       0.001 |      0.001 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
 +-----------+-------------+-----------+-------------+------------+
 
@@ -158,20 +159,20 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| ov5640_hdmi_design_wrapper |     1.825 |
-|   emio_sccb_tri_iobuf_0    |     0.002 |
-|   emio_sccb_tri_iobuf_1    |     0.002 |
-|   ov5640_hdmi_design_i     |     1.819 |
-|     axi_smc                |     0.012 |
-|       inst                 |     0.012 |
-|     axi_vdma_0             |     0.011 |
-|       U0                   |     0.011 |
+| ov5640_hdmi_design_wrapper |     1.835 |
+|   ov5640_hdmi_design_i     |     1.834 |
+|     axi_smc                |     0.016 |
+|       inst                 |     0.016 |
+|     axi_vdma_0             |     0.010 |
+|       U0                   |     0.010 |
+|     axi_vdma_1             |     0.009 |
+|       U0                   |     0.009 |
 |     clk_wiz_0              |     0.122 |
 |       inst                 |     0.122 |
 |     hdmi_trans_0           |     0.135 |
 |       inst                 |     0.135 |
-|     processing_system7_0   |     1.531 |
-|       inst                 |     1.531 |
+|     processing_system7_0   |     1.533 |
+|       inst                 |     1.533 |
 |     ps7_0_axi_periph       |     0.002 |
 |       s00_couplers         |     0.002 |
 |     v_axi4s_vid_out_0      |     0.004 |

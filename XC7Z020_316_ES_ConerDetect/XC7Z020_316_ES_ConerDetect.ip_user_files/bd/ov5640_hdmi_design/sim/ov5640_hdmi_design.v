@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Oct 24 01:11:41 2021
+//Date        : Sun Oct 24 18:33:08 2021
 //Host        : DESKTOP-HMF772I running 64-bit major release  (build 9200)
 //Command     : generate_target ov5640_hdmi_design.bd
 //Design      : ov5640_hdmi_design
@@ -418,10 +418,9 @@ module ov5640_hdmi_design
     cmos_href,
     cmos_pclk,
     cmos_rst_n,
+    cmos_scl,
+    cmos_sda,
     cmos_vsync,
-    emio_sccb_tri_i,
-    emio_sccb_tri_o,
-    emio_sccb_tri_t,
     hdmi_oen,
     hdmi_tx_chn_b_n,
     hdmi_tx_chn_b_p,
@@ -456,10 +455,9 @@ module ov5640_hdmi_design
   input cmos_href;
   input cmos_pclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.CMOS_RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.CMOS_RST_N, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output cmos_rst_n;
+  output cmos_scl;
+  inout cmos_sda;
   input cmos_vsync;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 emio_sccb TRI_I" *) input [1:0]emio_sccb_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 emio_sccb TRI_O" *) output [1:0]emio_sccb_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 emio_sccb TRI_T" *) output [1:0]emio_sccb_tri_t;
   output [0:0]hdmi_oen;
   output hdmi_tx_chn_b_n;
   output hdmi_tx_chn_b_p;
@@ -470,6 +468,7 @@ module ov5640_hdmi_design
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_TX_CLK_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_TX_CLK_N, CLK_DOMAIN ov5640_hdmi_design_hdmi_trans_0_0_hdmi_tx_clk_n, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output hdmi_tx_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.HDMI_TX_CLK_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.HDMI_TX_CLK_P, CLK_DOMAIN ov5640_hdmi_design_hdmi_trans_0_0_hdmi_tx_clk_p, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output hdmi_tx_clk_p;
 
+  wire Net;
   wire [31:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
   wire [3:0]axi_smc_M00_AXI_ARCACHE;
@@ -582,6 +581,7 @@ module ov5640_hdmi_design
   wire [23:0]ddr3_hdmi_ov5640_0_capture_data;
   wire ddr3_hdmi_ov5640_0_cmos_clk_en;
   wire ddr3_hdmi_ov5640_0_cmos_rst_n;
+  wire ddr3_hdmi_ov5640_0_cmos_scl;
   wire ddr3_hdmi_ov5640_0_data_active;
   wire ddr3_hdmi_ov5640_0_pclk;
   wire ddr3_hdmi_ov5640_0_vsync;
@@ -622,9 +622,6 @@ module ov5640_hdmi_design
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_I;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_O;
-  wire [1:0]processing_system7_0_GPIO_0_TRI_T;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -736,9 +733,8 @@ module ov5640_hdmi_design
   assign cmos_href_0_1 = cmos_href;
   assign cmos_pclk_0_1 = cmos_pclk;
   assign cmos_rst_n = ddr3_hdmi_ov5640_0_cmos_rst_n;
+  assign cmos_scl = ddr3_hdmi_ov5640_0_cmos_scl;
   assign cmos_vsync_0_1 = cmos_vsync;
-  assign emio_sccb_tri_o[1:0] = processing_system7_0_GPIO_0_TRI_O;
-  assign emio_sccb_tri_t[1:0] = processing_system7_0_GPIO_0_TRI_T;
   assign hdmi_oen[0] = xlconstant_0_dout;
   assign hdmi_tx_chn_b_n = hdmi_trans_0_hdmi_tx_chn_b_n;
   assign hdmi_tx_chn_b_p = hdmi_trans_0_hdmi_tx_chn_b_p;
@@ -748,7 +744,6 @@ module ov5640_hdmi_design
   assign hdmi_tx_chn_r_p = hdmi_trans_0_hdmi_tx_chn_r_p;
   assign hdmi_tx_clk_n = hdmi_trans_0_hdmi_tx_clk_n;
   assign hdmi_tx_clk_p = hdmi_trans_0_hdmi_tx_clk_p;
-  assign processing_system7_0_GPIO_0_TRI_I = emio_sccb_tri_i[1:0];
   ov5640_hdmi_design_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
@@ -851,70 +846,7 @@ module ov5640_hdmi_design
         .S03_AXI_wvalid(axi_vdma_1_M_AXI_S2MM_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_50M_peripheral_aresetn));
-  ov5640_hdmi_design_axi_vdma_0_0 axi_vdma_0
-       (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
-        .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
-        .m_axi_mm2s_araddr(axi_vdma_0_M_AXI_MM2S_ARADDR),
-        .m_axi_mm2s_arburst(axi_vdma_0_M_AXI_MM2S_ARBURST),
-        .m_axi_mm2s_arcache(axi_vdma_0_M_AXI_MM2S_ARCACHE),
-        .m_axi_mm2s_arlen(axi_vdma_0_M_AXI_MM2S_ARLEN),
-        .m_axi_mm2s_arprot(axi_vdma_0_M_AXI_MM2S_ARPROT),
-        .m_axi_mm2s_arready(axi_vdma_0_M_AXI_MM2S_ARREADY),
-        .m_axi_mm2s_arsize(axi_vdma_0_M_AXI_MM2S_ARSIZE),
-        .m_axi_mm2s_arvalid(axi_vdma_0_M_AXI_MM2S_ARVALID),
-        .m_axi_mm2s_rdata(axi_vdma_0_M_AXI_MM2S_RDATA),
-        .m_axi_mm2s_rlast(axi_vdma_0_M_AXI_MM2S_RLAST),
-        .m_axi_mm2s_rready(axi_vdma_0_M_AXI_MM2S_RREADY),
-        .m_axi_mm2s_rresp(axi_vdma_0_M_AXI_MM2S_RRESP),
-        .m_axi_mm2s_rvalid(axi_vdma_0_M_AXI_MM2S_RVALID),
-        .m_axi_s2mm_aclk(processing_system7_0_FCLK_CLK0),
-        .m_axi_s2mm_awaddr(axi_vdma_0_M_AXI_S2MM_AWADDR),
-        .m_axi_s2mm_awburst(axi_vdma_0_M_AXI_S2MM_AWBURST),
-        .m_axi_s2mm_awcache(axi_vdma_0_M_AXI_S2MM_AWCACHE),
-        .m_axi_s2mm_awlen(axi_vdma_0_M_AXI_S2MM_AWLEN),
-        .m_axi_s2mm_awprot(axi_vdma_0_M_AXI_S2MM_AWPROT),
-        .m_axi_s2mm_awready(axi_vdma_0_M_AXI_S2MM_AWREADY),
-        .m_axi_s2mm_awsize(axi_vdma_0_M_AXI_S2MM_AWSIZE),
-        .m_axi_s2mm_awvalid(axi_vdma_0_M_AXI_S2MM_AWVALID),
-        .m_axi_s2mm_bready(axi_vdma_0_M_AXI_S2MM_BREADY),
-        .m_axi_s2mm_bresp(axi_vdma_0_M_AXI_S2MM_BRESP),
-        .m_axi_s2mm_bvalid(axi_vdma_0_M_AXI_S2MM_BVALID),
-        .m_axi_s2mm_wdata(axi_vdma_0_M_AXI_S2MM_WDATA),
-        .m_axi_s2mm_wlast(axi_vdma_0_M_AXI_S2MM_WLAST),
-        .m_axi_s2mm_wready(axi_vdma_0_M_AXI_S2MM_WREADY),
-        .m_axi_s2mm_wstrb(axi_vdma_0_M_AXI_S2MM_WSTRB),
-        .m_axi_s2mm_wvalid(axi_vdma_0_M_AXI_S2MM_WVALID),
-        .m_axis_mm2s_aclk(processing_system7_0_FCLK_CLK0),
-        .m_axis_mm2s_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
-        .m_axis_mm2s_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
-        .m_axis_mm2s_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
-        .m_axis_mm2s_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
-        .m_axis_mm2s_tvalid(axi_vdma_0_M_AXIS_MM2S_TVALID),
-        .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[8:0]),
-        .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
-        .s_axi_lite_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s_axi_lite_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[8:0]),
-        .s_axi_lite_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
-        .s_axi_lite_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
-        .s_axi_lite_bready(ps7_0_axi_periph_M00_AXI_BREADY),
-        .s_axi_lite_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
-        .s_axi_lite_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
-        .s_axi_lite_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
-        .s_axi_lite_rready(ps7_0_axi_periph_M00_AXI_RREADY),
-        .s_axi_lite_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
-        .s_axi_lite_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
-        .s_axi_lite_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
-        .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
-        .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
-        .s_axis_s2mm_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axis_s2mm_tdata(image_filter_0_outStream_TDATA),
-        .s_axis_s2mm_tkeep(image_filter_0_outStream_TKEEP),
-        .s_axis_s2mm_tlast(image_filter_0_outStream_TLAST),
-        .s_axis_s2mm_tready(image_filter_0_outStream_TREADY),
-        .s_axis_s2mm_tuser(image_filter_0_outStream_TUSER),
-        .s_axis_s2mm_tvalid(image_filter_0_outStream_TVALID));
-  ov5640_hdmi_design_axi_vdma_1_0 axi_vdma_1
+  ov5640_hdmi_design_axi_vdma_1_0 axi_vdma_0
        (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
         .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
         .m_axi_mm2s_araddr(axi_vdma_1_M_AXI_MM2S_ARADDR),
@@ -978,6 +910,69 @@ module ov5640_hdmi_design
         .s_axis_s2mm_tready(v_vid_in_axi4s_0_video_out_TREADY),
         .s_axis_s2mm_tuser(v_vid_in_axi4s_0_video_out_TUSER),
         .s_axis_s2mm_tvalid(v_vid_in_axi4s_0_video_out_TVALID));
+  ov5640_hdmi_design_axi_vdma_0_0 axi_vdma_1
+       (.axi_resetn(rst_ps7_0_50M_peripheral_aresetn),
+        .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
+        .m_axi_mm2s_araddr(axi_vdma_0_M_AXI_MM2S_ARADDR),
+        .m_axi_mm2s_arburst(axi_vdma_0_M_AXI_MM2S_ARBURST),
+        .m_axi_mm2s_arcache(axi_vdma_0_M_AXI_MM2S_ARCACHE),
+        .m_axi_mm2s_arlen(axi_vdma_0_M_AXI_MM2S_ARLEN),
+        .m_axi_mm2s_arprot(axi_vdma_0_M_AXI_MM2S_ARPROT),
+        .m_axi_mm2s_arready(axi_vdma_0_M_AXI_MM2S_ARREADY),
+        .m_axi_mm2s_arsize(axi_vdma_0_M_AXI_MM2S_ARSIZE),
+        .m_axi_mm2s_arvalid(axi_vdma_0_M_AXI_MM2S_ARVALID),
+        .m_axi_mm2s_rdata(axi_vdma_0_M_AXI_MM2S_RDATA),
+        .m_axi_mm2s_rlast(axi_vdma_0_M_AXI_MM2S_RLAST),
+        .m_axi_mm2s_rready(axi_vdma_0_M_AXI_MM2S_RREADY),
+        .m_axi_mm2s_rresp(axi_vdma_0_M_AXI_MM2S_RRESP),
+        .m_axi_mm2s_rvalid(axi_vdma_0_M_AXI_MM2S_RVALID),
+        .m_axi_s2mm_aclk(processing_system7_0_FCLK_CLK0),
+        .m_axi_s2mm_awaddr(axi_vdma_0_M_AXI_S2MM_AWADDR),
+        .m_axi_s2mm_awburst(axi_vdma_0_M_AXI_S2MM_AWBURST),
+        .m_axi_s2mm_awcache(axi_vdma_0_M_AXI_S2MM_AWCACHE),
+        .m_axi_s2mm_awlen(axi_vdma_0_M_AXI_S2MM_AWLEN),
+        .m_axi_s2mm_awprot(axi_vdma_0_M_AXI_S2MM_AWPROT),
+        .m_axi_s2mm_awready(axi_vdma_0_M_AXI_S2MM_AWREADY),
+        .m_axi_s2mm_awsize(axi_vdma_0_M_AXI_S2MM_AWSIZE),
+        .m_axi_s2mm_awvalid(axi_vdma_0_M_AXI_S2MM_AWVALID),
+        .m_axi_s2mm_bready(axi_vdma_0_M_AXI_S2MM_BREADY),
+        .m_axi_s2mm_bresp(axi_vdma_0_M_AXI_S2MM_BRESP),
+        .m_axi_s2mm_bvalid(axi_vdma_0_M_AXI_S2MM_BVALID),
+        .m_axi_s2mm_wdata(axi_vdma_0_M_AXI_S2MM_WDATA),
+        .m_axi_s2mm_wlast(axi_vdma_0_M_AXI_S2MM_WLAST),
+        .m_axi_s2mm_wready(axi_vdma_0_M_AXI_S2MM_WREADY),
+        .m_axi_s2mm_wstrb(axi_vdma_0_M_AXI_S2MM_WSTRB),
+        .m_axi_s2mm_wvalid(axi_vdma_0_M_AXI_S2MM_WVALID),
+        .m_axis_mm2s_aclk(processing_system7_0_FCLK_CLK0),
+        .m_axis_mm2s_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
+        .m_axis_mm2s_tlast(axi_vdma_0_M_AXIS_MM2S_TLAST),
+        .m_axis_mm2s_tready(axi_vdma_0_M_AXIS_MM2S_TREADY),
+        .m_axis_mm2s_tuser(axi_vdma_0_M_AXIS_MM2S_TUSER),
+        .m_axis_mm2s_tvalid(axi_vdma_0_M_AXIS_MM2S_TVALID),
+        .s_axi_lite_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_lite_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[8:0]),
+        .s_axi_lite_arready(ps7_0_axi_periph_M00_AXI_ARREADY),
+        .s_axi_lite_arvalid(ps7_0_axi_periph_M00_AXI_ARVALID),
+        .s_axi_lite_awaddr(ps7_0_axi_periph_M00_AXI_AWADDR[8:0]),
+        .s_axi_lite_awready(ps7_0_axi_periph_M00_AXI_AWREADY),
+        .s_axi_lite_awvalid(ps7_0_axi_periph_M00_AXI_AWVALID),
+        .s_axi_lite_bready(ps7_0_axi_periph_M00_AXI_BREADY),
+        .s_axi_lite_bresp(ps7_0_axi_periph_M00_AXI_BRESP),
+        .s_axi_lite_bvalid(ps7_0_axi_periph_M00_AXI_BVALID),
+        .s_axi_lite_rdata(ps7_0_axi_periph_M00_AXI_RDATA),
+        .s_axi_lite_rready(ps7_0_axi_periph_M00_AXI_RREADY),
+        .s_axi_lite_rresp(ps7_0_axi_periph_M00_AXI_RRESP),
+        .s_axi_lite_rvalid(ps7_0_axi_periph_M00_AXI_RVALID),
+        .s_axi_lite_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
+        .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
+        .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
+        .s_axis_s2mm_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axis_s2mm_tdata(image_filter_0_outStream_TDATA),
+        .s_axis_s2mm_tkeep(image_filter_0_outStream_TKEEP),
+        .s_axis_s2mm_tlast(image_filter_0_outStream_TLAST),
+        .s_axis_s2mm_tready(image_filter_0_outStream_TREADY),
+        .s_axis_s2mm_tuser(image_filter_0_outStream_TUSER),
+        .s_axis_s2mm_tvalid(image_filter_0_outStream_TVALID));
   ov5640_hdmi_design_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -992,6 +987,8 @@ module ov5640_hdmi_design
         .cmos_href(cmos_href_0_1),
         .cmos_pclk(cmos_pclk_0_1),
         .cmos_rst_n(ddr3_hdmi_ov5640_0_cmos_rst_n),
+        .cmos_scl(ddr3_hdmi_ov5640_0_cmos_scl),
+        .cmos_sda(cmos_sda),
         .cmos_vsync(cmos_vsync_0_1),
         .data_active(ddr3_hdmi_ov5640_0_data_active),
         .pclk(ddr3_hdmi_ov5640_0_pclk),
@@ -1068,9 +1065,6 @@ module ov5640_hdmi_design
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
-        .GPIO_I(processing_system7_0_GPIO_0_TRI_I),
-        .GPIO_O(processing_system7_0_GPIO_0_TRI_O),
-        .GPIO_T(processing_system7_0_GPIO_0_TRI_T),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
